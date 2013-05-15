@@ -4,7 +4,7 @@
       xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
 
     <rootUrl>http://example.com</rootUrl>
-    <title>пример</title>
+    <title>Пример доски объявлений</title>
     <description>Доска объявлений о продаже собак и кошек, щенков и котят</description>
 
     <resource>
