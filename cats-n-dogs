@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
+
+    <rootUrl>http://example.com</rootUrl>
+    <title>пример</title>
+    <description>Доска объявлений о продаже собак и кошек, щенков и котят</description>
+
+    <resource>
+        <fixed name="example.com" terminal="false">
+            <placeholder name="species"/>
+        </fixed>
+    </resource>
+    <filters>
+        <dropDown>
+            <description caption="животное">
+                <modifyResource placeholder="species"/>
+            </description>
+            <dropDownValue key="cats" caption="кошки">
+                <dropDown>
+                    <description caption="порода">
+                        <setParameter name="breed"/>
+                    </description>
+                    <dropDownValue key="british" caption="британская"/>
+                    <dropDownValue key="scottish" caption="шотландская"/>
+                    <!--...-->
+                    <dropDownValue key="maine_coon" caption="мейн-кун"/>
+                    <dropDownValue key="other" caption="другие"/>
+                </dropDown>
+                <checkBox>
+                    <description caption="котята">
+                        <setParameter name="is_young"/>
+                    </description>
+                    <checked key="1"/>
+                </checkBox>
+            </dropDownValue>
+            <dropDownValue key="dogs" caption="собаки">
+                <dropDown>
+                    <description caption="порода">
+                        <setParameter name="breed"/>
+                    </description>
+                    <dropDownValue key="yorkshire" caption="йоркширский терьер"/>
+                    <dropDownValue key="toy" caption="той-терьер"/>
+                    <!--...-->
+                    <dropDownValue key="shar_pei" caption="шар-пей"/>
+                    <dropDownValue key="other" caption="другие"/>
+                </dropDown>
+                <checkBox>
+                    <description caption="щенки">
+                        <setParameter name="is_young"/>
+                    </description>
+                    <checked key="1"/>
+                </checkBox>
+            </dropDownValue>
+        </dropDown>
+        <checkBox>
+            <description caption="бесплатно">
+                <setParameter name="free"/>
+            </description>
+            <checked key="1"/>
+            <unchecked>
+                <rangeFilter min="0" max="50000" step="100" unit="руб">
+                    <description caption="цена">
+                        <setParameter name="min_price"/>
+                        <setParameter name="max_price"/>
+                    </description>
+                </rangeFilter>
+            </unchecked>
+        </checkBox>
+    </filters>
+</site>
