@@ -1442,7 +1442,7 @@
             </description>
             <dropDownValue key="U" caption="Used">
                 <checkBox>
-                    <description caption="Certified pre-owned">
+                    <description caption="Certified">
                         <setParameter name="cpo"/>
                     </description>
                     <checked key="Y"/>
