@@ -1,0 +1,2837 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
+    <title>Яндекс.Авто</title>
+    <description>Лучший сервис выбора автомобилей</description>
+    <rootUrl>http://auto2.yandex.ru</rootUrl>
+    <resource>
+        <fixed name="auto2.yandex.ru/search"/>
+    </resource>
+    <filters>
+        <dropDown>
+            <description caption="Марка">
+                <setParameter name="mark"/>
+            </description>
+            <dropDownValue key="AC" caption="AC">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ACE" caption="Ace"/>
+                    <dropDownValue key="COBRA" caption="Cobra"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ACURA" caption="Acura">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="RSX" caption="RSX"/>
+                    <dropDownValue key="INTEGRA" caption="Integra"/>
+                    <dropDownValue key="NSX" caption="NSX"/>
+                    <dropDownValue key="CSX" caption="CSX"/>
+                    <dropDownValue key="LEGEND" caption="Legend"/>
+                    <dropDownValue key="MDX" caption="MDX"/>
+                    <dropDownValue key="RDX" caption="RDX"/>
+                    <dropDownValue key="RL" caption="RL"/>
+                    <dropDownValue key="CL" caption="CL"/>
+                    <dropDownValue key="SLX" caption="SLX"/>
+                    <dropDownValue key="TL" caption="TL"/>
+                    <dropDownValue key="ZDX" caption="ZDX"/>
+                    <dropDownValue key="TSX" caption="TSX"/>
+                    <dropDownValue key="EL" caption="EL"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ADMIRAL" caption="Admiral">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PICKUP" caption="Pickup"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ALFA_ROMEO" caption="Alfa Romeo">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="GIULIETTA" caption="Giulietta"/>
+                    <dropDownValue key="90" caption="90"/>
+                    <dropDownValue key="33" caption="33"/>
+                    <dropDownValue key="8C_COMPETIZIONE" caption="8C Competizione"/>
+                    <dropDownValue key="GTV" caption="GTV"/>
+                    <dropDownValue key="SPIDER" caption="Spider"/>
+                    <dropDownValue key="156" caption="156"/>
+                    <dropDownValue key="ALFASUD" caption="Alfasud"/>
+                    <dropDownValue key="MITO" caption="MiTo"/>
+                    <dropDownValue key="GT" caption="GT"/>
+                    <dropDownValue key="146" caption="146"/>
+                    <dropDownValue key="164" caption="164"/>
+                    <dropDownValue key="166" caption="166"/>
+                    <dropDownValue key="ALFETTA" caption="Alfetta"/>
+                    <dropDownValue key="147" caption="147"/>
+                    <dropDownValue key="155" caption="155"/>
+                    <dropDownValue key="75" caption="75"/>
+                    <dropDownValue key="145" caption="145"/>
+                    <dropDownValue key="BRERA" caption="Brera"/>
+                    <dropDownValue key="159" caption="159"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ALPINA" caption="Alpina">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="B3" caption="B3"/>
+                    <dropDownValue key="B6" caption="B6"/>
+                    <dropDownValue key="B5" caption="B5"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ARO" caption="Aro">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="244" caption="244"/>
+                    <dropDownValue key="243" caption="243"/>
+                    <dropDownValue key="24" caption="24"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ASIA" caption="Asia">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ROCSTA" caption="Rocsta"/>
+                    <dropDownValue key="HI_TOPIC" caption="Hi-Topic"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ASTON_MARTIN" caption="Aston Martin">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="V8" caption="V8 Vantage"/>
+                    <dropDownValue key="DB7" caption="DB7"/>
+                    <dropDownValue key="RAPIDE" caption="Rapide"/>
+                    <dropDownValue key="DBS" caption="DBS"/>
+                    <dropDownValue key="DB9" caption="DB9"/>
+                    <dropDownValue key="V12" caption="V12 Vanquish"/>
+                    <dropDownValue key="V8_VOLANTE" caption="V8 Volante"/>
+                    <dropDownValue key="VIRAGE" caption="Virage"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="AUDI" caption="Audi">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="Q5" caption="Q5"/>
+                    <dropDownValue key="A5" caption="A5"/>
+                    <dropDownValue key="RS6" caption="RS6"/>
+                    <dropDownValue key="A8" caption="A8"/>
+                    <dropDownValue key="TTS" caption="TTS"/>
+                    <dropDownValue key="CABRIOLET" caption="Cabriolet"/>
+                    <dropDownValue key="R8" caption="R8"/>
+                    <dropDownValue key="S6" caption="S6"/>
+                    <dropDownValue key="Q3" caption="Q3"/>
+                    <dropDownValue key="S5" caption="S5"/>
+                    <dropDownValue key="RS5" caption="RS5"/>
+                    <dropDownValue key="S7" caption="S7"/>
+                    <dropDownValue key="ALLROAD" caption="A6 allroad quattro"/>
+                    <dropDownValue key="A6" caption="A6"/>
+                    <dropDownValue key="A3" caption="A3"/>
+                    <dropDownValue key="TT" caption="TT"/>
+                    <dropDownValue key="80" caption="80"/>
+                    <dropDownValue key="S8" caption="S8"/>
+                    <dropDownValue key="90" caption="90"/>
+                    <dropDownValue key="100" caption="100"/>
+                    <dropDownValue key="V8" caption="V8"/>
+                    <dropDownValue key="A1" caption="A1"/>
+                    <dropDownValue key="Q7" caption="Q7"/>
+                    <dropDownValue key="A4" caption="A4"/>
+                    <dropDownValue key="A4_ALLROAD" caption="A4 allroad quattro"/>
+                    <dropDownValue key="RS4" caption="RS4"/>
+                    <dropDownValue key="S3" caption="S3"/>
+                    <dropDownValue key="200" caption="200"/>
+                    <dropDownValue key="A2" caption="A2"/>
+                    <dropDownValue key="S4" caption="S4"/>
+                    <dropDownValue key="TT_RS" caption="TT RS"/>
+                    <dropDownValue key="RS2" caption="RS2"/>
+                    <dropDownValue key="A7" caption="A7"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BMW" caption="BMW">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="M1" caption="1 серия М"/>
+                    <dropDownValue key="X3" caption="X3"/>
+                    <dropDownValue key="Z1" caption="Z1"/>
+                    <dropDownValue key="Z3M" caption="Z3 M"/>
+                    <dropDownValue key="X5_M" caption="X5 M"/>
+                    <dropDownValue key="X5" caption="X5"/>
+                    <dropDownValue key="M6" caption="M6"/>
+                    <dropDownValue key="5GRANTURISMO" caption="5 Gran Turismo"/>
+                    <dropDownValue key="Z4" caption="Z4"/>
+                    <dropDownValue key="X6_M" caption="X6 M"/>
+                    <dropDownValue key="6ER" caption="6 series"/>
+                    <dropDownValue key="X6" caption="X6"/>
+                    <dropDownValue key="M3" caption="M3"/>
+                    <dropDownValue key="Z8" caption="Z8"/>
+                    <dropDownValue key="X1" caption="X1"/>
+                    <dropDownValue key="Z3" caption="Z3"/>
+                    <dropDownValue key="M5" caption="M5"/>
+                    <dropDownValue key="7ER" caption="7 series"/>
+                    <dropDownValue key="5ER" caption="5 series"/>
+                    <dropDownValue key="1ER" caption="1 series"/>
+                    <dropDownValue key="3ER" caption="3 series"/>
+                    <dropDownValue key="8ER" caption="8"/>
+                    <dropDownValue key="3GRANTURISMO" caption="3 Gran Turismo"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BYD" caption="BYD">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FLYER" caption="Flyer"/>
+                    <dropDownValue key="F3" caption="F3"/>
+                    <dropDownValue key="S6" caption="S6"/>
+                    <dropDownValue key="F0" caption="F0"/>
+                    <dropDownValue key="G3" caption="G3"/>
+                    <dropDownValue key="F6" caption="F6"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BENTLEY" caption="Bentley">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ARNAGE" caption="Arnage"/>
+                    <dropDownValue key="MULSANNE" caption="Mulsanne"/>
+                    <dropDownValue key="CONTINENTAL_GT" caption="Continental GT"/>
+                    <dropDownValue key="BROOKLANDS" caption="Brooklands"/>
+                    <dropDownValue key="AZURE" caption="Azure"/>
+                    <dropDownValue key="FLYING_SPUR" caption="Flying Spur"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BOGDAN" caption="Bogdan">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="2111" caption="2111"/>
+                    <dropDownValue key="2310" caption="2310"/>
+                    <dropDownValue key="2312" caption="2312"/>
+                    <dropDownValue key="2110" caption="2110"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BRILLIANCE" caption="Brilliance">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="M1" caption="M1 (Zhonghua)"/>
+                    <dropDownValue key="BS6" caption="BS6"/>
+                    <dropDownValue key="M2" caption="M2 (JunJie)"/>
+                    <dropDownValue key="BS4" caption="BS4"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BUGATTI" caption="Bugatti">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="EB_110" caption="EB 110"/>
+                    <dropDownValue key="EB_112" caption="EB 112"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="BUICK" caption="Buick">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="CENTURY" caption="Century"/>
+                    <dropDownValue key="PARK_AVENUE" caption="Park Avenue"/>
+                    <dropDownValue key="ROADMASTER" caption="Roadmaster"/>
+                    <dropDownValue key="RENDEZVOUS" caption="RendezVous"/>
+                    <dropDownValue key="SKYLARK" caption="Skylark"/>
+                    <dropDownValue key="ENCLAVE" caption="Enclave"/>
+                    <dropDownValue key="RIVIERA" caption="Riviera"/>
+                    <dropDownValue key="RAINER" caption="Rainer"/>
+                    <dropDownValue key="REGAL" caption="Regal"/>
+                    <dropDownValue key="LE_SABRE" caption="Le Sabre"/>
+                    <dropDownValue key="ELECTRA" caption="Electra"/>
+                    <dropDownValue key="LUCERNE" caption="Lucerne"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CADILLAC" caption="Cadillac">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FLEETWOOD" caption="Fleetwood"/>
+                    <dropDownValue key="XLR" caption="XLR"/>
+                    <dropDownValue key="STS" caption="STS"/>
+                    <dropDownValue key="SEVILLE" caption="Seville"/>
+                    <dropDownValue key="CATERA" caption="Catera"/>
+                    <dropDownValue key="DTS" caption="DTS"/>
+                    <dropDownValue key="CTS" caption="CTS"/>
+                    <dropDownValue key="ATS" caption="ATS"/>
+                    <dropDownValue key="DE_VILLE" caption="De Ville"/>
+                    <dropDownValue key="SRX" caption="SRX"/>
+                    <dropDownValue key="ESCALADE" caption="Escalade"/>
+                    <dropDownValue key="BLS" caption="BLS"/>
+                    <dropDownValue key="ELDORADO" caption="Eldorado"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CHANA" caption="Chana">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="BENNI" caption="Benni"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CHANGFENG" caption="ChangFeng">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FLYING" caption="Flying"/>
+                    <dropDownValue key="SUV" caption="SUV"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CHERY" caption="Chery">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ELARA" caption="Elara"/>
+                    <dropDownValue key="BONUS" caption="Bonus"/>
+                    <dropDownValue key="KARRY" caption="Karry"/>
+                    <dropDownValue key="E5" caption="E5"/>
+                    <dropDownValue key="KIMO" caption="Kimo"/>
+                    <dropDownValue key="AMULET" caption="Amulet"/>
+                    <dropDownValue key="EASTAR" caption="Eastar"/>
+                    <dropDownValue key="QQ6" caption="QQ 6"/>
+                    <dropDownValue key="TIGGO" caption="Tiggo"/>
+                    <dropDownValue key="A21" caption="A21"/>
+                    <dropDownValue key="QQ" caption="QQ"/>
+                    <dropDownValue key="VERY" caption="Very"/>
+                    <dropDownValue key="M11" caption="M11"/>
+                    <dropDownValue key="ORIENTAL_SON" caption="B11 (Oriental Son)"/>
+                    <dropDownValue key="INDIS" caption="IndiS"/>
+                    <dropDownValue key="BEAT" caption="Beat"/>
+                    <dropDownValue key="FORA" caption="Fora"/>
+                    <dropDownValue key="B14" caption="B14"/>
+                    <dropDownValue key="CROSS_EASTAR" caption="Cross Eastar"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CHEVROLET" caption="Chevrolet">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PRIZM" caption="Prizm"/>
+                    <dropDownValue key="CORVETTE" caption="Corvette"/>
+                    <dropDownValue key="VIVA" caption="Viva"/>
+                    <dropDownValue key="EVANDA" caption="Evanda"/>
+                    <dropDownValue key="ASTRO" caption="Astro"/>
+                    <dropDownValue key="CORSICA" caption="Corsica"/>
+                    <dropDownValue key="NIVA" caption="Niva"/>
+                    <dropDownValue key="STARCRAFT" caption="Starcraft"/>
+                    <dropDownValue key="LUMINA" caption="Lumina"/>
+                    <dropDownValue key="TACUMA" caption="Tacuma"/>
+                    <dropDownValue key="SUBURBAN" caption="Suburban"/>
+                    <dropDownValue key="SPARK" caption="Spark"/>
+                    <dropDownValue key="LACETTI" caption="Lacetti"/>
+                    <dropDownValue key="METRO" caption="Metro"/>
+                    <dropDownValue key="COBALT" caption="Cobalt"/>
+                    <dropDownValue key="IMPALA" caption="Impala"/>
+                    <dropDownValue key="SAVANA" caption="Savana"/>
+                    <dropDownValue key="CAVALIER" caption="Cavalier"/>
+                    <dropDownValue key="AVEO" caption="Aveo"/>
+                    <dropDownValue key="CLASSIC" caption="Classic"/>
+                    <dropDownValue key="MONZA" caption="Monza"/>
+                    <dropDownValue key="LANOS" caption="Lanos"/>
+                    <dropDownValue key="SSR" caption="SSR"/>
+                    <dropDownValue key="VOLT" caption="Volt"/>
+                    <dropDownValue key="CAPTIVA" caption="Captiva"/>
+                    <dropDownValue key="ZAFIRA" caption="Zafira"/>
+                    <dropDownValue key="ORLANDO" caption="Orlando"/>
+                    <dropDownValue key="BLAZER" caption="Blazer"/>
+                    <dropDownValue key="GEO_STORM" caption="Geo Storm"/>
+                    <dropDownValue key="CAMARO" caption="Camaro"/>
+                    <dropDownValue key="TAHOE" caption="Tahoe"/>
+                    <dropDownValue key="BERETTA" caption="Beretta"/>
+                    <dropDownValue key="AVALANCHE" caption="Avalanche"/>
+                    <dropDownValue key="EXPRESS" caption="Express"/>
+                    <dropDownValue key="MALIBU" caption="Malibu"/>
+                    <dropDownValue key="TRAVERSE" caption="Traverse"/>
+                    <dropDownValue key="REZZO" caption="Rezzo"/>
+                    <dropDownValue key="EQUINOX" caption="Equinox"/>
+                    <dropDownValue key="HHR" caption="HHR"/>
+                    <dropDownValue key="TRAILBLAZER" caption="TrailBlazer"/>
+                    <dropDownValue key="CAPRICE" caption="Caprice"/>
+                    <dropDownValue key="S_10" caption="S-10"/>
+                    <dropDownValue key="EPICA" caption="Epica"/>
+                    <dropDownValue key="TRACKER" caption="Tracker"/>
+                    <dropDownValue key="NUBIRA" caption="Nubira"/>
+                    <dropDownValue key="CRUZE" caption="Cruze"/>
+                    <dropDownValue key="SILVERADO" caption="Silverado"/>
+                    <dropDownValue key="TRANSSPORT" caption="TransSport"/>
+                    <dropDownValue key="COLORADO" caption="Colorado"/>
+                    <dropDownValue key="ALERO" caption="Alero"/>
+                    <dropDownValue key="UPLANDER" caption="Uplander"/>
+                    <dropDownValue key="VAN" caption="Van"/>
+                    <dropDownValue key="NOVA" caption="Nova"/>
+                    <dropDownValue key="VENTURE" caption="Venture"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CHRYSLER" caption="Chrysler">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VOYAGER" caption="Voyager"/>
+                    <dropDownValue key="SARATOGA" caption="Saratoga"/>
+                    <dropDownValue key="GRAND_VOYAGER" caption="Grand Voyager"/>
+                    <dropDownValue key="SEBRING" caption="Sebring"/>
+                    <dropDownValue key="300M" caption="300M"/>
+                    <dropDownValue key="PACIFICA" caption="Pacifica"/>
+                    <dropDownValue key="LHS" caption="LHS"/>
+                    <dropDownValue key="300C" caption="300C"/>
+                    <dropDownValue key="LE_BARON" caption="Le Baron"/>
+                    <dropDownValue key="NEON" caption="Neon"/>
+                    <dropDownValue key="TOWN_AND_COUNTRY" caption="Town&amp;Country"/>
+                    <dropDownValue key="NEW_YORKER" caption="New Yorker"/>
+                    <dropDownValue key="PROWLER" caption="Prowler"/>
+                    <dropDownValue key="VISION" caption="Vision"/>
+                    <dropDownValue key="STRATUS" caption="Stratus"/>
+                    <dropDownValue key="PT_CRUISER" caption="PT Cruiser"/>
+                    <dropDownValue key="CROSSFIRE" caption="Crossfire"/>
+                    <dropDownValue key="CIRRUS" caption="Cirrus"/>
+                    <dropDownValue key="INTREPID" caption="Intrepid"/>
+                    <dropDownValue key="LASER" caption="Laser"/>
+                    <dropDownValue key="CONCORDE" caption="Concorde"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="CITROEN" caption="Citroen">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="JUMPER" caption="Jumper"/>
+                    <dropDownValue key="AX" caption="AX"/>
+                    <dropDownValue key="C5" caption="C5"/>
+                    <dropDownValue key="DS3" caption="DS3"/>
+                    <dropDownValue key="ZX" caption="ZX"/>
+                    <dropDownValue key="C-ELYSEE" caption="C-Elysee"/>
+                    <dropDownValue key="C3_PICASSO" caption="C3 Picasso"/>
+                    <dropDownValue key="XM" caption="XM"/>
+                    <dropDownValue key="C4_AIRCROSS" caption="C4 Aircross"/>
+                    <dropDownValue key="C8" caption="C8"/>
+                    <dropDownValue key="DS4" caption="DS4"/>
+                    <dropDownValue key="XSARA_PICASSO" caption="Xsara Picasso"/>
+                    <dropDownValue key="C4_PICASSO" caption="C4 Picasso"/>
+                    <dropDownValue key="BERLINGO" caption="Berlingo"/>
+                    <dropDownValue key="NEMO" caption="Nemo"/>
+                    <dropDownValue key="JUMPY" caption="Jumpy"/>
+                    <dropDownValue key="C2" caption="C2"/>
+                    <dropDownValue key="C4" caption="C4"/>
+                    <dropDownValue key="DS5" caption="DS5"/>
+                    <dropDownValue key="GRAND_C4_PICASSO" caption="Grand C4 Picasso"/>
+                    <dropDownValue key="C6" caption="C6"/>
+                    <dropDownValue key="C25" caption="C25"/>
+                    <dropDownValue key="BX" caption="BX"/>
+                    <dropDownValue key="XANTIA" caption="Xantia"/>
+                    <dropDownValue key="XSARA" caption="Xsara"/>
+                    <dropDownValue key="CX" caption="CX"/>
+                    <dropDownValue key="C-CROSSER" caption="C-Crosser"/>
+                    <dropDownValue key="VISA" caption="Visa"/>
+                    <dropDownValue key="C3" caption="C3"/>
+                    <dropDownValue key="C15" caption="C15"/>
+                    <dropDownValue key="C1" caption="C1"/>
+                    <dropDownValue key="EVASION" caption="Evasion"/>
+                    <dropDownValue key="SAXO" caption="Saxo"/>
+                    <dropDownValue key="C3_PLURIEL" caption="C3 Pluriel"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DADI" caption="DADI">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="CITY_LEADING" caption="City Leading"/>
+                    <dropDownValue key="SHUTTLE" caption="Shuttle"/>
+                    <dropDownValue key="SMOOTHING" caption="Smoothing"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DACIA" caption="Dacia">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="LOGAN" caption="Logan"/>
+                    <dropDownValue key="1310" caption="1310"/>
+                    <dropDownValue key="SOLENZA" caption="Solenza"/>
+                    <dropDownValue key="NOVA" caption="Nova"/>
+                    <dropDownValue key="SUPERNOVA" caption="SuperNova"/>
+                    <dropDownValue key="SANDERO" caption="Sandero"/>
+                    <dropDownValue key="1410" caption="1410"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DAEWOO" caption="Daewoo">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ESPERO" caption="Espero"/>
+                    <dropDownValue key="GENTRA" caption="Gentra"/>
+                    <dropDownValue key="MATIZ" caption="Matiz"/>
+                    <dropDownValue key="TOSCA" caption="Tosca"/>
+                    <dropDownValue key="MUSSO" caption="Musso"/>
+                    <dropDownValue key="EVANDA" caption="Evanda"/>
+                    <dropDownValue key="LEGANZA" caption="Leganza"/>
+                    <dropDownValue key="NEXIA" caption="Nexia"/>
+                    <dropDownValue key="REZZO" caption="Rezzo"/>
+                    <dropDownValue key="TACUMA" caption="Tacuma"/>
+                    <dropDownValue key="CIELO" caption="Cielo"/>
+                    <dropDownValue key="LACETTI" caption="Lacetti"/>
+                    <dropDownValue key="TICO" caption="Tico"/>
+                    <dropDownValue key="WINDSTORM" caption="Windstorm"/>
+                    <dropDownValue key="ARCADIA" caption="Arcadia"/>
+                    <dropDownValue key="NUBIRA" caption="Nubira"/>
+                    <dropDownValue key="PRINCE" caption="Prince"/>
+                    <dropDownValue key="LEMANS" caption="Lemans"/>
+                    <dropDownValue key="LABO" caption="Labo"/>
+                    <dropDownValue key="MAGNUS" caption="Magnus"/>
+                    <dropDownValue key="SUPER_SALON" caption="Super Salon"/>
+                    <dropDownValue key="KORANDO" caption="Korando"/>
+                    <dropDownValue key="DAMAS" caption="Damas"/>
+                    <dropDownValue key="LANOS" caption="Lanos"/>
+                    <dropDownValue key="KALOS" caption="Kalos"/>
+                    <dropDownValue key="SENS" caption="Sens"/>
+                    <dropDownValue key="RACER" caption="Racer"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DAIHATSU" caption="Daihatsu">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="STORIA" caption="Storia"/>
+                    <dropDownValue key="SONICA" caption="Sonica"/>
+                    <dropDownValue key="TERIOS" caption="Terios"/>
+                    <dropDownValue key="CUORE" caption="Cuore"/>
+                    <dropDownValue key="MATERIA" caption="Materia"/>
+                    <dropDownValue key="DOMINO" caption="Domino"/>
+                    <dropDownValue key="EXTOL" caption="Extol"/>
+                    <dropDownValue key="RUGGER" caption="Rugger"/>
+                    <dropDownValue key="DELTA_WAGON" caption="Delta Wagon"/>
+                    <dropDownValue key="SIRION" caption="Sirion"/>
+                    <dropDownValue key="BOON_LUMINAS" caption="Boon Luminas"/>
+                    <dropDownValue key="XENIA" caption="Xenia"/>
+                    <dropDownValue key="MOVE" caption="Move"/>
+                    <dropDownValue key="MAX" caption="Max"/>
+                    <dropDownValue key="ATRAI_WAGON" caption="Atrai Wagon"/>
+                    <dropDownValue key="PYZAR" caption="Pizar"/>
+                    <dropDownValue key="COPEN" caption="Copen"/>
+                    <dropDownValue key="NAKED" caption="Naked"/>
+                    <dropDownValue key="GRAN_MOVE" caption="Gran Move"/>
+                    <dropDownValue key="BE-GO" caption="Be-go"/>
+                    <dropDownValue key="HI_JET" caption="Hi Jet"/>
+                    <dropDownValue key="ALTIS" caption="Altis"/>
+                    <dropDownValue key="APPLAUSE" caption="Applause"/>
+                    <dropDownValue key="ATRAI" caption="Atrai"/>
+                    <dropDownValue key="TERIOS_KID" caption="Terios Kid"/>
+                    <dropDownValue key="DELTA" caption="Delta"/>
+                    <dropDownValue key="COO" caption="Coo"/>
+                    <dropDownValue key="ESSE" caption="Esse"/>
+                    <dropDownValue key="CHARADE" caption="Charade"/>
+                    <dropDownValue key="YRV" caption="YRV"/>
+                    <dropDownValue key="BOON" caption="Boon"/>
+                    <dropDownValue key="FEROZA" caption="Feroza"/>
+                    <dropDownValue key="ROCKY" caption="Rocky"/>
+                    <dropDownValue key="MIRA" caption="Mira"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DERWAYS" caption="Derways">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="AURORA" caption="Aurora"/>
+                    <dropDownValue key="SHUTTLE" caption="Shuttle"/>
+                    <dropDownValue key="COWBOY" caption="Cowboy"/>
+                    <dropDownValue key="DADI_SHUTTLE" caption="DADI Shuttle"/>
+                    <dropDownValue key="PLUTUS" caption="Plutus"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DODGE" caption="Dodge">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VIPER" caption="Viper"/>
+                    <dropDownValue key="CALIBER" caption="Caliber"/>
+                    <dropDownValue key="SPIRIT" caption="Spirit"/>
+                    <dropDownValue key="DURANGO" caption="Durango"/>
+                    <dropDownValue key="GRAND_CARAVAN" caption="Grand Caravan"/>
+                    <dropDownValue key="JOURNEY" caption="Journey"/>
+                    <dropDownValue key="INTREPID" caption="Intrepid"/>
+                    <dropDownValue key="MAGNUM" caption="Magnum"/>
+                    <dropDownValue key="CHARGER" caption="Charger"/>
+                    <dropDownValue key="600" caption="600"/>
+                    <dropDownValue key="NEON" caption="Neon"/>
+                    <dropDownValue key="DYNASTY" caption="Dynasty"/>
+                    <dropDownValue key="NITRO" caption="Nitro"/>
+                    <dropDownValue key="CARAVAN" caption="Caravan"/>
+                    <dropDownValue key="SPRINTER" caption="Sprinter"/>
+                    <dropDownValue key="STEALTH" caption="Stealth"/>
+                    <dropDownValue key="RAM" caption="Ram"/>
+                    <dropDownValue key="STRATUS" caption="Stratus"/>
+                    <dropDownValue key="AVENGER" caption="Avenger"/>
+                    <dropDownValue key="DAYTONA" caption="Daytona"/>
+                    <dropDownValue key="OMNI" caption="Omni"/>
+                    <dropDownValue key="DAKOTA" caption="Dakota"/>
+                    <dropDownValue key="SHADOW" caption="Shadow"/>
+                    <dropDownValue key="CHALLENGER" caption="Challenger"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="DONINVEST" caption="Doninvest">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ASSOL" caption="Assol"/>
+                    <dropDownValue key="ORION" caption="Orion"/>
+                    <dropDownValue key="KONDOR" caption="Kondor"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="EAGLE" caption="Eagle">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VISION" caption="Vision"/>
+                    <dropDownValue key="TALON" caption="Talon"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FAW" caption="FAW">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ADMIRAL" caption="Admiral"/>
+                    <dropDownValue key="JINN" caption="Jinn"/>
+                    <dropDownValue key="V2" caption="V2"/>
+                    <dropDownValue key="V5" caption="V5"/>
+                    <dropDownValue key="VITA" caption="Vita"/>
+                    <dropDownValue key="BESTURN_B50" caption="Besturn B50"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FSO" caption="FSO">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="POLONEZ" caption="Polonez"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FERRARI" caption="Ferrari">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="F40" caption="F40"/>
+                    <dropDownValue key="F12BERLINETTA" caption="F12 Berlinetta"/>
+                    <dropDownValue key="FF" caption="FF"/>
+                    <dropDownValue key="CALIFORNIA" caption="California"/>
+                    <dropDownValue key="F355" caption="F355"/>
+                    <dropDownValue key="F430" caption="F430"/>
+                    <dropDownValue key="TESTAROSSA" caption="Testarossa"/>
+                    <dropDownValue key="360_SPIDER" caption="360 Spider"/>
+                    <dropDownValue key="458_ITALIA" caption="458 Italia"/>
+                    <dropDownValue key="348" caption="348"/>
+                    <dropDownValue key="360_MODENA" caption="360 Modena"/>
+                    <dropDownValue key="599_GTB" caption="599 GTB"/>
+                    <dropDownValue key="456" caption="456 GT"/>
+                    <dropDownValue key="ENZO" caption="Enzo"/>
+                    <dropDownValue key="612_SCAGLIETTI" caption="612 Scaglietti"/>
+                    <dropDownValue key="F50" caption="F50"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FIAT" caption="Fiat">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ALBEA" caption="Albea"/>
+                    <dropDownValue key="BRAVO" caption="Bravo"/>
+                    <dropDownValue key="SEICENTO" caption="Seicento"/>
+                    <dropDownValue key="IDEA" caption="Idea"/>
+                    <dropDownValue key="TEMPRA" caption="Tempra"/>
+                    <dropDownValue key="850" caption="850"/>
+                    <dropDownValue key="SIENA" caption="Siena"/>
+                    <dropDownValue key="127" caption="127"/>
+                    <dropDownValue key="UNO" caption="Uno"/>
+                    <dropDownValue key="REGATA" caption="Regata"/>
+                    <dropDownValue key="DUCATO" caption="Ducato"/>
+                    <dropDownValue key="PALIO" caption="Palio"/>
+                    <dropDownValue key="TIPO" caption="Tipo"/>
+                    <dropDownValue key="FIORINO" caption="Fiorino"/>
+                    <dropDownValue key="CINQUECENTO" caption="Cinquecento"/>
+                    <dropDownValue key="LINEA" caption="Linea"/>
+                    <dropDownValue key="BARCHETTA" caption="Barchetta"/>
+                    <dropDownValue key="PANDA" caption="Panda"/>
+                    <dropDownValue key="MAREA" caption="Marea"/>
+                    <dropDownValue key="500" caption="500"/>
+                    <dropDownValue key="SEDICI" caption="Sedici"/>
+                    <dropDownValue key="SCUDO" caption="Scudo"/>
+                    <dropDownValue key="MULTIPLA" caption="Multipla"/>
+                    <dropDownValue key="STILO" caption="Stilo"/>
+                    <dropDownValue key="X_1_9" caption="X 1/9"/>
+                    <dropDownValue key="131" caption="131"/>
+                    <dropDownValue key="GRANDE_PUNTO" caption="Grande Punto"/>
+                    <dropDownValue key="ULYSSE" caption="Ulysse"/>
+                    <dropDownValue key="DUNA" caption="Duna"/>
+                    <dropDownValue key="RITMO" caption="Ritmo"/>
+                    <dropDownValue key="PUNTO" caption="Punto"/>
+                    <dropDownValue key="600" caption="600"/>
+                    <dropDownValue key="126" caption="126"/>
+                    <dropDownValue key="CROMA" caption="Croma"/>
+                    <dropDownValue key="BRAVA" caption="Brava"/>
+                    <dropDownValue key="COUPE" caption="Coupe"/>
+                    <dropDownValue key="DOBLO" caption="Doblo"/>
+                    <dropDownValue key="STRADA" caption="Strada"/>
+                    <dropDownValue key="124" caption="124"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FORD" caption="Ford">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="COURIER" caption="Courier"/>
+                    <dropDownValue key="GRANADA" caption="Granada"/>
+                    <dropDownValue key="ECONOVAN" caption="Econovan"/>
+                    <dropDownValue key="EDGE" caption="Edge"/>
+                    <dropDownValue key="ECONOLINE" caption="Econoline"/>
+                    <dropDownValue key="F150" caption="F150"/>
+                    <dropDownValue key="ORION" caption="Orion"/>
+                    <dropDownValue key="FESTIVA" caption="Festiva"/>
+                    <dropDownValue key="TAURUS" caption="Taurus"/>
+                    <dropDownValue key="TRANSIT" caption="Transit"/>
+                    <dropDownValue key="SCORPIO" caption="Scorpio"/>
+                    <dropDownValue key="GALAXY" caption="Galaxy"/>
+                    <dropDownValue key="F250" caption="F250"/>
+                    <dropDownValue key="TOURNEO_CONNECT" caption="Tourneo Connect"/>
+                    <dropDownValue key="FOCUS" caption="Focus"/>
+                    <dropDownValue key="FREESTYLE" caption="Freestyle"/>
+                    <dropDownValue key="S_MAX" caption="S-MAX"/>
+                    <dropDownValue key="SIERRA" caption="Sierra"/>
+                    <dropDownValue key="EXPEDITION" caption="Expedition"/>
+                    <dropDownValue key="BRONCO" caption="Bronco"/>
+                    <dropDownValue key="THUNDERBIRD" caption="Thunderbird"/>
+                    <dropDownValue key="FOCUS_RS" caption="Focus RS"/>
+                    <dropDownValue key="ESCORT" caption="Escort"/>
+                    <dropDownValue key="COUGAR" caption="Cougar"/>
+                    <dropDownValue key="C_MAX" caption="C-Max"/>
+                    <dropDownValue key="F350" caption="F350"/>
+                    <dropDownValue key="PROBE" caption="Probe"/>
+                    <dropDownValue key="GRAND_CMAX" caption="Grand C-Max"/>
+                    <dropDownValue key="FIESTA_ST" caption="Fiesta ST"/>
+                    <dropDownValue key="EXPLORER" caption="Explorer"/>
+                    <dropDownValue key="RANGER" caption="Ranger"/>
+                    <dropDownValue key="KUGA" caption="Kuga"/>
+                    <dropDownValue key="TEMPO" caption="Tempo"/>
+                    <dropDownValue key="MUSTANG" caption="Mustang"/>
+                    <dropDownValue key="MONDEO" caption="Mondeo"/>
+                    <dropDownValue key="KA" caption="Ka"/>
+                    <dropDownValue key="AEROSTAR" caption="Aerostar"/>
+                    <dropDownValue key="CAPRI" caption="Capri"/>
+                    <dropDownValue key="ASPIRE" caption="Aspire"/>
+                    <dropDownValue key="SHELBY" caption="Shelby"/>
+                    <dropDownValue key="EXCURSION" caption="Excursion"/>
+                    <dropDownValue key="MAVERICK" caption="Maverick"/>
+                    <dropDownValue key="FUSION" caption="Fusion"/>
+                    <dropDownValue key="FAIRLINE" caption="Fairline"/>
+                    <dropDownValue key="FOCUS_ST" caption="Focus ST"/>
+                    <dropDownValue key="ESCAPE" caption="Escape"/>
+                    <dropDownValue key="CONSUL" caption="Consul"/>
+                    <dropDownValue key="FIESTA" caption="Fiesta"/>
+                    <dropDownValue key="FREESTAR" caption="Freestar"/>
+                    <dropDownValue key="CONTOUR" caption="Contour"/>
+                    <dropDownValue key="TAUNUS" caption="Taunus"/>
+                    <dropDownValue key="CROWN_VICTORIA" caption="Crown Victoria"/>
+                    <dropDownValue key="WINDSTAR" caption="Windstar"/>
+                    <dropDownValue key="LASER" caption="Laser"/>
+                    <dropDownValue key="PUMA" caption="Puma"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="FOTON" caption="Foton">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="OLLIN" caption="Ollin"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="GMC" caption="GMC">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SAFARI" caption="Safary"/>
+                    <dropDownValue key="ACADIA" caption="Acadia"/>
+                    <dropDownValue key="SIERRA" caption="Sierra"/>
+                    <dropDownValue key="CANYON" caption="Canyon"/>
+                    <dropDownValue key="VANDURA" caption="Vandura"/>
+                    <dropDownValue key="SUBURBAN" caption="Suburban"/>
+                    <dropDownValue key="SAVANA" caption="Savana"/>
+                    <dropDownValue key="JIMMY" caption="Jimmy"/>
+                    <dropDownValue key="YUKON" caption="Yukon"/>
+                    <dropDownValue key="ENVOY" caption="Envoy"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="GEELY" caption="Geely">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="MK_CROSS" caption="MK Cross"/>
+                    <dropDownValue key="EMGRAND" caption="Emgrand"/>
+                    <dropDownValue key="SL" caption="SL"/>
+                    <dropDownValue key="LC_CROSS" caption="LC Cross"/>
+                    <dropDownValue key="MERRIE" caption="Merrie"/>
+                    <dropDownValue key="VISION" caption="Vision"/>
+                    <dropDownValue key="OTAKA" caption="Otaka"/>
+                    <dropDownValue key="CK" caption="CK"/>
+                    <dropDownValue key="LC" caption="LC"/>
+                    <dropDownValue key="MK" caption="MK"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="GEO" caption="Geo">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="TRACKER" caption="Tracker"/>
+                    <dropDownValue key="SHTORM" caption="Shtorm"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="GREAT_WALL" caption="Great Wall">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PEGASUS" caption="Pegasus"/>
+                    <dropDownValue key="HOVER" caption="Hover"/>
+                    <dropDownValue key="COOLBEAR" caption="Coolbear"/>
+                    <dropDownValue key="SING" caption="Sing"/>
+                    <dropDownValue key="SOCOOL" caption="Sokol"/>
+                    <dropDownValue key="SAFE" caption="Safe"/>
+                    <dropDownValue key="SAILOR" caption="Sailor"/>
+                    <dropDownValue key="WINGLE_5" caption="Wingle 5"/>
+                    <dropDownValue key="FLORID" caption="Florid"/>
+                    <dropDownValue key="DEER" caption="Deer"/>
+                    <dropDownValue key="PERI" caption="Peri"/>
+                    <dropDownValue key="WINGLE" caption="Wingle 3"/>
+                    <dropDownValue key="HOVER_M2" caption="Hover M2"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HAFEI" caption="Hafei">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="BRIO" caption="Brio"/>
+                    <dropDownValue key="SIMBO" caption="Simbo"/>
+                    <dropDownValue key="PRINCIP" caption="Princip"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HAIMA" caption="Haima">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="3" caption="3"/>
+                    <dropDownValue key="2" caption="2"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HONDA" caption="Honda">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FR_V" caption="FR-V"/>
+                    <dropDownValue key="CROSSROAD" caption="Crossroad"/>
+                    <dropDownValue key="JAZZ" caption="Jazz"/>
+                    <dropDownValue key="STREAM" caption="Stream"/>
+                    <dropDownValue key="ELEMENT" caption="Element"/>
+                    <dropDownValue key="NSX" caption="NSX"/>
+                    <dropDownValue key="LAGREAT" caption="Lagreat"/>
+                    <dropDownValue key="FIT_ARIA" caption="Fit Aria"/>
+                    <dropDownValue key="LEGEND" caption="Legend"/>
+                    <dropDownValue key="CIVIC_AERODECK" caption="Civic Aerodeck"/>
+                    <dropDownValue key="CR_V" caption="CR-V"/>
+                    <dropDownValue key="ASCOT_INNOVA" caption="Ascot Innova"/>
+                    <dropDownValue key="STEPWGN" caption="Stepwgn"/>
+                    <dropDownValue key="ODYSSEY" caption="Odyssey"/>
+                    <dropDownValue key="LOGO" caption="Logo"/>
+                    <dropDownValue key="ACCORD_INSPIRE" caption="Accord Inspire"/>
+                    <dropDownValue key="VAMOS" caption="Vamos"/>
+                    <dropDownValue key="PASSPORT" caption="Passport"/>
+                    <dropDownValue key="INSPIRE" caption="Inspire"/>
+                    <dropDownValue key="CITY" caption="City"/>
+                    <dropDownValue key="ACTY" caption="Acty"/>
+                    <dropDownValue key="ACCORD_COUPE" caption="Accord Coupe"/>
+                    <dropDownValue key="AVANCIER" caption="Avancier"/>
+                    <dropDownValue key="MDX" caption="MDX"/>
+                    <dropDownValue key="VIGOR" caption="Vigor"/>
+                    <dropDownValue key="CIVIC_FERIO" caption="Civic Ferio"/>
+                    <dropDownValue key="INTEGRA_SJ" caption="Integra SJ"/>
+                    <dropDownValue key="CIVIC" caption="Civic"/>
+                    <dropDownValue key="S_MX" caption="S-MX"/>
+                    <dropDownValue key="LIFE" caption="Life"/>
+                    <dropDownValue key="ZEST" caption="Zest"/>
+                    <dropDownValue key="PRELUDE" caption="Prelude"/>
+                    <dropDownValue key="RAFAGA" caption="Rafaga"/>
+                    <dropDownValue key="RIDGELINE" caption="Ridgeline"/>
+                    <dropDownValue key="CONCERTO" caption="Concerto"/>
+                    <dropDownValue key="ACCORD_WAGON" caption="Accord Wagon"/>
+                    <dropDownValue key="THATS" caption="That'S"/>
+                    <dropDownValue key="CIVIC_HYBRID" caption="Civic Hybrid"/>
+                    <dropDownValue key="MOBILIO" caption="Mobilio"/>
+                    <dropDownValue key="FREED" caption="Freed"/>
+                    <dropDownValue key="ORTHIA" caption="Orthia"/>
+                    <dropDownValue key="PARTNER" caption="Partner"/>
+                    <dropDownValue key="SPIKE" caption="Spike"/>
+                    <dropDownValue key="PILOT" caption="Pilot"/>
+                    <dropDownValue key="FIT" caption="Fit"/>
+                    <dropDownValue key="HR_V" caption="HR-V"/>
+                    <dropDownValue key="ELYSION" caption="Elysion"/>
+                    <dropDownValue key="DOMANI" caption="Domani"/>
+                    <dropDownValue key="S2000" caption="S2000"/>
+                    <dropDownValue key="CIVIC_TYPE_R" caption="Civic Type-R"/>
+                    <dropDownValue key="SHUTTLE" caption="Shuttle"/>
+                    <dropDownValue key="INTEGRA" caption="Integra"/>
+                    <dropDownValue key="CAPA" caption="Capa"/>
+                    <dropDownValue key="INSIGHT" caption="Insight"/>
+                    <dropDownValue key="MOBILIO_SPIKE" caption="Mobilio Spike"/>
+                    <dropDownValue key="CIVIC_SHUTTLE" caption="Civic Shuttle"/>
+                    <dropDownValue key="CIVIC_COUPE" caption="Civic Coupe"/>
+                    <dropDownValue key="AIRWAVE" caption="Airwave"/>
+                    <dropDownValue key="ASCOT" caption="Ascot"/>
+                    <dropDownValue key="CROSSTOUR" caption="Crosstour"/>
+                    <dropDownValue key="ACCORD_TOURER" caption="Accord Tourer"/>
+                    <dropDownValue key="CRX" caption="CRX"/>
+                    <dropDownValue key="STREET" caption="Street"/>
+                    <dropDownValue key="EDIX" caption="Edix"/>
+                    <dropDownValue key="TODAY" caption="Today"/>
+                    <dropDownValue key="TORNEO" caption="Torneo"/>
+                    <dropDownValue key="SABER" caption="Saber"/>
+                    <dropDownValue key="QUINTET" caption="Quintet"/>
+                    <dropDownValue key="ACCORD" caption="Accord"/>
+                    <dropDownValue key="Z" caption="Z"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HUANGHAI" caption="Huanghai">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ANTELOPE" caption="Antelope"/>
+                    <dropDownValue key="Plutus" caption="Plutus"/>
+                    <dropDownValue key="MAJOR" caption="Major"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HUMMER" caption="Hummer">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="H1" caption="H1"/>
+                    <dropDownValue key="H3" caption="H3"/>
+                    <dropDownValue key="H2" caption="H2"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="HYUNDAI" caption="Hyundai">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="I20" caption="i20"/>
+                    <dropDownValue key="HD" caption="HD"/>
+                    <dropDownValue key="H200" caption="H200"/>
+                    <dropDownValue key="TIBURON" caption="Tiburon"/>
+                    <dropDownValue key="LAVITA" caption="Lavita"/>
+                    <dropDownValue key="SANTA_FE_CLASSIC" caption="Santa Fe Classic"/>
+                    <dropDownValue key="ELANTRA" caption="Elantra"/>
+                    <dropDownValue key="AZERA" caption="Azera"/>
+                    <dropDownValue key="NF" caption="NF Sonata"/>
+                    <dropDownValue key="STELAR" caption="Stelar"/>
+                    <dropDownValue key="TERRACAN" caption="Terracan"/>
+                    <dropDownValue key="I30" caption="i30"/>
+                    <dropDownValue key="ELANTRA_XD" caption="Elantra XD"/>
+                    <dropDownValue key="CENTENNIAL" caption="Centennial"/>
+                    <dropDownValue key="EQUUS" caption="Equus"/>
+                    <dropDownValue key="SANTA_FE" caption="Santa Fe"/>
+                    <dropDownValue key="GRANDEUR" caption="Grandeur"/>
+                    <dropDownValue key="GENESIS_COUPE" caption="Genesis Coupe"/>
+                    <dropDownValue key="H_1_STAREX" caption="H1 (Starex)"/>
+                    <dropDownValue key="MARCIA" caption="Marcia"/>
+                    <dropDownValue key="COUPE" caption="Coupe"/>
+                    <dropDownValue key="S_COUPE" caption="S Coupe"/>
+                    <dropDownValue key="TRAJET" caption="Trajet"/>
+                    <dropDownValue key="SONATA" caption="Sonata"/>
+                    <dropDownValue key="PONY" caption="Pony"/>
+                    <dropDownValue key="AVANTE" caption="Avante"/>
+                    <dropDownValue key="IX55" caption="ix55"/>
+                    <dropDownValue key="LANTRA" caption="Lantra"/>
+                    <dropDownValue key="EQUIS" caption="Equis"/>
+                    <dropDownValue key="PORTER" caption="Porter"/>
+                    <dropDownValue key="SANTAMO" caption="Santamo"/>
+                    <dropDownValue key="TUSCANI" caption="Tuscani"/>
+                    <dropDownValue key="VERACRUZ" caption="Veracruz"/>
+                    <dropDownValue key="IX35" caption="ix35"/>
+                    <dropDownValue key="I10" caption="i10"/>
+                    <dropDownValue key="TUCSON" caption="Tucson"/>
+                    <dropDownValue key="H100" caption="H100"/>
+                    <dropDownValue key="SOLARIS" caption="Solaris"/>
+                    <dropDownValue key="VERNA" caption="Verna"/>
+                    <dropDownValue key="XG" caption="XG"/>
+                    <dropDownValue key="VELOSTER" caption="Veloster"/>
+                    <dropDownValue key="GALLOPER" caption="Galloper"/>
+                    <dropDownValue key="ATOS" caption="Atos"/>
+                    <dropDownValue key="MATRIX" caption="Matrix"/>
+                    <dropDownValue key="GETZ" caption="Getz"/>
+                    <dropDownValue key="DYNASTY" caption="Dynasty"/>
+                    <dropDownValue key="ACCENT" caption="Accent"/>
+                    <dropDownValue key="GENESIS" caption="Genesis"/>
+                    <dropDownValue key="I40" caption="i40"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="INFINITI" caption="Infiniti">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="QX4" caption="QX4"/>
+                    <dropDownValue key="JX" caption="JX"/>
+                    <dropDownValue key="I" caption="I"/>
+                    <dropDownValue key="QX" caption="QX"/>
+                    <dropDownValue key="Q" caption="Q"/>
+                    <dropDownValue key="FX" caption="FX"/>
+                    <dropDownValue key="J30" caption="J30"/>
+                    <dropDownValue key="G35" caption="G"/>
+                    <dropDownValue key="EX" caption="EX"/>
+                    <dropDownValue key="M" caption="M"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="IRAN_KHODRO" caption="Iran Khodro">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SAMAND" caption="Samand"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ISUZU" caption="Isuzu">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="D_MAX" caption="D-Max"/>
+                    <dropDownValue key="WIZARD" caption="Wizard"/>
+                    <dropDownValue key="RODEO" caption="Rodeo"/>
+                    <dropDownValue key="MU" caption="MU"/>
+                    <dropDownValue key="ASKA" caption="Aska"/>
+                    <dropDownValue key="AMIGO" caption="Amigo"/>
+                    <dropDownValue key="ASCENDER" caption="Ascender"/>
+                    <dropDownValue key="FILLY" caption="Filly"/>
+                    <dropDownValue key="I-MARK" caption="I-Mark"/>
+                    <dropDownValue key="AXIOM" caption="Axiom"/>
+                    <dropDownValue key="TROOPER" caption="Trooper"/>
+                    <dropDownValue key="BIGHORN" caption="Bighorn"/>
+                    <dropDownValue key="GIGA" caption="Giga"/>
+                    <dropDownValue key="PIAZZA" caption="Piazza"/>
+                    <dropDownValue key="VEHI_CROSS" caption="Vehi Cross"/>
+                    <dropDownValue key="MIDI" caption="Midi"/>
+                    <dropDownValue key="GEMINI" caption="Gemini"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="JMC" caption="JMC">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="BAODIAN" caption="Baodian"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="JAGUAR" caption="Jaguar">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="XJS" caption="XJS"/>
+                    <dropDownValue key="XK" caption="XK"/>
+                    <dropDownValue key="XF" caption="XF"/>
+                    <dropDownValue key="XJR" caption="XJR"/>
+                    <dropDownValue key="S_TYPE" caption="S-Type"/>
+                    <dropDownValue key="X_TYPE" caption="X-Type"/>
+                    <dropDownValue key="SOVEREIGN" caption="Sovereign"/>
+                    <dropDownValue key="XFR" caption="XFR"/>
+                    <dropDownValue key="XJ" caption="XJ"/>
+                    <dropDownValue key="E_TYPE" caption="E-Type"/>
+                    <dropDownValue key="XKR" caption="XKR"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="JEEP" caption="Jeep">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="LIBERTY" caption="Liberty"/>
+                    <dropDownValue key="COMMANDER" caption="Commander"/>
+                    <dropDownValue key="GRAND_CHEROKEE_SRT8" caption="Grand Cherokee SRT8"/>
+                    <dropDownValue key="WRANGLER" caption="Wrangler"/>
+                    <dropDownValue key="COMPASS" caption="Compass"/>
+                    <dropDownValue key="GRAND_CHEROKEE" caption="Grand Cherokee"/>
+                    <dropDownValue key="PATRIOT" caption="Patriot"/>
+                    <dropDownValue key="CHEROKEE" caption="Cherokee"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="JINBEI" caption="Jinbei">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="HAISE" caption="Haise"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="KIA" caption="Kia">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="MOHAVES" caption="Mohave"/>
+                    <dropDownValue key="SOUL" caption="Soul"/>
+                    <dropDownValue key="VISTO" caption="Visto"/>
+                    <dropDownValue key="CLARUS" caption="Clarus"/>
+                    <dropDownValue key="VENGA" caption="Venga"/>
+                    <dropDownValue key="BESTA" caption="Besta"/>
+                    <dropDownValue key="CARENS" caption="Carens"/>
+                    <dropDownValue key="CARNIVAL" caption="Carnival"/>
+                    <dropDownValue key="QUORIS" caption="Quoris"/>
+                    <dropDownValue key="SPORTAGE" caption="Sportage"/>
+                    <dropDownValue key="SEDONA" caption="Sedona"/>
+                    <dropDownValue key="POTENTIA" caption="Potentia"/>
+                    <dropDownValue key="SEPHIA" caption="Sephia"/>
+                    <dropDownValue key="SHUMA" caption="Shuma"/>
+                    <dropDownValue key="CERATO" caption="Cerato"/>
+                    <dropDownValue key="SORENTO" caption="Sorento"/>
+                    <dropDownValue key="X_TREK" caption="X-Trek"/>
+                    <dropDownValue key="BONGO" caption="Bongo"/>
+                    <dropDownValue key="ENTERPRISE" caption="Enterprise"/>
+                    <dropDownValue key="RIO" caption="Rio"/>
+                    <dropDownValue key="RETONA" caption="Retona"/>
+                    <dropDownValue key="OPIRUS" caption="Opirus"/>
+                    <dropDownValue key="CEED" caption="Ceed"/>
+                    <dropDownValue key="OPTIMA" caption="Optima"/>
+                    <dropDownValue key="PRIDE" caption="Pride"/>
+                    <dropDownValue key="SPECTRA" caption="Spectra"/>
+                    <dropDownValue key="JOICE" caption="Joice"/>
+                    <dropDownValue key="K" caption="K"/>
+                    <dropDownValue key="PREGIO" caption="Pregio"/>
+                    <dropDownValue key="PICANTO" caption="Picanto"/>
+                    <dropDownValue key="MAGENTIS" caption="Magentis"/>
+                    <dropDownValue key="GRAND_BIRD" caption="GrandBird"/>
+                    <dropDownValue key="COSMOS" caption="Cosmos"/>
+                    <dropDownValue key="AVELLA" caption="Avella"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="VAZ" caption="LADA (ВАЗ)">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="2346" caption="2346"/>
+                    <dropDownValue key="2123" caption="2123"/>
+                    <dropDownValue key="2107" caption="2107"/>
+                    <dropDownValue key="2111" caption="2111"/>
+                    <dropDownValue key="2115" caption="2115"/>
+                    <dropDownValue key="LARGUS" caption="Largus"/>
+                    <dropDownValue key="2329" caption="2329"/>
+                    <dropDownValue key="2328" caption="2328"/>
+                    <dropDownValue key="2112" caption="2112"/>
+                    <dropDownValue key="2121" caption="2121"/>
+                    <dropDownValue key="2114" caption="2114"/>
+                    <dropDownValue key="2170" caption="Priora"/>
+                    <dropDownValue key="2131" caption="2131"/>
+                    <dropDownValue key="KALINA" caption="Kalina"/>
+                    <dropDownValue key="2110" caption="2110"/>
+                    <dropDownValue key="2113" caption="2113"/>
+                    <dropDownValue key="2106" caption="2106"/>
+                    <dropDownValue key="2347" caption="2347"/>
+                    <dropDownValue key="2105" caption="2105"/>
+                    <dropDownValue key="2345" caption="2345"/>
+                    <dropDownValue key="2129" caption="2129"/>
+                    <dropDownValue key="2104" caption="2104"/>
+                    <dropDownValue key="2120" caption="2120"/>
+                    <dropDownValue key="21099" caption="21099"/>
+                    <dropDownValue key="1922" caption="1922"/>
+                    <dropDownValue key="2109" caption="2109"/>
+                    <dropDownValue key="2102" caption="2102"/>
+                    <dropDownValue key="2108" caption="2108"/>
+                    <dropDownValue key="2103" caption="2103"/>
+                    <dropDownValue key="1111" caption="1111"/>
+                    <dropDownValue key="GRANTA" caption="Granta"/>
+                    <dropDownValue key="2101" caption="2101"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LAMBORGHINI" caption="Lamborghini">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="AVENTADOR" caption="Aventador"/>
+                    <dropDownValue key="DIABLO" caption="Diablo"/>
+                    <dropDownValue key="MURCIELAGO" caption="Murcielago"/>
+                    <dropDownValue key="GALLARDO" caption="Gallardo"/>
+                    <dropDownValue key="COUNTACH" caption="Countach"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LANCIA" caption="Lancia">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="DELTA" caption="Delta"/>
+                    <dropDownValue key="KAPPA" caption="Kappa"/>
+                    <dropDownValue key="MUSA" caption="Musa"/>
+                    <dropDownValue key="ZETA" caption="Zeta"/>
+                    <dropDownValue key="THESIS" caption="Thesis"/>
+                    <dropDownValue key="YPSILON" caption="Ypsilon"/>
+                    <dropDownValue key="PHEDRA" caption="Phedra"/>
+                    <dropDownValue key="THEMA" caption="Thema"/>
+                    <dropDownValue key="DEDRA" caption="Dedra"/>
+                    <dropDownValue key="PRISMA" caption="Prisma"/>
+                    <dropDownValue key="LYBRA" caption="Lybra"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LAND_ROVER" caption="Land Rover">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="EVOQUE" caption="Evoque"/>
+                    <dropDownValue key="DISCOVERY" caption="Discovery"/>
+                    <dropDownValue key="RANGE_ROVER" caption="Range Rover"/>
+                    <dropDownValue key="RANGE_ROVER_SPORT" caption="Range Rover Sport"/>
+                    <dropDownValue key="DEFENDER" caption="Defender"/>
+                    <dropDownValue key="FREELANDER" caption="Freelander"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LANDWIND" caption="Landwind">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="X6" caption="X6"/>
+                    <dropDownValue key="SUV" caption="SUV"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LEXUS" caption="Lexus">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SC" caption="SC"/>
+                    <dropDownValue key="LS" caption="LS"/>
+                    <dropDownValue key="ES" caption="ES"/>
+                    <dropDownValue key="HS" caption="HS"/>
+                    <dropDownValue key="GS" caption="GS"/>
+                    <dropDownValue key="IS" caption="IS"/>
+                    <dropDownValue key="GX" caption="GX"/>
+                    <dropDownValue key="LX" caption="LX"/>
+                    <dropDownValue key="CT" caption="CT"/>
+                    <dropDownValue key="IS_F" caption="IS F"/>
+                    <dropDownValue key="RX" caption="RX"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LIFAN" caption="Lifan">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="X60" caption="X60"/>
+                    <dropDownValue key="620" caption="620"/>
+                    <dropDownValue key="520" caption="520"/>
+                    <dropDownValue key="SOLANO" caption="Solano"/>
+                    <dropDownValue key="BREEZ" caption="Breez"/>
+                    <dropDownValue key="SMILY" caption="Smily"/>
+                    <dropDownValue key="320" caption="320"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LINCOLN" caption="Lincoln">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="TOWN_CAR" caption="Town Car"/>
+                    <dropDownValue key="MARK" caption="Mark"/>
+                    <dropDownValue key="LS" caption="LS"/>
+                    <dropDownValue key="MARK_LT" caption="Mark LT"/>
+                    <dropDownValue key="MKT" caption="MKT"/>
+                    <dropDownValue key="MKS" caption="MKS"/>
+                    <dropDownValue key="AVIATOR" caption="Aviator"/>
+                    <dropDownValue key="NAVIGATOR" caption="Navigator"/>
+                    <dropDownValue key="MKZ" caption="MKZ"/>
+                    <dropDownValue key="MKX" caption="MKX"/>
+                    <dropDownValue key="CONTINENTAL" caption="Continental"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LOTUS" caption="Lotus">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="EXIGE" caption="Exige"/>
+                    <dropDownValue key="EUROPA" caption="Europa"/>
+                    <dropDownValue key="SEVEN" caption="Seven"/>
+                    <dropDownValue key="ELISE" caption="Elise"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MG" caption="MG">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ZR" caption="ZR"/>
+                    <dropDownValue key="350" caption="350"/>
+                    <dropDownValue key="ZT" caption="ZT"/>
+                    <dropDownValue key="6" caption="6"/>
+                    <dropDownValue key="550" caption="550"/>
+                    <dropDownValue key="TF" caption="TF"/>
+                    <dropDownValue key="ZS" caption="ZS"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MINI" caption="MINI">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="COOPER" caption="Cooper"/>
+                    <dropDownValue key="COUNTRYMAN" caption="Countryman"/>
+                    <dropDownValue key="CABRIO" caption="Cabrio"/>
+                    <dropDownValue key="COUPE" caption="Coupe"/>
+                    <dropDownValue key="ROADSTER" caption="Roadster"/>
+                    <dropDownValue key="PACEMAN" caption="Paceman"/>
+                    <dropDownValue key="ONE" caption="ONE"/>
+                    <dropDownValue key="CLUBMAN" caption="Clubman"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MAHINDRA" caption="Mahindra">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="MARSHAL" caption="Marshal"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MASERATI" caption="Maserati">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="QUATTROPORTE" caption="Quattroporte"/>
+                    <dropDownValue key="SPYDER" caption="Spyder"/>
+                    <dropDownValue key="3200GT" caption="3200 GT"/>
+                    <dropDownValue key="COUPE" caption="Coupe"/>
+                    <dropDownValue key="GRAN_SPORT" caption="Gran Sport"/>
+                    <dropDownValue key="4300GT_COUPE" caption="4300 GT Coupe"/>
+                    <dropDownValue key="GHIBLI_2" caption="Ghibli II"/>
+                    <dropDownValue key="GRAN_TURISMO" caption="Gran Turismo"/>
+                    <dropDownValue key="GRANCABRIO" caption="GranCabrio"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MAYBACH" caption="Maybach">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="62" caption="62"/>
+                    <dropDownValue key="57" caption="57"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MAZDA" caption="Mazda">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="XEDOS_9" caption="Xedos 9"/>
+                    <dropDownValue key="LAPUTA" caption="Laputa"/>
+                    <dropDownValue key="REVUE" caption="Revue"/>
+                    <dropDownValue key="LEVANTE" caption="Levante"/>
+                    <dropDownValue key="EUNOS" caption="Eunos"/>
+                    <dropDownValue key="ROADSTER" caption="Roadster"/>
+                    <dropDownValue key="MX-5" caption="MX-5"/>
+                    <dropDownValue key="MPV" caption="MPV"/>
+                    <dropDownValue key="5" caption="5"/>
+                    <dropDownValue key="323C" caption="323C"/>
+                    <dropDownValue key="CX_9" caption="CX-9"/>
+                    <dropDownValue key="PROCEED" caption="Proceed"/>
+                    <dropDownValue key="6" caption="6"/>
+                    <dropDownValue key="VERISA" caption="Verisa"/>
+                    <dropDownValue key="AUTOZAM_REVUE" caption="Autozam Revue"/>
+                    <dropDownValue key="FAMILIA_WAGON" caption="Familia Wagon"/>
+                    <dropDownValue key="BONGO_BRAWNY" caption="Bongo Brawny"/>
+                    <dropDownValue key="B_SERIES" caption="B-Series"/>
+                    <dropDownValue key="MX-6" caption="MX-6"/>
+                    <dropDownValue key="EFINI_MPV" caption="Efini MPV"/>
+                    <dropDownValue key="DEMIO" caption="Demio"/>
+                    <dropDownValue key="BONGO_BRAWNY_VAN" caption="Bongo Brawny Van"/>
+                    <dropDownValue key="AXELA" caption="Axela"/>
+                    <dropDownValue key="CAPELLA_CARGO" caption="Capella Cargo"/>
+                    <dropDownValue key="RX_7" caption="RX-7"/>
+                    <dropDownValue key="BONGO" caption="Bongo"/>
+                    <dropDownValue key="3" caption="3"/>
+                    <dropDownValue key="ATENZA" caption="Atenza"/>
+                    <dropDownValue key="BIANTE" caption="Biante"/>
+                    <dropDownValue key="AZ_WAGON" caption="AZ-Wagon"/>
+                    <dropDownValue key="XEDOS_6" caption="Xedos 6"/>
+                    <dropDownValue key="626" caption="626"/>
+                    <dropDownValue key="RX_8" caption="RX-8"/>
+                    <dropDownValue key="CX_7" caption="CX-7"/>
+                    <dropDownValue key="323" caption="323"/>
+                    <dropDownValue key="EFINI_MS_8" caption="Efini MS-8"/>
+                    <dropDownValue key="AUTOZAM_AZ3" caption="Autozam AZ-3"/>
+                    <dropDownValue key="CAPELLA_WAGON" caption="Capella Wagon"/>
+                    <dropDownValue key="MPV_2" caption="MPV 2"/>
+                    <dropDownValue key="EFINI_MS_6" caption="Efini MS-6"/>
+                    <dropDownValue key="FAMILIA" caption="Familia"/>
+                    <dropDownValue key="FORD_LASER" caption="Ford Laser"/>
+                    <dropDownValue key="CX_5" caption="CX-5"/>
+                    <dropDownValue key="PERSONA" caption="Persona"/>
+                    <dropDownValue key="EUNOS_COSMO" caption="Eunos Cosmo"/>
+                    <dropDownValue key="TRIBUTE" caption="Tribute"/>
+                    <dropDownValue key="PROTEGE" caption="Protege"/>
+                    <dropDownValue key="2" caption="2"/>
+                    <dropDownValue key="SENTIA" caption="Sentia"/>
+                    <dropDownValue key="PROCEED_MARVIE" caption="Proceed Marvie"/>
+                    <dropDownValue key="FAMILIA_VAN" caption="Familia Van"/>
+                    <dropDownValue key="SCRUM_WAGON" caption="Scrum Wagon"/>
+                    <dropDownValue key="LUCE" caption="Luce"/>
+                    <dropDownValue key="121" caption="121"/>
+                    <dropDownValue key="CAPELLA" caption="Capella"/>
+                    <dropDownValue key="MX-3" caption="MX-3"/>
+                    <dropDownValue key="MILLENIA" caption="Millenia"/>
+                    <dropDownValue key="LANTIS" caption="Lantis"/>
+                    <dropDownValue key="929" caption="929"/>
+                    <dropDownValue key="NAVAJO" caption="Navajo"/>
+                    <dropDownValue key="BT_50" caption="BT-50"/>
+                    <dropDownValue key="BONGO_FRIENDEE" caption="Bongo Friendee"/>
+                    <dropDownValue key="CAROL" caption="Carol"/>
+                    <dropDownValue key="FAMILIA_S-WAGON" caption="Familia S-Wagon"/>
+                    <dropDownValue key="6_MPS" caption="6 MPS"/>
+                    <dropDownValue key="ATENZA_SPORT" caption="Atenza Sport"/>
+                    <dropDownValue key="323F" caption="323F"/>
+                    <dropDownValue key="PREMACY" caption="Premacy"/>
+                    <dropDownValue key="ATENZA_SPORT_WAGON" caption="Atenza Sport Wagon"/>
+                    <dropDownValue key="TITAN" caption="Titan"/>
+                    <dropDownValue key="3MPS" caption="3 MPS"/>
+                    <dropDownValue key="CRONOS" caption="Cronos"/>
+                    <dropDownValue key="PROCEED_LEVANTE" caption="Proceed Levante"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MCLAREN" caption="McLaren">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="F1" caption="F1"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MERCEDES" caption="Mercedes-Benz">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="E_KLASSE" caption="E-класс"/>
+                    <dropDownValue key="CLC_KLASSE" caption="CLC-класс"/>
+                    <dropDownValue key="CLA_KLASSE" caption="CLA-класс"/>
+                    <dropDownValue key="CLK_KLASSE" caption="CLK-класс"/>
+                    <dropDownValue key="S_KLASSE_AMG" caption="S-класс AMG"/>
+                    <dropDownValue key="SL_KLASSE_AMG" caption="SL-класс AMG"/>
+                    <dropDownValue key="VIANO" caption="Viano"/>
+                    <dropDownValue key="G_KLASSE_AMG" caption="G-класс AMG"/>
+                    <dropDownValue key="SLK_KLASSE_AMG" caption="SLK-класс AMG"/>
+                    <dropDownValue key="VARIO" caption="Vario"/>
+                    <dropDownValue key="A_KLASSE" caption="A-класс"/>
+                    <dropDownValue key="E_KLASSE_AMG" caption="E-класс AMG"/>
+                    <dropDownValue key="R_KLASSE" caption="R-класс"/>
+                    <dropDownValue key="SLK_KLASSE" caption="SLK-класс"/>
+                    <dropDownValue key="SL_KLASSE" caption="SL-класс"/>
+                    <dropDownValue key="CLS_KLASSE_AMG" caption="CLS-класс AMG"/>
+                    <dropDownValue key="S_KLASSE" caption="S-класс"/>
+                    <dropDownValue key="VITO" caption="Vito"/>
+                    <dropDownValue key="G_KLASSE" caption="G-класс"/>
+                    <dropDownValue key="PULLMANN" caption="Pullmann"/>
+                    <dropDownValue key="CL_CLASSE_AMG" caption="CL-класс AMG"/>
+                    <dropDownValue key="SLS_AMG" caption="SLS AMG"/>
+                    <dropDownValue key="CL_KLASSE" caption="CL-класс"/>
+                    <dropDownValue key="C_KLASSE" caption="C-класс"/>
+                    <dropDownValue key="VANEO" caption="Vaneo"/>
+                    <dropDownValue key="GL_KLASSE" caption="GL-класс"/>
+                    <dropDownValue key="SPRINTER" caption="Sprinter"/>
+                    <dropDownValue key="C_KLASSE_AMG" caption="C-класс AMG"/>
+                    <dropDownValue key="SLR_KLASSE" caption="SLR-класс"/>
+                    <dropDownValue key="M_KLASSE" caption="M-класс"/>
+                    <dropDownValue key="B_KLASSE" caption="B-класс"/>
+                    <dropDownValue key="M_KLASSE_AMG" caption="M-класс AMG"/>
+                    <dropDownValue key="CLS_KLASSE" caption="CLS-класс"/>
+                    <dropDownValue key="GLK_KLASSE" caption="GLK-класс"/>
+                    <dropDownValue key="V_KLASSE" caption="V-класс"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MERCURY" caption="Mercury">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="MONTEGO" caption="Montego"/>
+                    <dropDownValue key="VILLAGER" caption="Villager"/>
+                    <dropDownValue key="TOPAZ" caption="Topaz"/>
+                    <dropDownValue key="MYSTIQUE" caption="Mystique"/>
+                    <dropDownValue key="COUGAR" caption="Cougar"/>
+                    <dropDownValue key="GRAND_MARQUIS" caption="Grand Marquis"/>
+                    <dropDownValue key="MILAN" caption="Milan"/>
+                    <dropDownValue key="MARINER" caption="Mariner"/>
+                    <dropDownValue key="SABLE" caption="Sable"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MITSUBISHI" caption="Mitsubishi">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="DELICA" caption="Delica"/>
+                    <dropDownValue key="LANCER_CLASSIC" caption="Lancer Classic"/>
+                    <dropDownValue key="TOWN_BOX_WIDE" caption="Town Box Wide"/>
+                    <dropDownValue key="OUTLANDER" caption="Outlander"/>
+                    <dropDownValue key="MINICAB" caption="Minicab"/>
+                    <dropDownValue key="LANCER_WAGON" caption="Lancer Wagon"/>
+                    <dropDownValue key="ECLIPSE_SPYDER" caption="Eclipse Spyder"/>
+                    <dropDownValue key="MONTERO_SPORT" caption="Montero Sport"/>
+                    <dropDownValue key="TOPPO" caption="Toppo"/>
+                    <dropDownValue key="VIRAGE" caption="Virage"/>
+                    <dropDownValue key="DIAMANTE" caption="Diamante"/>
+                    <dropDownValue key="STARION" caption="Starion"/>
+                    <dropDownValue key="TOWN_BOX" caption="Town Box"/>
+                    <dropDownValue key="TREDIA" caption="Tredia"/>
+                    <dropDownValue key="GTO" caption="GTO"/>
+                    <dropDownValue key="SPACE_STAR" caption="Space Star"/>
+                    <dropDownValue key="ASX" caption="ASX"/>
+                    <dropDownValue key="CORDIA" caption="Cordia"/>
+                    <dropDownValue key="PAJERO_JUNIOR" caption="Pajero Junior"/>
+                    <dropDownValue key="PAJERO_SPORT" caption="Pajero Sport"/>
+                    <dropDownValue key="RVR" caption="RVR"/>
+                    <dropDownValue key="MIRAGE" caption="Mirage"/>
+                    <dropDownValue key="ETERNA" caption="Eterna"/>
+                    <dropDownValue key="SPACE_RUNNER" caption="Space Runner"/>
+                    <dropDownValue key="COLT" caption="Colt"/>
+                    <dropDownValue key="L400" caption="L400"/>
+                    <dropDownValue key="MINICA" caption="Minica"/>
+                    <dropDownValue key="PAJERO_PININ" caption="Pajero Pinin"/>
+                    <dropDownValue key="CHARIOT" caption="Chariot"/>
+                    <dropDownValue key="COLT_PLUS" caption="Colt Plus"/>
+                    <dropDownValue key="LANCER" caption="Lancer"/>
+                    <dropDownValue key="GALANT" caption="Galant"/>
+                    <dropDownValue key="EMERAUDE" caption="Emeraude"/>
+                    <dropDownValue key="CARISMA" caption="Carisma"/>
+                    <dropDownValue key="EK_WAGON" caption="eK-Wagon"/>
+                    <dropDownValue key="STRADA" caption="Strada"/>
+                    <dropDownValue key="FTO" caption="FTO"/>
+                    <dropDownValue key="TRITON" caption="Triton"/>
+                    <dropDownValue key="GALANT_FORTIS" caption="Galant Fortis"/>
+                    <dropDownValue key="LEGNUM" caption="Legnum"/>
+                    <dropDownValue key="L200" caption="L200"/>
+                    <dropDownValue key="PAJERO_MINI" caption="Pajero Mini"/>
+                    <dropDownValue key="NATIVA" caption="Nativa"/>
+                    <dropDownValue key="3000_GT" caption="3000 GT"/>
+                    <dropDownValue key="DINGO" caption="Dingo"/>
+                    <dropDownValue key="CHARIOT_GRANDIS" caption="Chariot Grandis"/>
+                    <dropDownValue key="LIBERO" caption="Libero"/>
+                    <dropDownValue key="GRANDIS" caption="Grandis"/>
+                    <dropDownValue key="ECLIPSE" caption="Eclipse"/>
+                    <dropDownValue key="MONTERO" caption="Montero"/>
+                    <dropDownValue key="ENDEAVOR" caption="Endeavor"/>
+                    <dropDownValue key="PROTON" caption="Proton"/>
+                    <dropDownValue key="PISTACHIO" caption="Pistachio"/>
+                    <dropDownValue key="SIGMA_WAGON" caption="Sigma Wagon"/>
+                    <dropDownValue key="LANCER_CEDIA" caption="Lancer Cedia"/>
+                    <dropDownValue key="LANCER_CEDIA_WAGON" caption="Lancer Cedia Wagon"/>
+                    <dropDownValue key="DION" caption="Dion"/>
+                    <dropDownValue key="LANCER_EVOLUTION" caption="Lancer Evolution"/>
+                    <dropDownValue key="SPACE_WAGON" caption="Space Wagon"/>
+                    <dropDownValue key="EK_SPORT" caption="eK-Sport"/>
+                    <dropDownValue key="MAGNA" caption="Magna"/>
+                    <dropDownValue key="ASPIRE" caption="Aspire"/>
+                    <dropDownValue key="MIRAGE_ASTI" caption="Mirage Asti"/>
+                    <dropDownValue key="SAPPORO" caption="Sapporo"/>
+                    <dropDownValue key="SPACE_GEAR" caption="Space Gear"/>
+                    <dropDownValue key="I" caption="i"/>
+                    <dropDownValue key="SIGMA" caption="Sigma"/>
+                    <dropDownValue key="L300" caption="L300"/>
+                    <dropDownValue key="PAJERO" caption="Pajero"/>
+                    <dropDownValue key="RAIDER" caption="Raider"/>
+                    <dropDownValue key="FUSO_CANTER" caption="Fuso Canter"/>
+                    <dropDownValue key="AIRTREK" caption="Airtrek"/>
+                    <dropDownValue key="EK" caption="eK-Classic"/>
+                    <dropDownValue key="TOPPO_BJ" caption="Toppo BJ"/>
+                    <dropDownValue key="CHALLENGER" caption="Challenger"/>
+                    <dropDownValue key="PAJERO_IO" caption="Pajero IO"/>
+                    <dropDownValue key="GALANT_HATCHBACK" caption="Galant Hatchback"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MITSUOKA" caption="Mitsuoka">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="LE_SEYDE" caption="Le-Seyde"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="NISSAN" caption="Nissan">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="LAUREL" caption="Laurel"/>
+                    <dropDownValue key="PULSAR_SERIE" caption="Pulsar Serie"/>
+                    <dropDownValue key="WINGROAD" caption="Wingroad"/>
+                    <dropDownValue key="ALTIMA" caption="Altima"/>
+                    <dropDownValue key="QASHQAI_PLUS_2" caption="Qashqai+2"/>
+                    <dropDownValue key="PRAIRIE" caption="Prairie"/>
+                    <dropDownValue key="PRESEA" caption="Presea"/>
+                    <dropDownValue key="HOMY_ELGRAND" caption="Homy Elgrand"/>
+                    <dropDownValue key="180SX" caption="180SX"/>
+                    <dropDownValue key="FUGA" caption="Fuga"/>
+                    <dropDownValue key="MISTRAL" caption="Mistral"/>
+                    <dropDownValue key="AD_WAGON" caption="AD Wagon"/>
+                    <dropDownValue key="SAFARI" caption="Safari"/>
+                    <dropDownValue key="SENTRA" caption="Sentra"/>
+                    <dropDownValue key="TIIDA" caption="Tiida"/>
+                    <dropDownValue key="200SX" caption="200SX"/>
+                    <dropDownValue key="DUALIS" caption="Dualis"/>
+                    <dropDownValue key="MOCO" caption="Moco"/>
+                    <dropDownValue key="TEANA" caption="Teana"/>
+                    <dropDownValue key="TINO" caption="Tino"/>
+                    <dropDownValue key="ALMERA_TINO" caption="Almera Tino"/>
+                    <dropDownValue key="KIX" caption="Kix"/>
+                    <dropDownValue key="SUNNY_CALIFORNIA" caption="Sunny California"/>
+                    <dropDownValue key="PAO" caption="Pao"/>
+                    <dropDownValue key="100NX" caption="100NX"/>
+                    <dropDownValue key="PRIMERA_CAMINO_WAGON" caption="Primera Camino Wagon"/>
+                    <dropDownValue key="BASSARA" caption="Bassara"/>
+                    <dropDownValue key="PIXO" caption="Pixo"/>
+                    <dropDownValue key="PRIMERA_CAMINO" caption="Primera Camino"/>
+                    <dropDownValue key="BLUEBIRD_WAGON" caption="Bluebird Wagon"/>
+                    <dropDownValue key="SERENA" caption="Serena"/>
+                    <dropDownValue key="MAXIMA_QX" caption="Maxima QX"/>
+                    <dropDownValue key="RNESSA" caption="R'nessa"/>
+                    <dropDownValue key="BLUEBIRD" caption="Bluebird"/>
+                    <dropDownValue key="STAGEA" caption="Stagea"/>
+                    <dropDownValue key="PRIMERA_WAGON" caption="Primera Wagon"/>
+                    <dropDownValue key="FAIRLADY" caption="Fairlady"/>
+                    <dropDownValue key="FRONTIER" caption="Frontier"/>
+                    <dropDownValue key="GT-R" caption="GT-R"/>
+                    <dropDownValue key="PRESAGE" caption="Presage"/>
+                    <dropDownValue key="AD" caption="AD"/>
+                    <dropDownValue key="ROGUE" caption="Rogue"/>
+                    <dropDownValue key="ALMERA" caption="Almera"/>
+                    <dropDownValue key="PINO" caption="Pino"/>
+                    <dropDownValue key="TIIDA_LATIO" caption="Tiida latio"/>
+                    <dropDownValue key="X_TRAIL" caption="X-Trail"/>
+                    <dropDownValue key="350Z" caption="350Z"/>
+                    <dropDownValue key="PRESIDENT" caption="President"/>
+                    <dropDownValue key="KING_CAB" caption="King Cab"/>
+                    <dropDownValue key="NAVARA" caption="Navara"/>
+                    <dropDownValue key="DATSUN" caption="Datsun"/>
+                    <dropDownValue key="LAFESTA" caption="Lafesta"/>
+                    <dropDownValue key="CEDRIC" caption="Cedric"/>
+                    <dropDownValue key="BLUEBIRD_SYLPHY" caption="Bluebird Sylphy"/>
+                    <dropDownValue key="AVENIR" caption="Avenir"/>
+                    <dropDownValue key="CEFIRO" caption="Cefiro"/>
+                    <dropDownValue key="TITAN" caption="Titan"/>
+                    <dropDownValue key="MICRA" caption="Micra"/>
+                    <dropDownValue key="CHERRY" caption="Cherry"/>
+                    <dropDownValue key="OTTI" caption="Otti"/>
+                    <dropDownValue key="AVENIR_SALUT" caption="Avenir Salut"/>
+                    <dropDownValue key="URVAN" caption="Urvan"/>
+                    <dropDownValue key="PRIMERA" caption="Primera"/>
+                    <dropDownValue key="MAXIMA" caption="Maxima"/>
+                    <dropDownValue key="LANGLEY" caption="Langley"/>
+                    <dropDownValue key="NV200" caption="NV200"/>
+                    <dropDownValue key="FAIRLADY_Z" caption="Fairlady Z"/>
+                    <dropDownValue key="CLIPPER" caption="Clipper"/>
+                    <dropDownValue key="VERSA" caption="Versa"/>
+                    <dropDownValue key="TERRANO_REGULUS" caption="Terrano Regulus"/>
+                    <dropDownValue key="XTERRA" caption="Xterra"/>
+                    <dropDownValue key="CUBE" caption="Cube"/>
+                    <dropDownValue key="MURANO" caption="Murano"/>
+                    <dropDownValue key="LEOPARD" caption="Leopard"/>
+                    <dropDownValue key="VANETTE" caption="Vanette"/>
+                    <dropDownValue key="PULSAR" caption="Pulsar"/>
+                    <dropDownValue key="KUBISTAR" caption="Kubistar"/>
+                    <dropDownValue key="CEDRIC_CIMA" caption="Cedric Cima"/>
+                    <dropDownValue key="PICKUP" caption="Pickup"/>
+                    <dropDownValue key="370Z" caption="370Z"/>
+                    <dropDownValue key="NP300" caption="NP300"/>
+                    <dropDownValue key="ALMERA_CLASSIC" caption="Almera Classic"/>
+                    <dropDownValue key="TERRANO" caption="Terrano"/>
+                    <dropDownValue key="GLORIA" caption="Gloria"/>
+                    <dropDownValue key="RASHEEN" caption="Rasheen"/>
+                    <dropDownValue key="EXPERT" caption="Expert"/>
+                    <dropDownValue key="EXA" caption="Exa"/>
+                    <dropDownValue key="PRAIRIE_JOY" caption="Prairie Joy"/>
+                    <dropDownValue key="LUCINO" caption="Lucino"/>
+                    <dropDownValue key="JUKE" caption="Juke"/>
+                    <dropDownValue key="LIBERTY" caption="Liberty"/>
+                    <dropDownValue key="ARMADA" caption="Armada"/>
+                    <dropDownValue key="SUNNY" caption="Sunny"/>
+                    <dropDownValue key="SILVIA" caption="Silvia"/>
+                    <dropDownValue key="HOMY" caption="Homy"/>
+                    <dropDownValue key="PATROL" caption="Patrol"/>
+                    <dropDownValue key="AUSTER" caption="Auster"/>
+                    <dropDownValue key="CIMA" caption="Cima"/>
+                    <dropDownValue key="NOTE" caption="Note"/>
+                    <dropDownValue key="ELGRAND" caption="Elgrand"/>
+                    <dropDownValue key="QUEST" caption="Quest"/>
+                    <dropDownValue key="SKYLINE" caption="Skyline"/>
+                    <dropDownValue key="CEFIRO_WAGON" caption="Cefiro Wagon"/>
+                    <dropDownValue key="PRIMASTAR" caption="Primastar"/>
+                    <dropDownValue key="STANZA" caption="Stanza"/>
+                    <dropDownValue key="LIBERTA_VILLA" caption="Libarta Villa"/>
+                    <dropDownValue key="CIVILIAN" caption="Civilian"/>
+                    <dropDownValue key="240SX" caption="240SX"/>
+                    <dropDownValue key="MICRA_CC" caption="Micra C+C"/>
+                    <dropDownValue key="MARCH" caption="March"/>
+                    <dropDownValue key="CARAVAN" caption="Caravan"/>
+                    <dropDownValue key="AD_VAN" caption="AD Van"/>
+                    <dropDownValue key="PULSAR_SERIE_SRV" caption="Pulsar Serie S-RV"/>
+                    <dropDownValue key="QASHQAI" caption="Qashqai"/>
+                    <dropDownValue key="300ZX" caption="300ZX"/>
+                    <dropDownValue key="NX_COUPE" caption="NX-Coupe"/>
+                    <dropDownValue key="LARGO" caption="Largo"/>
+                    <dropDownValue key="PATHFINDER" caption="Pathfinder"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="OLDSMOBILE" caption="Oldsmobile">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="OMEGA" caption="Omega"/>
+                    <dropDownValue key="AURORA" caption="Aurora"/>
+                    <dropDownValue key="DELTA" caption="Delta"/>
+                    <dropDownValue key="EIGHTY_EIGHT" caption="Eighty Eight"/>
+                    <dropDownValue key="ACHIEVA" caption="Achieva"/>
+                    <dropDownValue key="ALERO" caption="Alero"/>
+                    <dropDownValue key="SILHOUETTE" caption="Silhouette"/>
+                    <dropDownValue key="CUTLASS" caption="Cutlass"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="OPEL" caption="Opel">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ZAFIRA" caption="Zafira"/>
+                    <dropDownValue key="INSIGNIA_OPC" caption="Insignia OPC"/>
+                    <dropDownValue key="CAMPO" caption="Campo"/>
+                    <dropDownValue key="VECTRA_OPC" caption="Vectra OPC"/>
+                    <dropDownValue key="MOVANO" caption="Movano"/>
+                    <dropDownValue key="KADETT" caption="Kadett"/>
+                    <dropDownValue key="VIVARO" caption="Vivaro"/>
+                    <dropDownValue key="INSIGNIA" caption="Insignia"/>
+                    <dropDownValue key="MOKKA" caption="Mokka"/>
+                    <dropDownValue key="MANTA" caption="Manta"/>
+                    <dropDownValue key="FRONTERA" caption="Frontera"/>
+                    <dropDownValue key="REKORD" caption="Record"/>
+                    <dropDownValue key="MERIVA" caption="Meriva"/>
+                    <dropDownValue key="TIGRA" caption="Tigra"/>
+                    <dropDownValue key="OMEGA" caption="Omega"/>
+                    <dropDownValue key="VECTRA" caption="Vectra"/>
+                    <dropDownValue key="ASCONA" caption="Ascona"/>
+                    <dropDownValue key="CORSA" caption="Corsa"/>
+                    <dropDownValue key="CORSA_OPC" caption="Corsa OPC"/>
+                    <dropDownValue key="SINTRA" caption="Sintra"/>
+                    <dropDownValue key="SIGNUM" caption="Signum"/>
+                    <dropDownValue key="SENATOR" caption="Senator"/>
+                    <dropDownValue key="ASTRA" caption="Astra"/>
+                    <dropDownValue key="ARENA" caption="Arena"/>
+                    <dropDownValue key="VITA" caption="Vita"/>
+                    <dropDownValue key="AGILA" caption="Agila"/>
+                    <dropDownValue key="COMBO" caption="Combo"/>
+                    <dropDownValue key="ADMIRAL" caption="Admiral"/>
+                    <dropDownValue key="GT" caption="GT"/>
+                    <dropDownValue key="MONTEREY" caption="Monterey"/>
+                    <dropDownValue key="MONZA" caption="Monza"/>
+                    <dropDownValue key="ANTARA" caption="Antara"/>
+                    <dropDownValue key="SPEEDSTER" caption="Speedster"/>
+                    <dropDownValue key="COMMODORE" caption="Commodore"/>
+                    <dropDownValue key="CALIBRA" caption="Calibra"/>
+                    <dropDownValue key="ASTRA_OPC" caption="Astra OPC"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PUCH" caption="PUCH">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PINZGAUER" caption="Pinzgauer"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PEUGEOT" caption="Peugeot">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="406" caption="406"/>
+                    <dropDownValue key="207" caption="207"/>
+                    <dropDownValue key="408" caption="408"/>
+                    <dropDownValue key="4008" caption="4008"/>
+                    <dropDownValue key="607" caption="607"/>
+                    <dropDownValue key="PARTNER" caption="Partner"/>
+                    <dropDownValue key="508" caption="508"/>
+                    <dropDownValue key="407" caption="407"/>
+                    <dropDownValue key="307" caption="307"/>
+                    <dropDownValue key="604" caption="604"/>
+                    <dropDownValue key="107" caption="107"/>
+                    <dropDownValue key="405" caption="405"/>
+                    <dropDownValue key="308" caption="308"/>
+                    <dropDownValue key="505" caption="505"/>
+                    <dropDownValue key="205" caption="205"/>
+                    <dropDownValue key="204" caption="204"/>
+                    <dropDownValue key="504" caption="504"/>
+                    <dropDownValue key="806" caption="806"/>
+                    <dropDownValue key="309" caption="309"/>
+                    <dropDownValue key="807" caption="807"/>
+                    <dropDownValue key="605" caption="605"/>
+                    <dropDownValue key="3008" caption="3008"/>
+                    <dropDownValue key="206" caption="206"/>
+                    <dropDownValue key="301" caption="301"/>
+                    <dropDownValue key="305" caption="305"/>
+                    <dropDownValue key="BIPPER" caption="Bipper"/>
+                    <dropDownValue key="208" caption="208"/>
+                    <dropDownValue key="106" caption="106"/>
+                    <dropDownValue key="BOXER" caption="Boxer"/>
+                    <dropDownValue key="EXPERT" caption="Expert"/>
+                    <dropDownValue key="RCZ" caption="RCZ"/>
+                    <dropDownValue key="1007" caption="1007"/>
+                    <dropDownValue key="306" caption="306"/>
+                    <dropDownValue key="4007" caption="4007"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PLYMOUTH" caption="Plymouth">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VOYAGER" caption="Voyager"/>
+                    <dropDownValue key="PROWLER" caption="Prowler"/>
+                    <dropDownValue key="SUNDANCE" caption="Sundance"/>
+                    <dropDownValue key="ACCLAIM" caption="Acclaim"/>
+                    <dropDownValue key="RELIANT" caption="Reliant"/>
+                    <dropDownValue key="NEON" caption="Neon"/>
+                    <dropDownValue key="LASER" caption="Laser"/>
+                    <dropDownValue key="BREEZE" caption="Breeze"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PONTIAC" caption="Pontiac">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FIREBIRD" caption="Firebird"/>
+                    <dropDownValue key="G6" caption="G6"/>
+                    <dropDownValue key="SUNFIRE" caption="Sunfire"/>
+                    <dropDownValue key="GRAND_AM" caption="Grand AM"/>
+                    <dropDownValue key="MONTANA" caption="Montana"/>
+                    <dropDownValue key="AZTEC" caption="Aztec"/>
+                    <dropDownValue key="TRANS_SPORT" caption="Trans Sport"/>
+                    <dropDownValue key="BONNEVILLE" caption="Bonneville"/>
+                    <dropDownValue key="SOLSTICE" caption="Solstice"/>
+                    <dropDownValue key="GTO" caption="GTO"/>
+                    <dropDownValue key="TORRENT" caption="Torrent"/>
+                    <dropDownValue key="GRAND_PRIX" caption="Grand Prix"/>
+                    <dropDownValue key="SUNBIRD" caption="Sunbird"/>
+                    <dropDownValue key="VIBE" caption="Vibe"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PORSCHE" caption="Porsche">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="944" caption="944"/>
+                    <dropDownValue key="PANAMERA" caption="Panamera"/>
+                    <dropDownValue key="968" caption="968"/>
+                    <dropDownValue key="CAYMAN" caption="Cayman"/>
+                    <dropDownValue key="CARRERA_GT" caption="Carrera GT"/>
+                    <dropDownValue key="924" caption="924"/>
+                    <dropDownValue key="BOXSTER" caption="Boxster"/>
+                    <dropDownValue key="CAYENNE" caption="Cayenne"/>
+                    <dropDownValue key="911" caption="911"/>
+                    <dropDownValue key="928" caption="928"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="PROTON" caption="Proton">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="415" caption="415"/>
+                    <dropDownValue key="PERSONA" caption="Persona"/>
+                    <dropDownValue key="PUTRA" caption="Putra"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="RENAULT" caption="Renault">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="DUSTER" caption="Duster"/>
+                    <dropDownValue key="NEVADA" caption="Nevada"/>
+                    <dropDownValue key="CLIO_SYMBOL" caption="Symbol"/>
+                    <dropDownValue key="EXPRESS" caption="Express"/>
+                    <dropDownValue key="FLUENCE" caption="Fluence"/>
+                    <dropDownValue key="CLIO_RS" caption="Clio RS"/>
+                    <dropDownValue key="5" caption="5"/>
+                    <dropDownValue key="SAFRANE" caption="Safrane"/>
+                    <dropDownValue key="MEGANE" caption="Megane"/>
+                    <dropDownValue key="21" caption="21"/>
+                    <dropDownValue key="9" caption="9"/>
+                    <dropDownValue key="KANGOO" caption="Kangoo"/>
+                    <dropDownValue key="AVANTIME" caption="Avantime"/>
+                    <dropDownValue key="MEGANE_RS" caption="Megane RS"/>
+                    <dropDownValue key="CLIO" caption="Clio"/>
+                    <dropDownValue key="SCENIC" caption="Scenic"/>
+                    <dropDownValue key="25" caption="25"/>
+                    <dropDownValue key="19" caption="19"/>
+                    <dropDownValue key="LOGAN" caption="Logan"/>
+                    <dropDownValue key="ESPACE" caption="Espace"/>
+                    <dropDownValue key="18" caption="18"/>
+                    <dropDownValue key="GRAND_ESPACE" caption="Grand Espace"/>
+                    <dropDownValue key="KOLEOS" caption="Koleos"/>
+                    <dropDownValue key="SANDERO" caption="Sandero"/>
+                    <dropDownValue key="GRAND_SCENIC" caption="Grand Scenic"/>
+                    <dropDownValue key="TWINGO" caption="Twingo"/>
+                    <dropDownValue key="LAGUNA" caption="Laguna"/>
+                    <dropDownValue key="MODUS" caption="Modus"/>
+                    <dropDownValue key="VEL_SATIS" caption="Vel Satis"/>
+                    <dropDownValue key="MASTER" caption="Master"/>
+                    <dropDownValue key="LATITUDE" caption="Latitude"/>
+                    <dropDownValue key="14" caption="14"/>
+                    <dropDownValue key="RAPID" caption="Rapid"/>
+                    <dropDownValue key="11" caption="11"/>
+                    <dropDownValue key="SPORT_SPYDER" caption="Sport Spyder"/>
+                    <dropDownValue key="8" caption="8"/>
+                    <dropDownValue key="TRAFIC" caption="Trafic"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ROLLS_ROYCE" caption="Rolls-Royce">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PHANTOM" caption="Phantom"/>
+                    <dropDownValue key="CORNICHE" caption="Corniche"/>
+                    <dropDownValue key="GHOST" caption="Ghost"/>
+                    <dropDownValue key="SILVER_SPUR" caption="Silver Spur"/>
+                    <dropDownValue key="PARK_WARD" caption="Park Ward"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ROVER" caption="Rover">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="200" caption="200"/>
+                    <dropDownValue key="100" caption="100"/>
+                    <dropDownValue key="STREETWISE" caption="Streetwise"/>
+                    <dropDownValue key="MAESTRO" caption="Maestro"/>
+                    <dropDownValue key="600" caption="600"/>
+                    <dropDownValue key="45" caption="45"/>
+                    <dropDownValue key="75" caption="75"/>
+                    <dropDownValue key="400" caption="400"/>
+                    <dropDownValue key="25" caption="25"/>
+                    <dropDownValue key="213" caption="213"/>
+                    <dropDownValue key="800" caption="800"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SEAT" caption="SEAT">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="TOLEDO" caption="Toledo"/>
+                    <dropDownValue key="LEON" caption="Leon"/>
+                    <dropDownValue key="ALTEA" caption="Altea"/>
+                    <dropDownValue key="CORDOBA" caption="Cordoba"/>
+                    <dropDownValue key="ALHAMBRA" caption="Alhambra"/>
+                    <dropDownValue key="FREETRACK" caption="Freetrack"/>
+                    <dropDownValue key="AROSA" caption="Arosa"/>
+                    <dropDownValue key="MARBELLA" caption="Marbella"/>
+                    <dropDownValue key="INCA" caption="Inca"/>
+                    <dropDownValue key="IBIZA" caption="Ibiza"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SAAB" caption="Saab">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="900" caption="900"/>
+                    <dropDownValue key="9_5" caption="9-5"/>
+                    <dropDownValue key="9_7X" caption="9-7X"/>
+                    <dropDownValue key="9_3" caption="9-3"/>
+                    <dropDownValue key="9000" caption="9000"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SAMSUNG" caption="Samsung">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SM5" caption="SM5"/>
+                    <dropDownValue key="SM7" caption="SM7"/>
+                    <dropDownValue key="SM3" caption="SM3"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SATURN" caption="Saturn">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SC2" caption="SC2"/>
+                    <dropDownValue key="LS" caption="LS"/>
+                    <dropDownValue key="SL2" caption="SL2"/>
+                    <dropDownValue key="SL" caption="SL"/>
+                    <dropDownValue key="ION" caption="ION"/>
+                    <dropDownValue key="SKY" caption="Sky"/>
+                    <dropDownValue key="AURA" caption="Aura"/>
+                    <dropDownValue key="VUE" caption="VUE"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SCION" caption="Scion">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="XB" caption="xB"/>
+                    <dropDownValue key="XA" caption="xA"/>
+                    <dropDownValue key="XD" caption="xD"/>
+                    <dropDownValue key="TC" caption="tC"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SHUANGHUAN" caption="Shuanghuan">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SCEO" caption="SCEO"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SKODA" caption="Skoda">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FELICIA" caption="Felicia"/>
+                    <dropDownValue key="OCTAVIA_SCOUT" caption="Octavia Scout"/>
+                    <dropDownValue key="SUPERB" caption="Superb"/>
+                    <dropDownValue key="PRAKTIK" caption="Praktik"/>
+                    <dropDownValue key="OCTAVIA_TOUR" caption="Octavia Tour"/>
+                    <dropDownValue key="ROOMSTER" caption="Roomster"/>
+                    <dropDownValue key="YETI" caption="Yeti"/>
+                    <dropDownValue key="OCTAVIA_RS" caption="Octavia RS"/>
+                    <dropDownValue key="FORMAN" caption="Forman"/>
+                    <dropDownValue key="OCTAVIA" caption="Octavia"/>
+                    <dropDownValue key="120" caption="105, 120"/>
+                    <dropDownValue key="FABIA_RS" caption="Fabia RS"/>
+                    <dropDownValue key="RAPID" caption="Rapid"/>
+                    <dropDownValue key="FABIA" caption="Fabia"/>
+                    <dropDownValue key="FAVORIT" caption="Favorit"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SMART" caption="Smart">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FORFOUR" caption="Forfour"/>
+                    <dropDownValue key="CITY" caption="City"/>
+                    <dropDownValue key="ROADSTER" caption="Roadster"/>
+                    <dropDownValue key="FORTWO" caption="Fortwo"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SPYKER" caption="Spyker">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="C8" caption="C8"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SSANG_YONG" caption="SsangYong">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ACTYON" caption="Actyon"/>
+                    <dropDownValue key="ACTYON_SPORT" caption="Actyon Sport"/>
+                    <dropDownValue key="RODIUS" caption="Rodius"/>
+                    <dropDownValue key="REXTON" caption="Rexton"/>
+                    <dropDownValue key="KYRON" caption="Kyron"/>
+                    <dropDownValue key="KORANDO" caption="Korando"/>
+                    <dropDownValue key="MUSSO" caption="Musso"/>
+                    <dropDownValue key="CHAIRMAN" caption="Chairman"/>
+                    <dropDownValue key="ISTANA" caption="Istana"/>
+                    <dropDownValue key="KORANDO_FAMILY" caption="Korando Family"/>
+                    <dropDownValue key="MUSSO_SPORTS" caption="Musso Sports"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SUBARU" caption="Subaru">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="STELLA" caption="Stella"/>
+                    <dropDownValue key="DOMINGO" caption="Domingo"/>
+                    <dropDownValue key="IMPREZA_XV" caption="Impreza XV"/>
+                    <dropDownValue key="XT" caption="XT"/>
+                    <dropDownValue key="LEGACY" caption="Legacy"/>
+                    <dropDownValue key="LIBERO" caption="Libero"/>
+                    <dropDownValue key="LEGACY_LANCASTER" caption="Legacy Lancaster"/>
+                    <dropDownValue key="IMPREZA" caption="Impreza"/>
+                    <dropDownValue key="XV" caption="XV"/>
+                    <dropDownValue key="IMPREZA-WRX" caption="Impreza WRX"/>
+                    <dropDownValue key="EXIGA" caption="Exiga"/>
+                    <dropDownValue key="LEONE" caption="Leone"/>
+                    <dropDownValue key="PLEO" caption="Pleo"/>
+                    <dropDownValue key="LEGACY_WAGON" caption="Legacy Wagon"/>
+                    <dropDownValue key="SVX" caption="SVX"/>
+                    <dropDownValue key="IMPREZA_WAGON" caption="Impreza Wagon"/>
+                    <dropDownValue key="IMPREZA_WRX" caption="Impreza WRX STI"/>
+                    <dropDownValue key="TRAVIQ" caption="Traviq"/>
+                    <dropDownValue key="BRZ" caption="BRZ"/>
+                    <dropDownValue key="SAMBAR" caption="Sambar"/>
+                    <dropDownValue key="R1" caption="R1"/>
+                    <dropDownValue key="REX" caption="Rex"/>
+                    <dropDownValue key="VIVIO" caption="Vivio"/>
+                    <dropDownValue key="BISTRO" caption="Bistro"/>
+                    <dropDownValue key="BAJA" caption="Baja"/>
+                    <dropDownValue key="LEGACY_B4" caption="Legacy B4"/>
+                    <dropDownValue key="IMPREZA_COUPE" caption="Impreza Coupe"/>
+                    <dropDownValue key="OUTBACK" caption="Outback"/>
+                    <dropDownValue key="FORESTER" caption="Forester"/>
+                    <dropDownValue key="R2" caption="R2"/>
+                    <dropDownValue key="B9_TRIBECA" caption="Tribeca"/>
+                    <dropDownValue key="JUSTY" caption="Justy"/>
+                    <dropDownValue key="LEGACY_GRAND_WAGON" caption="Legacy Grand Wagon"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SUZUKI" caption="Suzuki">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="CULTUS_CRESCENT" caption="Cultus Crescent"/>
+                    <dropDownValue key="SOLIO" caption="Solio"/>
+                    <dropDownValue key="GRAND_ESCUDO" caption="Grand Escudo"/>
+                    <dropDownValue key="SPLASH" caption="Splash"/>
+                    <dropDownValue key="FORENZA" caption="Forenza"/>
+                    <dropDownValue key="RENO" caption="Reno"/>
+                    <dropDownValue key="EVERY" caption="Every"/>
+                    <dropDownValue key="MR_WAGON" caption="MR Wagon"/>
+                    <dropDownValue key="IGNIS" caption="Ignis"/>
+                    <dropDownValue key="JIMNY_WIDE" caption="Jimny Wide"/>
+                    <dropDownValue key="JIMNY" caption="Jimny"/>
+                    <dropDownValue key="JIMNY_SIERRA" caption="Jimny Sierra"/>
+                    <dropDownValue key="SAMURAI" caption="Samurai"/>
+                    <dropDownValue key="CULTUS_WAGON" caption="Cultus Wagon"/>
+                    <dropDownValue key="GRAND_VITARA" caption="Grand Vitara"/>
+                    <dropDownValue key="AERIO" caption="Aerio"/>
+                    <dropDownValue key="CARA" caption="Cara"/>
+                    <dropDownValue key="CULTUS_CRESCENT_WAGON" caption="Cultus Crescent Wagon"/>
+                    <dropDownValue key="KIZASHI" caption="Kizashi"/>
+                    <dropDownValue key="VERONA" caption="Verona"/>
+                    <dropDownValue key="VITARA" caption="Vitara"/>
+                    <dropDownValue key="SWIFT" caption="Swift"/>
+                    <dropDownValue key="XL_7" caption="XL-7"/>
+                    <dropDownValue key="ALTO" caption="Alto"/>
+                    <dropDownValue key="X_90" caption="X-90"/>
+                    <dropDownValue key="CHEVROLET_CRUZE" caption="Chevrolet Cruze"/>
+                    <dropDownValue key="CAPPUCCINO" caption="Cappuccino"/>
+                    <dropDownValue key="CULTUS" caption="Cultus"/>
+                    <dropDownValue key="WAGON_R" caption="Wagon R"/>
+                    <dropDownValue key="SX4" caption="SX4"/>
+                    <dropDownValue key="AERIO_WAGON" caption="Aerio Wagon"/>
+                    <dropDownValue key="CERVO" caption="Cervo"/>
+                    <dropDownValue key="WAGON_R_WIDE" caption="Wagon R Wide"/>
+                    <dropDownValue key="GRAND_VITARA_XL7" caption="Grand Vitara XL-7"/>
+                    <dropDownValue key="LIANA" caption="Liana"/>
+                    <dropDownValue key="KEI" caption="Kei"/>
+                    <dropDownValue key="ESTEEM" caption="Esteem"/>
+                    <dropDownValue key="WAGON_R_PLUS" caption="Wagon R Plus"/>
+                    <dropDownValue key="ESCUDO" caption="Escudo"/>
+                    <dropDownValue key="CULTUS_SEDAN" caption="Cultus Sedant"/>
+                    <dropDownValue key="AERIO_SX" caption="Aerio SX"/>
+                    <dropDownValue key="SX4_SUV" caption="SX4 SUV"/>
+                    <dropDownValue key="WAGON_R_SOLIO" caption="Wagon R Solio"/>
+                    <dropDownValue key="EVERY_LANDY" caption="Every Landy"/>
+                    <dropDownValue key="BALENO" caption="Baleno"/>
+                    <dropDownValue key="SIDEKICK" caption="Sidekick"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TALBOT" caption="Talbot">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="HORIZON" caption="Horizon"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TATA" caption="Tata">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="INDIGO" caption="Indigo"/>
+                    <dropDownValue key="INDICA" caption="Indica"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TATRA" caption="Tatra">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="613" caption="613"/>
+                    <dropDownValue key="815" caption="815"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TIANMA" caption="Tianma">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="CENTURY" caption="Century"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TIANYE" caption="Tianye">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ADMIRAL" caption="Admiral"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TOFAS" caption="Tofas">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="DOGAN" caption="Dogan"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TOYOTA" caption="Toyota">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VOXY" caption="Voxy"/>
+                    <dropDownValue key="SIENNA" caption="Sienna"/>
+                    <dropDownValue key="CAMI" caption="Cami"/>
+                    <dropDownValue key="IQ" caption="iQ"/>
+                    <dropDownValue key="COROLLA_RUMION" caption="Corolla Rumion"/>
+                    <dropDownValue key="MARK_II" caption="Mark II"/>
+                    <dropDownValue key="PROBOX" caption="Probox"/>
+                    <dropDownValue key="CHASER" caption="Chaser"/>
+                    <dropDownValue key="RAUM" caption="Raum"/>
+                    <dropDownValue key="COROLLA_CERES" caption="Corolla Ceres"/>
+                    <dropDownValue key="ESTIMA" caption="Estima"/>
+                    <dropDownValue key="PROGRES" caption="Progres"/>
+                    <dropDownValue key="SUPRA" caption="Supra"/>
+                    <dropDownValue key="VISTA" caption="Vista"/>
+                    <dropDownValue key="FJ_CRUISER" caption="FJ Cruiser"/>
+                    <dropDownValue key="COROLLA_FIELDER" caption="Corolla Fielder"/>
+                    <dropDownValue key="PLATZ" caption="Platz"/>
+                    <dropDownValue key="CROWN_ROYAL" caption="Crown Royal"/>
+                    <dropDownValue key="COROLLA_VAN" caption="Corolla Van"/>
+                    <dropDownValue key="COMFORT" caption="Comfort"/>
+                    <dropDownValue key="PASSO" caption="Passo"/>
+                    <dropDownValue key="PRONARD" caption="Pronard"/>
+                    <dropDownValue key="SPARKY" caption="Sparky"/>
+                    <dropDownValue key="VITZ" caption="Vitz"/>
+                    <dropDownValue key="MARK_II_WAGON" caption="Mark II Wagon"/>
+                    <dropDownValue key="RAV_4" caption="Rav 4"/>
+                    <dropDownValue key="CAVALIER" caption="Cavalier"/>
+                    <dropDownValue key="CROWN_MAJESTA" caption="Crown Majesta"/>
+                    <dropDownValue key="HIACE" caption="Hiace"/>
+                    <dropDownValue key="TUNDRA" caption="Tundra"/>
+                    <dropDownValue key="BLIZZARD" caption="Blizzard"/>
+                    <dropDownValue key="ALLEX" caption="Allex"/>
+                    <dropDownValue key="YARIS" caption="Yaris"/>
+                    <dropDownValue key="GAIA" caption="Gaia"/>
+                    <dropDownValue key="LAND_CRUISER_PRADO" caption="Land Cruiser Prado"/>
+                    <dropDownValue key="TOWN_ACE_NOAH" caption="Town Ace Noah"/>
+                    <dropDownValue key="AVENSIS_VERSO" caption="Avensis Verso"/>
+                    <dropDownValue key="ALPHARD" caption="Alphard"/>
+                    <dropDownValue key="FUNCARGO" caption="Funcargo"/>
+                    <dropDownValue key="4_RUNNER" caption="4 Runner"/>
+                    <dropDownValue key="HIGHLANDER" caption="Highlander"/>
+                    <dropDownValue key="SPRINTER_MARINO" caption="Sprinter Marino"/>
+                    <dropDownValue key="COROLLA_FX" caption="Corolla FX"/>
+                    <dropDownValue key="COROLLA_RUNX" caption="Corolla Runx"/>
+                    <dropDownValue key="ESTIMA_LUCIDA" caption="Estima Lucida"/>
+                    <dropDownValue key="GRANVIA" caption="Granvia"/>
+                    <dropDownValue key="LAND_CRUISER" caption="Land Cruiser"/>
+                    <dropDownValue key="CORONA_PREMIO" caption="Corona Premio"/>
+                    <dropDownValue key="NADIA" caption="Nadia"/>
+                    <dropDownValue key="CORONA" caption="Corona"/>
+                    <dropDownValue key="VELLFIRE" caption="Vellfire"/>
+                    <dropDownValue key="ALLION" caption="Allion"/>
+                    <dropDownValue key="VIOS" caption="Vios"/>
+                    <dropDownValue key="CURREN" caption="Curren"/>
+                    <dropDownValue key="MR2" caption="MR2"/>
+                    <dropDownValue key="RUSH" caption="Rush"/>
+                    <dropDownValue key="CENTURY" caption="Century"/>
+                    <dropDownValue key="GT86" caption="GT86"/>
+                    <dropDownValue key="LITE_ACE" caption="Lite Ace"/>
+                    <dropDownValue key="CAMRY" caption="Camry"/>
+                    <dropDownValue key="PREVIA" caption="Previa"/>
+                    <dropDownValue key="SERA" caption="Sera"/>
+                    <dropDownValue key="ARISTO" caption="Aristo"/>
+                    <dropDownValue key="CELSIOR" caption="Celsior"/>
+                    <dropDownValue key="CALDINA" caption="Caldina"/>
+                    <dropDownValue key="SPRINTER_WAGON" caption="Sprinter Wagon"/>
+                    <dropDownValue key="VOLTZ" caption="Voltz"/>
+                    <dropDownValue key="SPRINTER_CARIB" caption="Sprinter Carib"/>
+                    <dropDownValue key="BELTA" caption="Belta"/>
+                    <dropDownValue key="MATRIX" caption="Matrix"/>
+                    <dropDownValue key="PREMIO" caption="Premio"/>
+                    <dropDownValue key="AURIS" caption="Auris"/>
+                    <dropDownValue key="CARINA" caption="Carina"/>
+                    <dropDownValue key="DUET" caption="Duet"/>
+                    <dropDownValue key="MARK_X_ZIO" caption="Mark X Zio"/>
+                    <dropDownValue key="STARLET" caption="Starlet"/>
+                    <dropDownValue key="CARINA_E" caption="Carina E"/>
+                    <dropDownValue key="HARRIER" caption="Harrier"/>
+                    <dropDownValue key="TOWN_ACE_VAN" caption="Town Ace Van"/>
+                    <dropDownValue key="BB" caption="bB"/>
+                    <dropDownValue key="LITE_ACE_NOAH" caption="Lite Ace Noah"/>
+                    <dropDownValue key="REGIUS_ACE" caption="Regius ACE"/>
+                    <dropDownValue key="CROWN" caption="Crown"/>
+                    <dropDownValue key="WISH" caption="Wish"/>
+                    <dropDownValue key="COROLLA_SPACIO" caption="Corolla Spacio"/>
+                    <dropDownValue key="MARK_II_WAGON_BLIT" caption="Mark II Wagon Blit"/>
+                    <dropDownValue key="MASTER_ACE_SURF" caption="Master Ace Surf"/>
+                    <dropDownValue key="PICNIC" caption="Picnic"/>
+                    <dropDownValue key="SOLARA" caption="Solara"/>
+                    <dropDownValue key="CROWN_WAGON" caption="Crown Wagon"/>
+                    <dropDownValue key="CORONA_SF" caption="Corona SF"/>
+                    <dropDownValue key="SOARER" caption="Soarer"/>
+                    <dropDownValue key="VANGUARD" caption="Vanguard"/>
+                    <dropDownValue key="PRIUS" caption="Prius"/>
+                    <dropDownValue key="WILL_VI" caption="Will Vi"/>
+                    <dropDownValue key="WILL_VC" caption="Will VS"/>
+                    <dropDownValue key="BLADE" caption="Blade"/>
+                    <dropDownValue key="MARK_II_WAGON_QUALIS" caption="Mark II Wagon Qualis"/>
+                    <dropDownValue key="CRESSIDA" caption="Cressida"/>
+                    <dropDownValue key="TACOMA" caption="Tacoma"/>
+                    <dropDownValue key="SIENTA" caption="Sienta"/>
+                    <dropDownValue key="TOWN_ACE" caption="Town Ace"/>
+                    <dropDownValue key="YARIS_VERSO" caption="Yaris Verso"/>
+                    <dropDownValue key="CORONA_EXIV" caption="Corona Exiv"/>
+                    <dropDownValue key="AVALON" caption="Avalon"/>
+                    <dropDownValue key="WILL" caption="Will"/>
+                    <dropDownValue key="PASEO" caption="Paseo"/>
+                    <dropDownValue key="NOAH" caption="Noah"/>
+                    <dropDownValue key="HILUX_SURF" caption="Hilux Surf"/>
+                    <dropDownValue key="PORTE" caption="Porte"/>
+                    <dropDownValue key="FORTUNER" caption="Fortuner"/>
+                    <dropDownValue key="HIACE_REGIUS" caption="Hiace Regius"/>
+                    <dropDownValue key="VERSO" caption="Verso"/>
+                    <dropDownValue key="CORONA_WAGON" caption="Corona Wagon"/>
+                    <dropDownValue key="REGIUS" caption="Regius"/>
+                    <dropDownValue key="CRESTA" caption="Cresta"/>
+                    <dropDownValue key="CAMRY_GRACIA" caption="Camry Gracia"/>
+                    <dropDownValue key="SCION" caption="Scion"/>
+                    <dropDownValue key="SCEPTER" caption="Scepter"/>
+                    <dropDownValue key="COROLLA_WAGON" caption="Corolla Wagon"/>
+                    <dropDownValue key="RACTIS" caption="Ractis"/>
+                    <dropDownValue key="VEROSSA" caption="Verossa"/>
+                    <dropDownValue key="ECHO" caption="Echo"/>
+                    <dropDownValue key="SUCCEED" caption="Succeed"/>
+                    <dropDownValue key="MRS" caption="MR-S"/>
+                    <dropDownValue key="CELICA" caption="Celica"/>
+                    <dropDownValue key="CYNOS" caption="Cynos"/>
+                    <dropDownValue key="TOURING_HIACE" caption="Touring Hiace"/>
+                    <dropDownValue key="CARINA_ED" caption="Carina ED"/>
+                    <dropDownValue key="COROLLA_LEVIN" caption="Corolla Levin"/>
+                    <dropDownValue key="GRAND_HIACE" caption="Grand hiace"/>
+                    <dropDownValue key="AYGO" caption="Aygo"/>
+                    <dropDownValue key="URBAN_CRUISER" caption="Urban Cruiser"/>
+                    <dropDownValue key="SPRINTER_TRUENO" caption="Sprinter Trueno"/>
+                    <dropDownValue key="VENZA" caption="Venza"/>
+                    <dropDownValue key="ALTEZZA" caption="Altezza"/>
+                    <dropDownValue key="IST" caption="ist"/>
+                    <dropDownValue key="KLUGER" caption="Kluger V"/>
+                    <dropDownValue key="CORSA" caption="Corsa"/>
+                    <dropDownValue key="AVENSIS" caption="Avensis"/>
+                    <dropDownValue key="SEQUOIA" caption="Sequoia"/>
+                    <dropDownValue key="LAND_CRUISER_CYGNUS" caption="Land Cruiser Cygnus"/>
+                    <dropDownValue key="WILL_CYPHA" caption="Will Cypha"/>
+                    <dropDownValue key="WINDOM" caption="Windom"/>
+                    <dropDownValue key="MEGA_CRUISER" caption="Mega Cruiser"/>
+                    <dropDownValue key="MARK_X" caption="Mark X"/>
+                    <dropDownValue key="OPA" caption="Opa"/>
+                    <dropDownValue key="VISTA_ARDEO" caption="Vista Ardeo"/>
+                    <dropDownValue key="ESTIMA_EMINA" caption="Estima Emina"/>
+                    <dropDownValue key="SOLUNA" caption="Soluna"/>
+                    <dropDownValue key="TERCEL" caption="Tercel"/>
+                    <dropDownValue key="ISIS" caption="Isis"/>
+                    <dropDownValue key="SPRINTER" caption="Sprinter"/>
+                    <dropDownValue key="CAMRY_PROMINENT" caption="Camry Prominent"/>
+                    <dropDownValue key="COROLLA_VERSO" caption="Corolla Verso"/>
+                    <dropDownValue key="BREVIS" caption="Brevis"/>
+                    <dropDownValue key="HILUX" caption="Hilux Pickup"/>
+                    <dropDownValue key="IPSUM" caption="Ipsum"/>
+                    <dropDownValue key="PASSO_SETTE" caption="Passo Sette"/>
+                    <dropDownValue key="COROLLA" caption="Corolla"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TRABANT" caption="Trabant">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="601" caption="601"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="VOLKSWAGEN" caption="Volkswagen">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="EUROVAN" caption="EuroVan"/>
+                    <dropDownValue key="TIGUAN" caption="Tiguan"/>
+                    <dropDownValue key="JETTA" caption="Jetta"/>
+                    <dropDownValue key="GOLF_GTI" caption="Golf GTI"/>
+                    <dropDownValue key="BEETLE" caption="Beetle"/>
+                    <dropDownValue key="CORRADO" caption="Corrado"/>
+                    <dropDownValue key="FOX" caption="Fox"/>
+                    <dropDownValue key="PASSAT_CC" caption="Passat CC"/>
+                    <dropDownValue key="COUNTRY_BUGGY" caption="Country Buggy"/>
+                    <dropDownValue key="CROSS_GOLF" caption="Cross Golf"/>
+                    <dropDownValue key="PASSAT" caption="Passat"/>
+                    <dropDownValue key="SCIROCCO" caption="Scirocco"/>
+                    <dropDownValue key="SANTANA" caption="Santana"/>
+                    <dropDownValue key="LUPO" caption="Lupo"/>
+                    <dropDownValue key="TOUAREG" caption="Touareg"/>
+                    <dropDownValue key="CADDY" caption="Caddy"/>
+                    <dropDownValue key="LT" caption="LT"/>
+                    <dropDownValue key="VENTO" caption="Vento"/>
+                    <dropDownValue key="BORA" caption="Bora"/>
+                    <dropDownValue key="CALIFORNIA" caption="California"/>
+                    <dropDownValue key="TARO" caption="Taro"/>
+                    <dropDownValue key="CROSS_TOURAN" caption="Cross Touran"/>
+                    <dropDownValue key="POINTER" caption="Pointer"/>
+                    <dropDownValue key="GOLF" caption="Golf"/>
+                    <dropDownValue key="CROSS_POLO" caption="Cross Polo"/>
+                    <dropDownValue key="CARAVELLE" caption="Caravelle"/>
+                    <dropDownValue key="TOURAN" caption="Touran"/>
+                    <dropDownValue key="EOS" caption="EOS"/>
+                    <dropDownValue key="GOLF_PLUS" caption="Golf Plus"/>
+                    <dropDownValue key="TRANSPORTER" caption="Transporter"/>
+                    <dropDownValue key="PARATI" caption="Parati"/>
+                    <dropDownValue key="CRAFTER" caption="Crafter"/>
+                    <dropDownValue key="POLO" caption="Polo"/>
+                    <dropDownValue key="SHARAN" caption="Sharan"/>
+                    <dropDownValue key="MULTIVAN" caption="Multivan"/>
+                    <dropDownValue key="PHAETON" caption="Phaeton"/>
+                    <dropDownValue key="KAEFER" caption="Kaefer"/>
+                    <dropDownValue key="AMAROK" caption="Amarok"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="VOLVO" caption="Volvo">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="940" caption="940"/>
+                    <dropDownValue key="360" caption="360"/>
+                    <dropDownValue key="S90" caption="S90"/>
+                    <dropDownValue key="460" caption="460"/>
+                    <dropDownValue key="V90" caption="V90"/>
+                    <dropDownValue key="850" caption="850"/>
+                    <dropDownValue key="744" caption="744"/>
+                    <dropDownValue key="260" caption="260"/>
+                    <dropDownValue key="C70" caption="C70"/>
+                    <dropDownValue key="V60" caption="V60"/>
+                    <dropDownValue key="164" caption="164"/>
+                    <dropDownValue key="XC60" caption="XC60"/>
+                    <dropDownValue key="XC70" caption="XC70"/>
+                    <dropDownValue key="S40" caption="S40"/>
+                    <dropDownValue key="V70" caption="V70"/>
+                    <dropDownValue key="944" caption="944"/>
+                    <dropDownValue key="480" caption="480"/>
+                    <dropDownValue key="760" caption="760"/>
+                    <dropDownValue key="S80" caption="S80"/>
+                    <dropDownValue key="S60" caption="S60"/>
+                    <dropDownValue key="V40_CC" caption="V40 Cross Country"/>
+                    <dropDownValue key="780" caption="780"/>
+                    <dropDownValue key="340" caption="340"/>
+                    <dropDownValue key="V40" caption="V40"/>
+                    <dropDownValue key="V50" caption="V50"/>
+                    <dropDownValue key="960" caption="960"/>
+                    <dropDownValue key="XC90" caption="XC90"/>
+                    <dropDownValue key="440" caption="440"/>
+                    <dropDownValue key="740" caption="740"/>
+                    <dropDownValue key="240" caption="240"/>
+                    <dropDownValue key="140" caption="140"/>
+                    <dropDownValue key="S70" caption="S70"/>
+                    <dropDownValue key="C30" caption="C30"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="VORTEX" caption="Vortex">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="ESTINA" caption="Estina"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="WARTBURG" caption="Wartburg">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="353" caption="353"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="XINKAI" caption="Xin Kai">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="PICKUP_X3" caption="Pickup X3"/>
+                    <dropDownValue key="SUV_X3" caption="SUV X3"/>
+                    <dropDownValue key="SR_V_X3" caption="SR-V X3"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ZAZ" caption="ZAZ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="FORZA" caption="Forza"/>
+                    <dropDownValue key="CHANCE" caption="Chance"/>
+                    <dropDownValue key="VIDA" caption="Vida"/>
+                    <dropDownValue key="ZAZ_LANOS" caption="Lanos"/>
+                    <dropDownValue key="SLAVUTA" caption="1103 Славута"/>
+                    <dropDownValue key="TAVRIA" caption="Таврия"/>
+                    <dropDownValue key="968" caption="968"/>
+                    <dropDownValue key="1140" caption="1140"/>
+                    <dropDownValue key="966" caption="966"/>
+                    <dropDownValue key="965" caption="965"/>
+                    <dropDownValue key="SENS" caption="Sens"/>
+                    <dropDownValue key="DANA" caption="1105 Дана"/>
+                    <dropDownValue key="968M" caption="968М"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ZX" caption="ZX">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="GRAND_TIGER" caption="Grand Tiger"/>
+                    <dropDownValue key="LANDMARK" caption="landmark"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="GAZ" caption="ГАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="2818" caption="2818 Газель"/>
+                    <dropDownValue key="12" caption="12 ЗИМ"/>
+                    <dropDownValue key="3310" caption="3310"/>
+                    <dropDownValue key="21" caption="21 Волга"/>
+                    <dropDownValue key="17310" caption="17310 Трофим"/>
+                    <dropDownValue key="VOLGA_SIBER" caption="Volga Siber"/>
+                    <dropDownValue key="31105" caption="31105 Волга"/>
+                    <dropDownValue key="2310" caption="2310 Соболь"/>
+                    <dropDownValue key="3105" caption="3105"/>
+                    <dropDownValue key="2790" caption="2790"/>
+                    <dropDownValue key="2330" caption="2330 Тигр"/>
+                    <dropDownValue key="22" caption="22 Волга"/>
+                    <dropDownValue key="2410" caption="24-10 Волга"/>
+                    <dropDownValue key="3221" caption="3221 Газель"/>
+                    <dropDownValue key="24" caption="24 Волга"/>
+                    <dropDownValue key="69" caption="69"/>
+                    <dropDownValue key="M1" caption="M-1"/>
+                    <dropDownValue key="67" caption="67"/>
+                    <dropDownValue key="3111" caption="3111 Волга"/>
+                    <dropDownValue key="M_20" caption="M-20 Победа"/>
+                    <dropDownValue key="2217" caption="2217 Соболь/Баргузин"/>
+                    <dropDownValue key="2705" caption="2705 Газель"/>
+                    <dropDownValue key="2752" caption="2752 Соболь"/>
+                    <dropDownValue key="13" caption="13 Чайка"/>
+                    <dropDownValue key="3110" caption="3110 Волга"/>
+                    <dropDownValue key="31029" caption="31029 Волга"/>
+                    <dropDownValue key="3302" caption="3302 Газель"/>
+                    <dropDownValue key="3102" caption="3102 Волга"/>
+                    <dropDownValue key="14" caption="14 Чайка"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ERAZ" caption="ЕРАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="762" caption="762"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="ZIL" caption="ЗИЛ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="4104" caption="4104"/>
+                    <dropDownValue key="130" caption="130"/>
+                    <dropDownValue key="114" caption="114"/>
+                    <dropDownValue key="4741" caption="4741"/>
+                    <dropDownValue key="117" caption="117"/>
+                    <dropDownValue key="115" caption="115"/>
+                    <dropDownValue key="41047" caption="41047"/>
+                    <dropDownValue key="5301" caption="5301"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="IG" caption="ИЖ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="2715" caption="2715"/>
+                    <dropDownValue key="412" caption="412"/>
+                    <dropDownValue key="2126" caption="2126 / Ода"/>
+                    <dropDownValue key="2117" caption="2117"/>
+                    <dropDownValue key="2125" caption="2125"/>
+                    <dropDownValue key="2717" caption="2717"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="KAMAZ" caption="КАМАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="1111" caption="1111"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="LUAZ" caption="ЛУАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="969" caption="969"/>
+                    <dropDownValue key="1302" caption="1302"/>
+                    <dropDownValue key="968" caption="968"/>
+                    <dropDownValue key="967" caption="967"/>
+                    <dropDownValue key="969A" caption="969А"/>
+                    <dropDownValue key="969M" caption="969М"/>
+                    <dropDownValue key="967M" caption="967М"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="MOSCVICH" caption="Москвич">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="427" caption="427"/>
+                    <dropDownValue key="408" caption="408"/>
+                    <dropDownValue key="KNYAZ_VLADIMIR" caption="Князь Владимир"/>
+                    <dropDownValue key="YURI_DOLGORUKIY" caption="Юрий Долгорукий"/>
+                    <dropDownValue key="2135" caption="2135"/>
+                    <dropDownValue key="2125" caption="2125"/>
+                    <dropDownValue key="400" caption="400"/>
+                    <dropDownValue key="423" caption="423"/>
+                    <dropDownValue key="407" caption="407"/>
+                    <dropDownValue key="2137" caption="2137"/>
+                    <dropDownValue key="2901" caption="2901"/>
+                    <dropDownValue key="SVYATOGOR" caption="Святогор"/>
+                    <dropDownValue key="2141" caption="2141"/>
+                    <dropDownValue key="410" caption="410"/>
+                    <dropDownValue key="412" caption="412"/>
+                    <dropDownValue key="2140" caption="2140"/>
+                    <dropDownValue key="426" caption="426"/>
+                    <dropDownValue key="2138" caption="2138"/>
+                    <dropDownValue key="403" caption="403"/>
+                    <dropDownValue key="402" caption="402"/>
+                    <dropDownValue key="401" caption="401"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="SEAZ" caption="СеАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="SZD" caption="СЗД"/>
+                    <dropDownValue key="1111" caption="1111"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="TAGAZ" caption="ТагАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="VORTEX_CORDA" caption="Vortex Corda"/>
+                    <dropDownValue key="TAGER" caption="Tager"/>
+                    <dropDownValue key="C10" caption="C10"/>
+                    <dropDownValue key="C190" caption="C190"/>
+                    <dropDownValue key="AQUILA" caption="Aquila"/>
+                    <dropDownValue key="ROAD_PARTNER" caption="Road Partner"/>
+                    <dropDownValue key="VORTEX_ESTINA" caption="Vortex Estina"/>
+                    <dropDownValue key="LC100" caption="LC100"/>
+                    <dropDownValue key="C30" caption="C30"/>
+                    <dropDownValue key="C-100" caption="C-100 Вега"/>
+                    <dropDownValue key="VORTEX_TINGO" caption="Vortex Tingo"/>
+                </dropDown>
+            </dropDownValue>
+            <dropDownValue key="UAZ" caption="УАЗ">
+                <dropDown>
+                    <description caption="Модель">
+                        <setParameter name="model"/>
+                    </description>
+                    <dropDownValue key="HUNTER" caption="315195 / Hunter"/>
+                    <dropDownValue key="2360" caption="2360"/>
+                    <dropDownValue key="2206" caption="2206"/>
+                    <dropDownValue key="3309" caption="3309"/>
+                    <dropDownValue key="3151" caption="3151"/>
+                    <dropDownValue key="PICKUP" caption="Pickup"/>
+                    <dropDownValue key="3303" caption="3303"/>
+                    <dropDownValue key="3741" caption="3741"/>
+                    <dropDownValue key="469" caption="469"/>
+                    <dropDownValue key="31519" caption="31519"/>
+                    <dropDownValue key="459" caption="459"/>
+                    <dropDownValue key="31514" caption="31514"/>
+                    <dropDownValue key="3153" caption="3153"/>
+                    <dropDownValue key="3159" caption="3159"/>
+                    <dropDownValue key="3160" caption="3160"/>
+                    <dropDownValue key="3150" caption="3150"/>
+                    <dropDownValue key="3962" caption="3962"/>
+                    <dropDownValue key="31512" caption="31512"/>
+                    <dropDownValue key="PATRIOT" caption="Patriot"/>
+                    <dropDownValue key="3909" caption="3909"/>
+                    <dropDownValue key="3162" caption="3162"/>
+                </dropDown>
+            </dropDownValue>
+        </dropDown>
+        <dropDown>
+            <description caption="Руль">
+                <setParameter name="steering_wheel"/>
+            </description>
+            <dropDownValue key="RIGHT" caption="правый"/>
+            <dropDownValue key="LEFT" caption="левый"/>
+        </dropDown>
+        <rangeFilter min="0" max="200" step="10" unit="тыс. км">
+            <description caption="Пробег">
+                <setParameter name="km_age_from"/>
+                <setParameter name="km_age_to"/>
+            </description>
+        </rangeFilter>
+        <dropDown>
+            <description caption="Цвет">
+                <setParameter name="color"/>
+            </description>
+            <dropDownValue key="" caption="любой" default="true"/>
+            <dropDownValue key="EE1D19" caption="красный"/>
+            <dropDownValue key="97948F" caption="серый"/>
+            <dropDownValue key="FFD600" caption="желтый"/>
+            <dropDownValue key="0000CC" caption="синий"/>
+            <dropDownValue key="007F00" caption="зеленый"/>
+            <dropDownValue key="040001" caption="черный"/>
+            <dropDownValue key="FAFBFB" caption="белый"/>
+            <dropDownValue key="200204" caption="коричневый"/>
+            <dropDownValue key="4A2197" caption="фиолетовый"/>
+            <dropDownValue key="CACECB" caption="серебристый"/>
+            <dropDownValue key="DEA522" caption="золотой"/>
+        </dropDown>
+        <checkBox>
+            <description caption="с фото">
+                <setParameter name="image"/>
+            </description>
+            <checked key="true"/>
+        </checkBox>
+        <dropDown>
+            <description caption="Тип кузова">
+                <setParameter name="body_type"/>
+            </description>
+            <dropDownValue key="PICK_UP" caption="пикап"/>
+            <dropDownValue key="VAN" caption="фургон"/>
+            <dropDownValue key="CABRIOLET" caption="кабриолет"/>
+            <dropDownValue key="UNIVERSAL" caption="универсал"/>
+            <dropDownValue key="COUPE" caption="купе"/>
+            <dropDownValue key="MINI_WEN" caption="минивен"/>
+            <dropDownValue key="SEDAN" caption="седан"/>
+            <dropDownValue key="CROSSOVER" caption="кроссовер"/>
+            <dropDownValue key="ALLROAD" caption="вседорожник"/>
+            <dropDownValue key="HATCHBACK" caption="хэтчбек"/>
+        </dropDown>
+        <rangeFilter min="1970" max="2013">
+            <description caption="Год выпуска">
+                <setParameter name="year_from"/>
+                <setParameter name="year_to"/>
+            </description>
+        </rangeFilter>
+        <dropDown>
+            <description caption="Привод">
+                <setParameter name="gear_type"/>
+            </description>
+            <dropDownValue key="REAR_DRIVE" caption="задний"/>
+            <dropDownValue key="ALL_WHEEL_DRIVE" caption="полный"/>
+            <dropDownValue key="FORWARD_CONTROL" caption="передний"/>
+        </dropDown>
+        <dropDown>
+            <description caption="Состояние">
+                <setParameter name="state"/>
+            </description>
+            <dropDownValue key="NEW" caption="новые"/>
+            <dropDownValue key="USED" caption="с пробегом"/>
+            <dropDownValue key="BEATEN" caption="битые"/>
+        </dropDown>
+        <dropDown>
+            <description caption="Тип топлива">
+                <setParameter name="engine_type"/>
+            </description>
+            <dropDownValue key="DIESEL" caption="дизель"/>
+            <dropDownValue key="GASOLINE" caption="бензин"/>
+            <dropDownValue key="HYBRID" caption="гибрид"/>
+        </dropDown>
+        <dropDown>
+            <description caption="Коробка">
+                <setParameter name="transmission"/>
+            </description>
+            <dropDownValue key="AUTOMATIC" caption="автомат"/>
+            <dropDownValue key="MECHANICAL" caption="механика"/>
+        </dropDown>
+    </filters>
+</site>
