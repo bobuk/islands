@@ -2762,7 +2762,6 @@
             <description caption="Цвет">
                 <setParameter name="color"/>
             </description>
-            <dropDownValue key="" caption="любой" default="true"/>
             <dropDownValue key="EE1D19" caption="красный"/>
             <dropDownValue key="97948F" caption="серый"/>
             <dropDownValue key="FFD600" caption="желтый"/>
