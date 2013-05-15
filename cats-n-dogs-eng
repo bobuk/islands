@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
+
+    <rootUrl>http://example.com</rootUrl>
+    <title>Sample message board</title>
+    <description>Message board of dogs and cats, puppies and kittens for sale</description>
+
+    <resource>
+        <fixed name="example.com" terminal="false">
+            <placeholder name="species"/>
+        </fixed>
+    </resource>
+    <filters>
+        <dropDown>
+            <description caption="Animal">
+                <modifyResource placeholder="species"/>
+            </description>
+            <dropDownValue key="cats" caption="cats">
+                <dropDown>
+                    <description caption="Breed">
+                        <setParameter name="breed"/>
+                    </description>
+                    <dropDownValue key="british" caption="British"/>
+                    <dropDownValue key="scottish" caption="Scottish"/>
+                    <!--...-->
+                    <dropDownValue key="maine_coon" caption="Maine Coon"/>
+                    <dropDownValue key="other" caption="other"/>
+                </dropDown>
+                <checkBox>
+                    <description caption="Kittens">
+                        <setParameter name="is_young"/>
+                    </description>
+                    <checked key="1"/>
+                </checkBox>
+            </dropDownValue>
+            <dropDownValue key="dogs" caption="Dogs">
+                <dropDown>
+                    <description caption="Breed">
+                        <setParameter name="breed"/>
+                    </description>
+                    <dropDownValue key="yorkshire" caption="Yorkshire Terrier"/>
+                    <dropDownValue key="toy" caption="Toy Terrier"/>
+                    <!--...-->
+                    <dropDownValue key="shar_pei" caption="Shar Pei"/>
+                    <dropDownValue key="other" caption="other"/>
+                </dropDown>
+                <checkBox>
+                    <description caption="Puppies">
+                        <setParameter name="is_young"/>
+                    </description>
+                    <checked key="1"/>
+                </checkBox>
+            </dropDownValue>
+        </dropDown>
+        <checkBox>
+            <description caption="Free">
+                <setParameter name="free"/>
+            </description>
+            <checked key="1"/>
+            <unchecked>
+                <rangeFilter min="0" max="50" step="1" unit="USD">
+                    <description caption="Price">
+                        <setParameter name="min_price"/>
+                        <setParameter name="max_price"/>
+                    </description>
+                </rangeFilter>
+            </unchecked>
+        </checkBox>
+    </filters>
+</site>
