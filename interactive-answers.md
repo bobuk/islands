@@ -6,7 +6,7 @@
 * передавать информацию от сервиса в режиме реального времени; 
 * переносить транзакцию на страницу результатов поиска.
 
-Для создания интерактивных ответов мы предлагаем [язык описания форм](https://github.com/bobuk/islands/blob/master/interactive-answers.md#--) и правила подготовки ((http://wiki.yandex-team.ru/serp/api/specification#apidljareal-timevzaimodejjstvija API для real-time взаимодействия)). Сначала мы описываем технологии, а потом ((http://wiki.yandex-team.ru/serp/api/specification#primeryinteraktivnyxotvetov рассматриваем примеры)), которые можно сделать с их помощью.
+Для создания интерактивных ответов мы предлагаем [язык описания форм](#--) и правила подготовки ((http://wiki.yandex-team.ru/serp/api/specification#apidljareal-timevzaimodejjstvija API для real-time взаимодействия)). Сначала мы описываем технологии, а потом ((http://wiki.yandex-team.ru/serp/api/specification#primeryinteraktivnyxotvetov рассматриваем примеры)), которые можно сделать с их помощью.
 
 **Краткий обзор предлагаемых возможностей** 
   * Язык описания форм;
