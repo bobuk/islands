@@ -6,6 +6,7 @@
     <description>Use Cars.com to search 2.6 million new &amp; used car listings or get a dealer quote. Our easy-to-use online tools put you a step ahead in your next vehicle purchase.</description>
     <rootUrl>http://cars.com</rootUrl>
     <protocol>HTTP</protocol>
+    <!-- 11 -->
     <resource>
         <fixed name="cars.com/for-sale/searchresults.action"/>
     </resource>
