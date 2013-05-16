@@ -32,7 +32,8 @@ Now we will look at examples: the transaction button, a basic form with a few fi
 If your website performs online transactions (such as reservations, registration, appointment scheduling, or purchases), you can put a transaction button in the search results. After clicking it, a user goes directly to completing the action on your website.  
 
 **Example:** transaction button for flight check-in
-<img src=http://img-fotki.yandex.ru/get/6805/148869347.0/0_a0aed_4a3c3489_orig>
+
+<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0b02_6e7681fd_orig>
 
 ####Example of Open Graph markup
 
@@ -62,7 +63,8 @@ Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdas
 For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
 
 **Example:** basic form for flight check-in:
-<img src=http://img-fotki.yandex.ru/get/6710/148869347.0/0_a0aec_43606338_orig>
+
+<img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
 
 **todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
 
@@ -85,7 +87,7 @@ Parameters that are input to the API may be arbitrary and can be passed to Yande
 Additionally, the API will have specifications for the response format (XML/JSON), expiration of the answer (depending on the subject), and the allowed access rate. We expect that the API will respond at a high speed (300-400 msec) and be able to handle a reasonable load.
 
 **Example:** choosing a date and type of specialist shows doctors' updated schedules
-<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0aee_eff2dd7e_orig>
+<img src=http://img-fotki.yandex.ru/get/6805/148869347.0/0_a0b03_a1b4f705_orig>
 
 
 #### API specification based on the Open Graph standard
@@ -158,24 +160,29 @@ Let's look at different types of interactive snippets for the use case of "order
 
 ####Answer with real-time data
 First we'll add real-time data to the interactive snippet. To do this, while loading the search results page, Yandex asynchronously sends a request to the service's API. After the API returns the data, such as the number of taxis available, this data is loaded in the island.
+
 <img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0afd_177fa34d_orig>
 
 ####Transaction button
 Now we will point out that a transaction can be made on the site; in this case, the user can order a taxi. The site must send Yandex the correct internal URL for performing this action. In some cases, the transaction may be performed by a different service and at a separate URL (for example, for buying movie tickets).  
+
 <img src=http://img-fotki.yandex.ru/get/6719/148869347.0/0_a0afe_b69a9c99_orig>
 
 ####Transaction form
 We will add a few fields so the user can choose the trip route or specify it in the search query. For example, in the query [order taxi to train station], we recognize the geographic location and put it in the "To" field. After clicking "Order" the user is redirected to the website for continuing the transaction, and Yandex passes the route parameters to the site.
+
 <img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0afa_e8171299_orig>
 
-To demonstrate interactive search snippets, we have created a ((http://api.an9eldust.lori.yandex.ru/examples/ working sample for the Yandex.Auto service)).
+To demonstrate interactive search snippets, we have created a [working sample for the Yandex.Auto service](http://interactive-answers.webmaster.yandex.com/).
 
 ####Transaction form with real-time preview of results
 Finally, we will make the form interactive &mdash; we will start responding to the user's actions on the form in real-time. In our example, the service's API returns the trip price depending on the selected route.
+
 <img src=http://img-fotki.yandex.ru/get/6829/148869347.0/0_a0afb_9b6d17df_orig>
 
 ####Transaction on SERP in the interface
 In certain cases, when it is to the advantage of both the user and the website owner, the transaction can be completed entirely on the search results page. Examples of this are checking in for a flight or reserving a table at a restaurant. To do this, we still use the form description language and the API for real-time interaction. In the first case, we must describe the fields for entering data for completing the transaction, and in the second case, we will need to expand the API features to send Yandex status updates for the transaction (possible, pending, confirmed, rejected).
 
 The only step left in our example is to enter a name, phone number, and the time to deliver the taxi. If the service's API confirms the order, Yandex will notify the user.
-<img src=http://img-fotki.yandex.ru/get/6802/148869347.0/0_a0afc_96192639_orig>
+
+<img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0b04_e635852d_orig>
