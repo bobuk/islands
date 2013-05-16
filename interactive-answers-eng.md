@@ -7,13 +7,13 @@ Yandex has released the «[Islands](http://beta.yandex.com/)» platform, a new i
 * provide information from your service in real-time. 
 * make transactions on the search results page.
 
-To create interactive snippets, we offer a ((http://wiki.yandex-team.ru/serp/api/specification#jazykopisanijaform form description language)) and guidelines for preparing the ((http://wiki.yandex-team.ru/serp/api/specification#apidljareal-timevzaimodejjstvija API for real-time interaction)). First we document the technologies, then we ((http://wiki.yandex-team.ru/serp/api/specification#primeryinteraktivnyxotvetov review examples)) of how to use them.
+To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First we document the technologies, then we [review examples](#examples-of-interactive-snippets) of how to use them.
 
 **Overview of features** 
   * Form description language.
-  * ((http://wiki.yandex-team.ru/vertikali/serp-api/doc/interactive-answers/search Guidelines)) for describing forms with custom semantics in XML format.
-  * ((http://h.yandex.net/?http%3A%2F%2Fapi.an9eldust.lori.yandex.ru%2Findex%2F Tool)) for testing forms in interactive snippets.
-  * Extension of the Open Graph markup standard for interaction: ((http://wiki.yandex-team.ru/SERP/API/specification#primeropengraph-razmetki web-handler)) (deep link) and ((http://wiki.yandex-team.ru/SERP/API/specification#specifikacijaapipostandartuopengraph http-handler)) (real-time interaction).
+  * [Guidelines](http://help.yandex.com/webmaster/?id=1127882) for describing forms with custom semantics in XML format.
+  * [Tool](http://interactive-answers.webmaster.yandex.com/) for testing forms in interactive snippets.
+  * Extension of the Open Graph markup standard for interaction: [web-handler](#example-of-open-graph-markup) (deep link) and [http-handler](#api-specification-based-on-the-open-graph-standard) (real-time interaction).
 
 This document covers the concepts of interactive snippets in Yandex search. This is the first version of the document, and we welcome feedback. Only the Beta version of the "Interactive answers" tool is currently available, which implements the search form description as a separate XML file. The other types of interactive snippets will be supported in the future.
 
@@ -34,7 +34,7 @@ If your website performs online transactions (such as reservations, registration
 **Example:** transaction button for flight check-in
 file:snimokjekrana2013-05-14v4.40.56.png
 
-####Example of Open Graph markup
+###Example of Open Graph markup
 To indicate that a transaction can be made, you need to add two metatags to the page on your website that you want to bind this action to. For reserving a table at a restaurant, it looks like this: 
 ```html
 <html prefix="og: http://ogp.me/ns#">
@@ -65,7 +65,7 @@ file:snimokjekrana2013-05-14v4.25.26.png
 
 **todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
 
-##Complex forms and dictionaries
+###Complex forms and dictionaries
 For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **[Beta version of interactive snippets](http://interactive-answers.webmaster.yandex.com/)** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **[detailed instructions](http://help.yandex.com/webmaster/?id=1127882)** there.
 
 **Example:** search form for a website about automobiles
@@ -73,7 +73,7 @@ file:snimokjekrana2013-05-14v4.30.45.png
  
 
 ##API for real-time interaction
-To create interactive answers that presume real-time interaction with users, you will need to implement an API on your website. You can notify us that you have added an API either using ((http://wiki.yandex-team.ru/serp/api/specification#specifikacijaapipostandartuopengraph OpenGraph markup)) or in a special section of Yandex.Webmaster. These are the API features that we plan to support on search results pages: 
+To create interactive answers that presume real-time interaction with users, you will need to implement an API on your website. You can notify us that you have added an API either using [Open Graph markup](#api-specification-based-on-the-open-graph-standard) or in a special section of Yandex.Webmaster. These are the API features that we plan to support on search results pages: 
 
 ####The API can return real-time data for a specific page
 For example, for a service, this might be today's weather forecast or an airport departures/arrivals board; for a product page, it could be the price and availability; or for a list page, the number of objects found or a range of prices. In this case, the API must be bound to a specific page on the website.
@@ -155,24 +155,24 @@ In response, the service's API must return the price of a hotel room for the sel
 ##Examples of interactive snippets
 Let's look at different types of interactive snippets for the use case of "ordering a taxi". We will progressively add functional elements, relying on the technologies described above.
 
-##Answer with real-time data
+####Answer with real-time data
 First we'll add real-time data to the interactive snippet. To do this, while loading the search results page, Yandex asynchronously sends a request to the service's API. After the API returns the data, such as the number of taxis available, this data is loaded in the island.
 <{img
 file:snimokjekrana2013-05-14v15.04.23.png}>
 
-##Transaction button
+####Transaction button
 Now we will point out that a transaction can be made on the site; in this case, the user can order a taxi. The site must send Yandex the correct internal URL for performing this action. In some cases, the transaction may be performed by a different service and at a separate URL (for example, for buying movie tickets).  
 <{img
 file:snimokjekrana2013-05-14v15.04.35.png}>
 
-##Transaction form
+####Transaction form
 We will add a few fields so the user can choose the trip route or specify it in the search query. For example, in the query [order taxi to train station], we recognize the geographic location and put it in the "To" field. After clicking "Order" the user is redirected to the website for continuing the transaction, and Yandex passes the route parameters to the site.
 <{img
 file:snimokjekrana2013-05-14v15.04.42.png}>
 
 To demonstrate interactive search snippets, we have created a ((http://api.an9eldust.lori.yandex.ru/examples/ working sample for the Yandex.Auto service)).
 
-##Transaction form with real-time preview of results
+####Transaction form with real-time preview of results
 Finally, we will make the form interactive &mdash; we will start responding to the user's actions on the form in real-time. In our example, the service's API returns the trip price depending on the selected route.
 <{img
 file:snimokjekrana2013-05-14v15.04.54.png}>
