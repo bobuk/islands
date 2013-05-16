@@ -32,7 +32,6 @@ Now we will look at examples: the transaction button, a basic form with a few fi
 If your website performs online transactions (such as reservations, registration, appointment scheduling, or purchases), you can put a transaction button in the search results. After clicking it, a user goes directly to completing the action on your website.  
 
 **Example:** transaction button for flight check-in
-
 <img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0b02_6e7681fd_orig>
 
 ####Example of Open Graph markup
@@ -63,17 +62,12 @@ Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdas
 For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
 
 **Example:** basic form for flight check-in:
-
 <img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
 
 **todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
 
 ###Complex forms and dictionaries
-For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **[Beta version of interactive snippets](http://interactive-answers.webmaster.yandex.com/)** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **[detailed instructions](http://help.yandex.com/webmaster/?id=1127882)** there.
-
-**Example:** search form for a website about automobiles
-file:snimokjekrana2013-05-14v4.30.45.png
- 
+For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **[Beta version of interactive snippets](http://interactive-answers.webmaster.yandex.com/)** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **[detailed instructions](http://help.yandex.com/webmaster/?id=1127882)** there. 
 
 ##API for real-time interaction
 To create interactive answers that presume real-time interaction with users, you will need to implement an API on your website. You can notify us that you have added an API either using [Open Graph markup](#api-specification-based-on-the-open-graph-standard) or in a special section of Yandex.Webmaster. These are the API features that we plan to support on search results pages: 
