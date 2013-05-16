@@ -1,11 +1,11 @@
 #Interactive snippets
 
-Introduction
+##Introduction
 
-Yandex has released the ((http://beta.nodejs.test.spec.yandex.ru/ "Islands" platform)), a new interface and tools that let website owners make their search results interactive.  In particular, you can:
-  – move data entry to the search results page.
-  – provide information from your service in real-time. 
-  – make transactions on the search results page.
+Yandex has released the «[Islands](http://beta.yandex.com/)» platform)), a new interface and tools that let website owners make their search results interactive. In particular, you can:
+* move data entry to the search results page.
+* provide information from your service in real-time. 
+* make transactions on the search results page.
 
 To create interactive snippets, we offer a ((http://wiki.yandex-team.ru/serp/api/specification#jazykopisanijaform form description language)) and guidelines for preparing the ((http://wiki.yandex-team.ru/serp/api/specification#apidljareal-timevzaimodejjstvija API for real-time interaction)). First we document the technologies, then we ((http://wiki.yandex-team.ru/serp/api/specification#primeryinteraktivnyxotvetov review examples)) of how to use them.
 
@@ -18,26 +18,25 @@ To create interactive snippets, we offer a ((http://wiki.yandex-team.ru/serp/api
 This document covers the concepts of interactive snippets in Yandex search. This is the first version of the document, and we welcome feedback. Only the Beta version of the "Interactive answers" tool is currently available, which implements the search form description as a separate XML file. The other types of interactive snippets will be supported in the future.
 
 
-===Form description language===
+##Form description language
 In order for interactive elements to appear in search results, we use a form description language. Using this language, you can describe the fields on a form, specify their types, and list acceptable values. You can submit the form description in two ways: either as markup on the page itself, or in a separate XML/JSON file. We will support both methods.
 
 Lists of acceptable field values (dictionaries) make it possible for Yandex to parse search queries related to your website and put them in the appropriate fields on the form. The user can refine the query using drop-down lists, checkboxes, and so on, and will then be sent to the appropriate URL on your website. 
 
-=====Semantics=====
+###Semantics
 The names of fields and values can be arbitrary or fixed. In certain cases we require that form descriptions follow a semantic standard that has been developed for a particular subject area, such as for flight check-ins. These thematic specifications will be published as appendices to this document. In addition, we are preserving semantics that were already introduced with the launch of our services, such as the semantics for     ((http://help.yandex.ru/webmaster/?id=1112634 Yandex.Amenities)).
 
 Now we will look at examples: the transaction button, a basic form with a few fields, and a complex form with large dictionaries of values. 
 
-====Transaction button====
+###Transaction button
 If your website performs online transactions (such as reservations, registration, appointment scheduling, or purchases), you can put a transaction button in the search results. After clicking it, a user goes directly to completing the action on your website.  
 
-Example: transaction button for flight check-in
+**Example:** transaction button for flight check-in
 file:snimokjekrana2013-05-14v4.40.56.png
 
-=====Example of Open Graph markup=====
+####Example of Open Graph markup
 To indicate that a transaction can be made, you need to add two metatags to the page on your website that you want to bind this action to. For reserving a table at a restaurant, it looks like this: 
-
-%%
+```html
 <html prefix="og: http://ogp.me/ns#">
   <head>
     <meta property="og:type" content="..." />
@@ -48,26 +47,25 @@ To indicate that a transaction can be made, you need to add two metatags to the 
   </head>
   ...
 </html>
-%%
+```
 
-Tags that start with //interaction// are our extension of the open standard Open Graph Protocol (http://ogp.me).
+Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
 
-  //interaction// (interaction ((http://ogp.me/#array array)) ) **mandatory** tag that defines possible actions. Examples are making a reservation at a restaurant ("BookTable" value), reserving a hotel room ("BookHotel" value) and others. We will be publishing specific actions and values for them as products are added.
-  //interaction:web_handler ( ((http://ogp.me/#url URL)) )// - **mandatory** tag that defines the address of the page to go to for completing the action. This can be a page on your website if you can complete the action there, or a page on another website (an aggregator's site) if your site does not offer this feature. 
-  //interaction:paid_service ( ((http://ogp.me/#bool Boolean)) )// - optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise. 
+* **interaction** (interaction [array](http://ogp.me/#array)) &mdash; **mandatory** tag that defines possible actions. Examples are making a reservation at a restaurant ("BookTable" value), reserving a hotel room ("BookHotel" value) and others. We will be publishing specific actions and values for them as products are added.
+* **interaction:web_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the address of the page to go to for completing the action. This can be a page on your website if you can complete the action there, or a page on another website (an aggregator's site) if your site does not offer this feature. 
+* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise. 
 
-Don't forget to set //prefix="og: http://ogp.me/ns#"// in the html tag or head - this is required by the protocol.
+Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdash; this is required by the protocol.
 
-====Basic forms====
-For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag <form>...</form>. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
+###Basic forms
+For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
 
-Example: basic form for flight check-in:
+**Example:** basic form for flight check-in:
 file:snimokjekrana2013-05-14v4.25.26.png
 
+**todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
 
-//todo:// description example in the <form>...</form> tag
-
-====Complex forms and dictionaries====
+##Complex forms and dictionaries
 For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **((http://api.an9eldust.lori.yandex.ru/index/ Beta version of interactive snippets))** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **((http://wiki.yandex-team.ru/vertikali/serp-api/doc/interactive-answers/search detailed instructions))** there.
 
 Example: search form for a website about automobiles
