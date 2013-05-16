@@ -70,6 +70,9 @@ For simple forms that contain a small number of fields, it is convenient to put 
 ###Complex forms and dictionaries
 For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **[Beta version of interactive snippets](http://interactive-answers.webmaster.yandex.com/)** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **[detailed instructions](http://help.yandex.com/webmaster/?id=1127882)** there. 
 
+**Example:** search form for a website about automobiles
+<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0b11_fe663071_orig>
+
 ##API for real-time interaction
 To create interactive answers that presume real-time interaction with users, you will need to implement an API on your website. You can notify us that you have added an API either using [Open Graph markup](#api-specification-based-on-the-open-graph-standard) or in a special section of Yandex.Webmaster. These are the API features that we plan to support on search results pages: 
 
