@@ -32,9 +32,10 @@ Now we will look at examples: the transaction button, a basic form with a few fi
 If your website performs online transactions (such as reservations, registration, appointment scheduling, or purchases), you can put a transaction button in the search results. After clicking it, a user goes directly to completing the action on your website.  
 
 **Example:** transaction button for flight check-in
-file:snimokjekrana2013-05-14v4.40.56.png
+<img src=http://img-fotki.yandex.ru/get/6805/148869347.0/0_a0aed_4a3c3489_orig>
 
-###Example of Open Graph markup
+####Example of Open Graph markup
+
 To indicate that a transaction can be made, you need to add two metatags to the page on your website that you want to bind this action to. For reserving a table at a restaurant, it looks like this: 
 ```html
 <html prefix="og: http://ogp.me/ns#">
@@ -61,7 +62,7 @@ Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdas
 For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
 
 **Example:** basic form for flight check-in:
-file:snimokjekrana2013-05-14v4.25.26.png
+<img src=http://img-fotki.yandex.ru/get/6710/148869347.0/0_a0aec_43606338_orig>
 
 **todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
 
@@ -84,7 +85,7 @@ Parameters that are input to the API may be arbitrary and can be passed to Yande
 Additionally, the API will have specifications for the response format (XML/JSON), expiration of the answer (depending on the subject), and the allowed access rate. We expect that the API will respond at a high speed (300-400 msec) and be able to handle a reasonable load.
 
 **Example:** choosing a date and type of specialist shows doctors' updated schedules
-file:snimokjekrana2013-05-14v4.27.31.png
+<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0aee_eff2dd7e_orig>
 
 
 #### API specification based on the Open Graph standard
@@ -177,7 +178,7 @@ Finally, we will make the form interactive &mdash; we will start responding to t
 <{img
 file:snimokjekrana2013-05-14v15.04.54.png}>
 
-##Transaction on SERP in the interface
+####Transaction on SERP in the interface
 In certain cases, when it is to the advantage of both the user and the website owner, the transaction can be completed entirely on the search results page. Examples of this are checking in for a flight or reserving a table at a restaurant. To do this, we still use the form description language and the API for real-time interaction. In the first case, we must describe the fields for entering data for completing the transaction, and in the second case, we will need to expand the API features to send Yandex status updates for the transaction (possible, pending, confirmed, rejected).
 
 The only step left in our example is to enter a name, phone number, and the time to deliver the taxi. If the service's API confirms the order, Yandex will notify the user.
