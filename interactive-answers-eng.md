@@ -2,21 +2,25 @@
 
 ##Introduction
 
-Yandex has released the «[Islands](http://beta.yandex.com/)» platform, a new interface and tools that let website owners make their search results interactive. In particular, you can:
+Yandex’s a new search platform «[Islands](http://beta.yandex.com/)» gives website owners an interface and tools to make their search results interactive. If you have a website, you can now use Yandex’s search results page to:
+
 * move data entry to the search results page.
 * provide information from your service in real-time. 
 * make transactions on the search results page.
 
-To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First we document the technologies, then we [review examples](#examples-of-interactive-snippets) of how to use them.
+* feature your data entry;
+*	run your real-time information;
+*•	offer your transactions
+
+To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First, we document our technologies, and then we show examples of how to use them.
 
 **Overview of features** 
-  * Form description language.
-  * [Guidelines](http://help.yandex.com/webmaster/?id=1127882) for describing forms with custom semantics in XML format.
-  * [Tool](http://interactive-answers.webmaster.yandex.com/) for testing forms in interactive snippets.
-  * Extension of the Open Graph markup standard for interaction: [web-handler](#example-of-open-graph-markup) (deep link) and [http-handler](#api-specification-based-on-the-open-graph-standard) (real-time interaction).
+* Form description language
+*	[Guidelines](http://help.yandex.com/webmaster/?id=1127882) for describing forms with custom semantics in XML format
+*	Tool for testing forms in interactive snippets
+*	Extension of the Open Graph markup standard for interaction: [web-handler](#example-of-open-graph-markup) (deep link) and [http-handler](#api-specification-based-on-the-open-graph-standard) (real-time interaction)
 
-This document covers the concepts of interactive snippets in Yandex search. This is the first version of the document, and we welcome feedback. Only the Beta version of the "Interactive answers" tool is currently available, which implements the search form description as a separate XML file. The other types of interactive snippets will be supported in the future.
-
+This document covers the concepts of interactive snippets in Yandex Search. This is the first version of the document, and we welcome feedback. Only the beta version of the "Interactive answers" tool is currently available, which implements the search form description as a separate XML file. The other types of interactive snippets will be supported in the future.
 
 ##Form description language
 In order for interactive elements to appear in search results, we use a form description language. Using this language, you can describe the fields on a form, specify their types, and list acceptable values. You can submit the form description in two ways: either as markup on the page itself, or in a separate XML/JSON file. We will support both methods.
@@ -181,6 +185,6 @@ Finally, we will make the form interactive &mdash; we will start responding to t
 ####Transaction on SERP in the interface
 In certain cases, when it is to the advantage of both the user and the website owner, the transaction can be completed entirely on the search results page. Examples of this are checking in for a flight or reserving a table at a restaurant. To do this, we still use the form description language and the API for real-time interaction. In the first case, we must describe the fields for entering data for completing the transaction, and in the second case, we will need to expand the API features to send Yandex status updates for the transaction (possible, pending, confirmed, rejected).
 
-The only step left in our example is to enter a name, phone number, and the time to deliver the taxi. If the service's API confirms the order, Yandex will notify the user.
+The only step left in our example is to enter the name, phone number, and the time to deliver the taxi. If the service's API confirms the order, Yandex will notify the user.
 
 <img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0b04_e635852d_orig>
