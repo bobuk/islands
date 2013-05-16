@@ -7,7 +7,7 @@ Yandex’s a new search platform «[Islands](http://beta.yandex.com/)» gives we
 * move data entry to the search results page.
 * provide information from your service in real-time. 
 * make transactions on the search results page.
-* 
+ 
 To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First, we document our technologies, and then we show examples of how to use them.
 
 **Overview of features** 
