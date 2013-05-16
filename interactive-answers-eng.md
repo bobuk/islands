@@ -62,6 +62,7 @@ Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdas
 For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
 
 **Example:** basic form for flight check-in:
+
 <img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
 
 **todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
