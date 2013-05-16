@@ -91,7 +91,7 @@ Let's look at an example of how to use Open Graph markup for the API and its res
 
 Let's imagine that we want to show the price of a hotel room based on the check-in date (arrival), check-out date (departure) and number of occupants (guests). In addition, to display it correctly, we also need to set the price's currency (currency) and the language for the answer (lang). The user can change the dates for arrival and departure to get the price of a hotel room for the desired dates, without going to the website. The user also gets a URL for continuing the transaction.
 
-**Example of describing the API in Open Graph markup**
+####Example of describing the API in Open Graph markup
 The markup may look like a part of an object description:
 
 ```html
@@ -168,7 +168,7 @@ We will add a few fields so the user can choose the trip route or specify it in 
 
 <img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0afa_e8171299_orig>
 
-To demonstrate interactive search snippets, we have created a [working sample for the Yandex.Auto service](http://interactive-answers.webmaster.yandex.com/).
+To demonstrate interactive search snippets, we have created a [working sample for the Сars.com](http://interactive-answers.webmaster.yandex.com/).
 
 ####Transaction form with real-time preview of results
 Finally, we will make the form interactive &mdash; we will start responding to the user's actions on the form in real-time. In our example, the service's API returns the trip price depending on the selected route.
