@@ -1,8 +1,7 @@
 #Interactive snippets
 
 ##Introduction
-
-Yandex's new search platform, «[Islands](http://beta.yandex.com/)», gives website owners an interface and tools to make their search results interactive. If you have a website, you can now use Yandex’s search results page to:
+[Yandex Islands](http://beta.yandex.com/), a new search platform, gives website owners an interface and tools to create interactive snippets for their websites. 
 
 * move data entry to the search results page.
 * provide information from your service in real-time. 
