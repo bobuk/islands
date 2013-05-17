@@ -2,7 +2,7 @@
 
 ##Introduction
 
-Yandex’s a new search platform «[Islands](http://beta.yandex.com/)» gives website owners an interface and tools to make their search results interactive. If you have a website, you can now use Yandex’s search results page to:
+Yandex's new search platform, «[Islands](http://beta.yandex.com/)», gives website owners an interface and tools to make their search results interactive. If you have a website, you can now use Yandex’s search results page to:
 
 * move data entry to the search results page.
 * provide information from your service in real-time. 
