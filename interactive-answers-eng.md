@@ -1,11 +1,11 @@
 #Interactive snippets
 
 ##Introduction
-[Yandex Islands](http://beta.yandex.com/), a new search platform, gives website owners an interface and tools to create interactive snippets for their websites. 
+[Yandex Islands](http://beta.yandex.com/), a new search platform, gives website owners an interface and tools to create interactive snippets for their websites. If you have a website, you can now use Yandex’s search results page to:
 
-* move data entry to the search results page.
-* provide information from your service in real-time. 
-* make transactions on the search results page.
+* feature your data entry;
+* run your real-time information;
+*- offer your transactions.
  
 To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First, we document our technologies, and then we show examples of how to use them.
 
