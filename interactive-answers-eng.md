@@ -5,7 +5,7 @@
 
 * feature your data entry;
 * run your real-time information;
-*- offer your transactions.
+* offer your transactions.
  
 To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First, we document our technologies, and then we show examples of how to use them.
 
