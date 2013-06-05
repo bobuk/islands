@@ -34,7 +34,8 @@ Alan adları ve alan değerleri isteğe bağlı ya da sabit olabilir. Bazı duru
 gerçekleştiriliyorsa arama sonuçlarına işlem düğmesi koyabilirsiniz. Kullanıcı bu düğmeyi tıkladığında sitenizde işlemi gerçekleştireceği sayfaya gider.
 
 **Örnek:** Uçuş kaydı için işlem düğmesi
-<img src="http://img-fotki.yandex.ru/get/6800/148869347.0/0_a0a9e_7bbf842_orig">
+
+<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0b02_6e7681fd_orig>
 
 #### Open Graph standardında işaretleme örneği
 İşlem yapma olanağını belirtmek için, bu işlemi ilişkilendirmek istediğiniz sayfaya iki meta etiketi eklenmesi gerekir. Bir kafede masa rezervasyonu için görünüm şöyle olur: 
@@ -61,15 +62,16 @@ Ayrıca standardın bir gereği olarak html veya head etiketinde prefix="og: htt
 Az sayıda alan içeren basit formlar için açıklamanın sayfadaki form html etiketinin içinde yapılması uygundur. Schema.org veya Open Graph standartlarında konudaki parametreler sabit ise, form açıklaması işaretleme kullanılarak yapılabilecektir.
 
 **Örnek:** Uçuş kaydı için basit bir form
-<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0ac3_77715c8_orig>
+
+<img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
 
 **todo:** [XForms](http://en.wikipedia.org/wiki/XForms) standardını kullanma olasılığını değerlendirme
 
 ###Karmaşık form ve sözlükler
-Karmaşık arama formları ve büyük sözlükler içeren siteler için, formun ayrı bir dosyada açıklanması daha uygundur. Bu seçenek, web uzmanlarına yönelik interaktif yanıtlar beta sürümü'nde desteklenmektedir. Form düzenleyicisinden yararlanabilirsiniz: Alanlarla ilgili açıklamayı iletebilir ve algoritmamızın işleyişini test edebilirsiniz. Burada ayrıntılı belgeler de bulunmaktadır.
+Karmaşık arama formları ve büyük sözlükler içeren siteler için, formun ayrı bir dosyada açıklanması daha uygundur. Bu seçenek, web uzmanlarına yönelik [interaktif yanıtlar beta sürümü'nde](http://interactive-answers.webmaster.yandex.com.tr/) desteklenmektedir. Form düzenleyicisinden yararlanabilirsiniz: Alanlarla ilgili açıklamayı iletebilir ve algoritmamızın işleyişini test edebilirsiniz. Burada [ayrıntılı belgeler](http://help.yandex.com/webmaster/?id=1127882) de bulunmaktadır.
 
 **Örnek:** Otomobillerle ilgili site için arama formu 
-<img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0ac7_800b06d0_orig> 
+<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0b11_fe663071_orig>
 
 ##Gerçek zamanlı interaktif API
 Kullanıcıyla gerçek zamanlı etkileşim amacına yönelik etkileşimli yanıtlar oluşturmak için, sitenizde API'yi uygulamaya geçirmek gerekir. Sitenizde böyle bir API kullanılmaya başlandığını bize Open Graph işaretlemesi kullanarak veya özel Yandex.Webmaster bölümünde bildirebilirsiniz. Şimdi de, arama sonuçları sayfalarında desteklemeyi planladığımız API özelliklerini vereceğiz.
