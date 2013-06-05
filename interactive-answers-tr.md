@@ -1,22 +1,22 @@
 #İnteraktif yanıtlar
 
 ##Giriş
-Yandex, site sahiplerinin arama sonuçlarındaki yanıtları interaktif hale getirmelerine yardımcı olan yeni bir arabirim ve yeni araçlar olarak "Adalar" platformunu piyasaya sürdü:
+Yandex, site sahiplerinin arama sonuçlarındaki yanıtları interaktif hale getirmelerine yardımcı olan yeni bir arabirim ve yeni araçlar olarak "[Adalar](http://beta.yandex.com.tr/)" platformunu piyasaya sürdü:
 * Veri girişini arama sonuçları sayfasına taşıma
 *	Sunulan bilgileri gerçek zamanlı biçimde iletme
 *	İşlemleri arama sonuçları sayfasına taşıma
 
-İnteraktif yanıtları oluşturmak için form açıklama dili ve Yandex ile gerçek zamanlı etkileşim API'si kullanılmasını öneriyoruz. Burada önce bu teknolojileri gözden geçirerek ve sonra da bunları kullanarak oluşturabileceğiniz yanıt örneklerine geçeceğiz.
+İnteraktif yanıtları oluşturmak için [form açıklama dili](#form-aklama-dili) ve Yandex ile [gerçek zamanlı etkileşim API'si](#gerek-zamanl-interaktif-api) kullanılmasını öneriyoruz. Burada önce bu teknolojileri gözden geçirerek ve sonra da bunları kullanarak oluşturabileceğiniz yanıt örneklerine geçeceğiz.
 
 Özelliklere kısa bir bakış
 *	Form açıklama dili
-*	Xml biçimindeki serbest semantik formun açıklanmasına ilişkin kurallar
-*	İnteraktif arama yanıtında form test etme aracı
-*	Etkileşim için Open Graph işaretleme (markup) standardı uzantısı: web-handler (deep link) ve http-handler (gerçek zamanlı etkileşim).
+*	Xml biçimindeki serbest semantik formun açıklanmasına ilişkin [kurallar](http://help.yandex.com/webmaster/?id=1127882)
+*	İnteraktif arama yanıtında form test etme [aracı](http://interactive-answers.webmaster.yandex.com.tr/)
+*	Etkileşim için Open Graph işaretleme (markup) standardı uzantısı: [web-handler](#open-graph-standardnda-iaretleme-rnei) (deep link) ve [http-handler](#open-graph-standardna-gre-api-belirtimi) (gerçek zamanlı etkileşim).
 
-Bu belge ön belirtim statüsündedir. Yandex aramasında interaktif yanıtları hayata geçirme yollarıyla ilgili görüşlerimizin açıklandığı birinci sürümdür. Site sahipleriyle ortak çalışma sürecinde belirtimle ilgili eksikliklerin tamamlanacağını düşünüyoruz; bu nedenle sizlerden geri bildirim almaktan memnuniyet duyarız.
+Bu belge ön belirtim statüsündedir. Yandex aramasında interaktif yanıtları hayata geçirme yollarıyla ilgili görüşlerimizin açıklandığı birinci sürümdür. Site sahipleriyle ortak çalışma sürecinde belirtimle ilgili eksikliklerin tamamlanacağını düşünüyoruz; bu nedenle sizlerden [geri bildirim](http://contact2.yandex.com.tr/interactive-answers/) almaktan memnuniyet duyarız.
 
-Şu an için, aracın web uzmanlarına yönelik beta sürümü kullanılabilmektedir. Bu araçta örnek olarak Yandex.Oto servisi için aramada interaktif yanıt özelliği kullanılmıştır. Siteniz için böyle bir yanıt oluşturmak isterseniz belgeleri okuyun ve form düzenleyicisinden yararlanın.
+Şu an için, aracın web uzmanlarına yönelik beta sürümü kullanılabilmektedir. Bu araçta örnek olarak Yandex.Oto servisi için [aramada interaktif yanıt](http://interactive-answers.webmaster.yandex.com.tr/) özelliği kullanılmıştır. Siteniz için böyle bir yanıt oluşturmak isterseniz belgeleri okuyun ve form düzenleyicisinden yararlanın.
 
 ##Form açıklama dili
 İnteraktif öğelerin yanıtta görünebilmesi için form açıklama dilinin kullanılmasını öneririz. Bunun yardımıyla formun alanları hakkında bilgi verebilir, türlerini ve olası değerlerini belirtebilirsiniz.
