@@ -1,41 +1,43 @@
-#Interactive snippets
+#İnteraktif yanıtlar
 
-##Introduction
-[Yandex Islands](http://beta.yandex.com/), a new search platform, gives website owners an interface and tools to create interactive snippets for their websites. If you have a website, you can now use Yandex’s search results page to:
+##Giriş
+Yandex, site sahiplerinin arama sonuçlarındaki yanıtları interaktif hale getirmelerine yardımcı olan yeni bir arabirim ve yeni araçlar olarak "Adalar" platformunu piyasaya sürdü:
+* Veri girişini arama sonuçları sayfasına taşıma
+*	Sunulan bilgileri gerçek zamanlı biçimde iletme
+*	İşlemleri arama sonuçları sayfasına taşıma
 
-* feature your data entry;
-* run your real-time information;
-* offer your transactions.
- 
-To create interactive snippets, we offer a [form description language](#form-description-language) and guidelines for preparing the [API for real-time interaction](#api-for-real-time-interaction). First, we document our technologies, and then we show examples of how to use them.
+İnteraktif yanıtları oluşturmak için form açıklama dili ve Yandex ile gerçek zamanlı etkileşim API'si kullanılmasını öneriyoruz. Burada önce bu teknolojileri gözden geçirerek ve sonra da bunları kullanarak oluşturabileceğiniz yanıt örneklerine geçeceğiz.
 
-**Overview of features** 
-* Form description language
-*  [Guidelines](http://help.yandex.com/webmaster/?id=1127882) for describing forms with custom semantics in XML format
-*	Tool for testing forms in interactive snippets
-*	Extension of the Open Graph markup standard for interaction: [web-handler](#example-of-open-graph-markup) (deep link) and [http-handler](#api-specification-based-on-the-open-graph-standard) (real-time interaction)
+Özelliklere kısa bir bakış
+*	Form açıklama dili
+*	Xml biçimindeki serbest semantik formun açıklanmasına ilişkin kurallar
+*	İnteraktif arama yanıtında form test etme aracı
+*	Etkileşim için Open Graph işaretleme (markup) standardı uzantısı: web-handler (deep link) ve http-handler (gerçek zamanlı etkileşim).
 
-This document covers the concepts of interactive snippets in Yandex Search. This is the first version of the document, and we welcome feedback. Only the beta version of the "Interactive answers" tool is currently available, which implements the search form description as a separate XML file. The other types of interactive snippets will be supported in the future.
+Bu belge ön belirtim statüsündedir. Yandex aramasında interaktif yanıtları hayata geçirme yollarıyla ilgili görüşlerimizin açıklandığı birinci sürümdür. Site sahipleriyle ortak çalışma sürecinde belirtimle ilgili eksikliklerin tamamlanacağını düşünüyoruz; bu nedenle sizlerden geri bildirim almaktan memnuniyet duyarız.
 
-##Form description language
-In order for interactive elements to appear in search results, we use a form description language. Using this language, you can describe the fields on a form, specify their types, and list acceptable values. You can submit the form description in two ways: either as markup on the page itself, or in a separate XML/JSON file. We will support both methods.
+Şu an için, aracın web uzmanlarına yönelik beta sürümü kullanılabilmektedir. Bu araçta örnek olarak Yandex.Oto servisi için aramada interaktif yanıt özelliği kullanılmıştır. Siteniz için böyle bir yanıt oluşturmak isterseniz belgeleri okuyun ve form düzenleyicisinden yararlanın.
 
-Lists of acceptable field values (dictionaries) make it possible for Yandex to parse search queries related to your website and put them in the appropriate fields on the form. The user can refine the query using drop-down lists, checkboxes, and so on, and will then be sent to the appropriate URL on your website. 
+##Form açıklama dili
+İnteraktif öğelerin yanıtta görünebilmesi için form açıklama dilinin kullanılmasını öneririz. Bunun yardımıyla formun alanları hakkında bilgi verebilir, türlerini ve olası değerlerini belirtebilirsiniz.
 
-###Semantics
-The names of fields and values can be arbitrary or fixed. In certain cases we require that form descriptions follow a semantic standard that has been developed for a particular subject area, such as for flight check-ins. These thematic specifications will be published as appendices to this document. In addition, we are preserving semantics that were already introduced with the launch of our services, such as the semantics for [Yandex.Amenities](http://help.yandex.ru/webmaster/?id=1112634).
+Form alanlarının açıklaması, sayfanın içinde işaretleme kullanılarak veya ayrı bir xml/json dosyasında Yandex'e bildirilebilir. İki yöntem için de destek vereceğiz.
 
-Now we will look at examples: the transaction button, a basic form with a few fields, and a complex form with large dictionaries of values. 
+Alanların olası değerleri (sözlükler) Yandex'in sitenizi ilgilendiren arama sorgularını çözümlemesine ve değerleri otomatik olarak formun ilgili alanlarına eklemesine olanak sağlar. Kullanıcı; açılan listeleri, onay kutularını vs. kullanarak sorguyu daraltabilir ve bunun yanı sıra düğmeyi tıkladığında sitenizdeki doğru şekilde oluşturulmuş URL'ye gider.
 
-###Transaction button
-If your website performs online transactions (such as reservations, registration, appointment scheduling, or purchases), you can put a transaction button in the search results. After clicking it, a user goes directly to completing the action on your website.  
+###Semantik
+Alan adları ve alan değerleri isteğe bağlı ya da sabit olabilir. Bazı durumlarda form açıklamasının belirli bir tema için geliştirilmiş semantik standarda uygun olmasını zorunlu tutacağız. (Örneğin, uçuş kayıtları yaptırılırken.) Bu tür konu belirtimleri bu belgeye ek olarak yayınlanacaktır. Ayrıca daha önce servislerimizin faaliyete geçmesiyle birlikte kullanılmaya başlanan semantiği devralmayı tasarlıyoruz. (Örneğin, Yandex.Hizmetler için.)
 
-**Example:** transaction button for flight check-in
-<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0b02_6e7681fd_orig>
+Şimdi de şu örnekleri inceleyeceğiz: işlem düğmesi, birkaç alanı içeren basit form ve büyük değer sözlükleri içeren karmaşık form.
 
-####Example of Open Graph markup
+###İşlem düğmesi
+gerçekleştiriliyorsa arama sonuçlarına işlem düğmesi koyabilirsiniz. Kullanıcı bu düğmeyi tıkladığında sitenizde işlemi gerçekleştireceği sayfaya gider.
 
-To indicate that a transaction can be made, you need to add two metatags to the page on your website that you want to bind this action to. For reserving a table at a restaurant, it looks like this: 
+**Örnek:** Uçuş kaydı için işlem düğmesi
+<img src="http://img-fotki.yandex.ru/get/6800/148869347.0/0_a0a9e_7bbf842_orig">
+
+#### Open Graph standardında işaretleme örneği
+İşlem yapma olanağını belirtmek için, bu işlemi ilişkilendirmek istediğiniz sayfaya iki meta etiketi eklenmesi gerekir. Bir kafede masa rezervasyonu için görünüm şöyle olur: 
 ```html
 <html prefix="og: http://ogp.me/ns#">
   <head>
@@ -48,60 +50,57 @@ To indicate that a transaction can be made, you need to add two metatags to the 
   ...
 </html>
 ```
+Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
+* **interaction** (interaction [array](http://ogp.me/#array)): Olası işlemi belirten zorunlu etiket. Örnek olarak restoran rezervasyonu ("BookTable" değeri), otel rezervasyonu ("BookHotel" değeri) vs. verilebilir. Belirli işlemleri ve bunlara ilişkin değerleri ürünler çıktıkça kademeli olarak yayınlayacağız.
+*	**interaction:web_handler** ([URL](http://ogp.me/#url)): İşlemin tamamlanması için gidilmesi gereken sayfanın adresini belirten zorunlu etiket. Bu adres, işlem sayfanızda gerçekleştirilebiliyorsa sitenizin bir sayfası olabileceği gibi, kendi siteniz böyle bir olanak sağlamıyorsa başka bir sitenin sayfası (toplayıcı sayfası) da olabilir.
+*	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerektiğini belirten isteğe bağlı etiket. Etiket belirtilmezse, varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
-Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
+Ayrıca standardın bir gereği olarak html veya head etiketinde prefix="og: http://ogp.me/ns#" öneki belirtilmelidir.
 
-* **interaction** (interaction [array](http://ogp.me/#array)) &mdash; **mandatory** tag that defines possible actions. Examples are making a reservation at a restaurant ("BookTable" value), reserving a hotel room ("BookHotel" value) and others. We will be publishing specific actions and values for them as products are added.
-* **interaction:web_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the address of the page to go to for completing the action. This can be a page on your website if you can complete the action there, or a page on another website (an aggregator's site) if your site does not offer this feature. 
-* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise. 
+###Простая форма
+Для простых форм, которые содержат небольшое количество полей, описание удобно выполнять на самой странице внутри html-тега **form**. Если параметры в тематике зафиксированы в страндартах schema.org или Open Graph, то описание формы можно будет сделать c помощью разметки.
 
-Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdash; this is required by the protocol.
+**Пример:** простая форма для регистрации на рейс
+<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0ac3_77715c8_orig>
 
-###Basic forms
-For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
+**todo:** рассмотреть возможность использования стандарта [XForms](http://en.wikipedia.org/wiki/XForms)
 
-**Example:** basic form for flight check-in:
+###Сложная форма и словари
+Для сайтов, которые содержат сложные поисковые формы и большие словари значений, форму удобнее описывать в отдельном файле. Этот вариант поддержан в **[бета-версии интерактивных ответов](http://interactive-answers.webmaster.yandex.ru/)** для вебмастеров. Вы можете воспользоваться  редактором форм: передать описание полей и протестировать работу нашего алгоритма. Там же размещена **[подробная документация](http://help.yandex.ru/webmaster/?id=1127879)**.
 
-<img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
+**Пример:** поисковая форма для сайта про автомобили
+<img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0ac7_800b06d0_orig> 
 
-**todo:** consider using the [XForms](http://en.wikipedia.org/wiki/XForms) standart 
+##API для real-time взаимодействия
+Для создания интерактивных ответов, которые предполагают реал-тайм взаимодействие c пользователем, на вашем сайте необходимо реализовать API. Сообщить нам о появлении такого API можно будет с помощью  [разметки в Open Graph](#-api---open-graph) или в специальном разделе Яндекс.Вебмастера. Далее приводим возможности API, которые собираемся поддерживать на страницах результатов поиска.
 
-###Complex forms and dictionaries
-For websites that contain complex search forms and large dictionaries of values, it is more convenient to put the form description in a separate file. This option is supported in the **[Beta version of interactive snippets](http://interactive-answers.webmaster.yandex.com/)** for webmasters. You can try out the form editor: submit a form description and test our algorithm for generating the form and parsing queries for your site. You will also find **[detailed instructions](http://help.yandex.com/webmaster/?id=1127882)** there. 
+####API может возвращать real-time данные для конкретной страницы
+Например, для сервиса это могут быть погода на сегодня или табло аэропорта, для страницы товара &mdash; его цена и наличие; для страницы, которая содержит списки объектов, &mdash; количество найденного или диапазон цен. В этом случае API должен быть привязан к конкретной странице сайта.
 
-**Example:** search form for a website about automobiles
-<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0b11_fe663071_orig>
+####API может возвращать real-time данные, в зависимости от входящих параметров
+Параметры на входе API могут быть произвольными и передаваться Яндексу через описание полей и значений формы. В некоторых случаях параметры будут фиксироваться для конкретной тематики (см. подробнее [о семантике](#-1)). Помимо ответа real-time данными API сервиса может перенаправлять пользователя на правильный URL (deep link), который соответствует набранным параметрам в форме и учитывает контекст пользователя (например, регион и язык). 
 
-##API for real-time interaction
-To create interactive answers that presume real-time interaction with users, you will need to implement an API on your website. You can notify us that you have added an API either using [Open Graph markup](#api-specification-based-on-the-open-graph-standard) or in a special section of Yandex.Webmaster. These are the API features that we plan to support on search results pages: 
+Также для API будут специфицированы формат ответа (xml/json), время устаревания ответа (зависит от тематики), разрешенная частота обращений. Мы ожидаем, что API будут отвечать с высокой скоростью (300-400 мсек) и выдерживать некоторую нагрузку.
 
-####The API can return real-time data for a specific page
-For example, for a service, this might be today's weather forecast or an airport departures/arrivals board; for a product page, it could be the price and availability; or for a list page, the number of objects found or a range of prices. In this case, the API must be bound to a specific page on the website.
-
-####The API can return real-time data dependent on input parameters
-Parameters that are input to the API may be arbitrary and can be passed to Yandex in the description of the form's fields and values. In some cases, parameters will be standardized for a particular subject area (see detailed information [on semantics](#semantics). In addition to responding with real-time data, the service's API can redirect the user to the appropriate URL (deep link), which matches the parameters entered in the form and can be sensitive to the user's context (such as region and language).
-
-Additionally, the API will have specifications for the response format (XML/JSON), expiration of the answer (depending on the subject), and the allowed access rate. We expect that the API will respond at a high speed (300-400 msec) and be able to handle a reasonable load.
-
-**Example:** choosing a date and type of specialist shows doctors' updated schedules
-<img src=http://img-fotki.yandex.ru/get/6805/148869347.0/0_a0b03_a1b4f705_orig>
+**Пример:** выбор даты и вида специалиста показывает актуальное расписание врачей
+<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0ac5_c7519c39_orig>
 
 
-#### API specification based on the Open Graph standard
+###Спецификация API по стандарту Open Graph
 
-Let's look at an example of how to use Open Graph markup for the API and its response for a specific area, &laquo;making a hotel reservation&raquo;.
+Покажем на примере, как с помощью разметки в Open Graph может быть специфицировано API и его ответ в конкретной тематике &mdash; &laquo;бронирование отелей&raquo;. 
 
-Let's imagine that we want to show the price of a hotel room based on the check-in date (arrival), check-out date (departure) and number of occupants (guests). In addition, to display it correctly, we also need to set the price's currency (currency) and the language for the answer (lang). The user can change the dates for arrival and departure to get the price of a hotel room for the desired dates, without going to the website. The user also gets a URL for continuing the transaction.
+Представим, что мы хотим показать цену на номер в отеле в зависимости от дат заезда (arrival), выезда (departure) и количества гостей (guests). При этом для корректного отображения необходимо также задать валюту цены (currency) и язык ответа (lang). Изменяя время заезда и выезда пользователь без перехода на сайт получает цену номера в отеле на выбранные даты, а также URL, по которому можно продолжить транзакцию.
 
-####Example of describing the API in Open Graph markup
-The markup may look like a part of an object description:
+#####Пример описания работы API
+Разметка может выглядеть как часть описания объекта:
 
 ```html
 <html prefix="og: http://ogp.me/ns#">
   <head>
     <meta property="og:type" content="..." />
     ...
-    <!--Hotel reservation feature -->
+    <!--Возможность забронировать номер в отеле -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?" /> 
   ...
@@ -110,23 +109,20 @@ The markup may look like a part of an object description:
 </html>
 ```
 
-Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
+Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
-* **interaction:http_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the URL of the API. This URL must work for getting a response that depends on parameters set by the user. 
-* **interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of API request. If omitted, by default the type is assumed to be GET. Acceptable values are GET and POST.
-* **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of response. If omitted, by default the type is assumed to be JSON. Acceptable values are JSON and XML.
-* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise.
+* **interaction:http_handler** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
+* **interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
+* **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
+* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю может потребоваться заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
 
-Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdash; this is required by the protocol.
-
-The same thing, but with optional parameters:
-
+То же, но с указанием необязательных параметров:
 ```html
 <html prefix="og: http://ogp.me/ns#">
   <head>
     <meta property="og:type" content="..." />
     ...
-    <!--Hotel reservation feature -->
+    <!--Возможность забронировать номер в отеле -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
     <meta property="og:interaction:http_handler:response_type" content="GET" />
@@ -136,50 +132,47 @@ The same thing, but with optional parameters:
   ...
 </html>
 ```
+По условиям примера пользователь указывает дату заезда (arrival), выезда (departure) и количества гостей (guests), а параметры &mdash; валюта цены (currency) и язык ответа (lang) мы понимаем из его текущего контекста. Тогда полный запрос к API от Яндекса будет выглядеть так: **http://host/prefix?hotel=433&arrival=2014-12-10&departure=2014-12-21&currency=RUB&lang=RU&guests=2**. 
 
-For this example, the user selects the check-in date (arrival), check-out date (departure) and number of occupants (guests), while we get the price currency (currency) and language (lang) to display based on the current context.  So the complete request from Yandex to the API will look like this: **http://host/prefix?hotel=433&arrival=2014-12-10&departure=2014-12-21&currency=RUB&lang=RU&guests=2**. 
-
-In response, the service's API must return the price of a hotel room for the selected dates, along with a URL where the next step of the transaction will be completed. For example, like this:
-
+В ответ API сервиса должен вернуть цену номера в отеле на выбранные даты, а также URL, на котором происходит следующий шаг транзакции. Например, так:
 ```json
 {
    "price" : {
-     "value" : 3455.00,
+     "value" : 2455.00,
      "currency" : "RUB"
    },
    "url" : "http://host/url"
 }
 ```
 
+##Примеры интерактивных ответов
+Рассмотрим различные варианты интерактивных ответов на примере кейса &laquo;заказ такси&raquo;. Будем последовательно добавлять функциональные элементы, опираясь на описанные выше технологии. 
 
-##Examples of interactive snippets
-Let's look at different types of interactive snippets for the use case of "ordering a taxi". We will progressively add functional elements, relying on the technologies described above.
+####Ответ real-time данными
+Вначале добавим real-time данные в интерактивный ответ. Для этого Яндекс вместе с загрузкой страницы результатов поиска асинхронно запрашивает API сервиса. После того, как API отдает данные, например, количество свободных машин, они догружаются в ответ.
 
-####Answer with real-time data
-First we'll add real-time data to the interactive snippet. To do this, while loading the search results page, Yandex asynchronously sends a request to the service's API. After the API returns the data, such as the number of taxis available, this data is loaded in the island.
+<img src="http://img-fotki.yandex.ru/get/6801/148869347.0/0_a0ae6_8a78dfb5_orig">
 
-<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0afd_177fa34d_orig>
+####Транзакционная кнопка
+Теперь укажем на возможность совершить транзакцию на сайте, в данном случае &mdash; заказать такси. Сайт должен передать Яндексу правильный внутренний URL, на котором выполняется действие. Для некоторых случаев транзакция может выполняться сторонним сервисом и на отдельном URL (например, покупка билета в кино). 
 
-####Transaction button
-Now we will point out that a transaction can be made on the site; in this case, the user can order a taxi. The site must send Yandex the correct internal URL for performing this action. In some cases, the transaction may be performed by a different service and at a separate URL (for example, for buying movie tickets).  
+<img src="http://img-fotki.yandex.ru/get/6706/148869347.0/0_a0ae7_b133c343_orig">
 
-<img src=http://img-fotki.yandex.ru/get/6719/148869347.0/0_a0afe_b69a9c99_orig>
+####Транзакционная форма
+Добавим несколько полей, чтобы пользователь мог указать маршут поездки или сообщить его в поисковом запросе. Например, в запросе [заказ такси до ленинградского вокзала] мы распознаем географию и проставим ее в поле &laquo;Куда&raquo;. По клику на кнопку &laquo;Заказать&raquo; пользователь переходит на сайт для продолжения транзакции, а Яндекс передает сайту параметры указанного маршрута.
 
-####Transaction form
-We will add a few fields so the user can choose the trip route or specify it in the search query. For example, in the query [order taxi to train station], we recognize the geographic location and put it in the "To" field. After clicking "Order" the user is redirected to the website for continuing the transaction, and Yandex passes the route parameters to the site.
+<img src="http://img-fotki.yandex.ru/get/6714/148869347.0/0_a0ae8_d4c52ee1_orig">
 
-<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0afa_e8171299_orig>
+Для демонстрации поискового интерактивного ответа мы подготовили [работающий пример для сервиса Яндекс.Авто](http://interactive-answers.webmaster.yandex.ru/).
 
-To demonstrate interactive search snippets, we have created a [working sample for the Сars.com](http://interactive-answers.webmaster.yandex.com/).
+####Транзакционная форма с real-time предпросмотром результата 
+Наконец, добавим форме интерактивности &mdash; начнем real-time отвечать на работу пользователя с формой. В нашем примере API сервиса возвращает стоимость поездки в зависимости от указанного маршрута.
 
-####Transaction form with real-time preview of results
-Finally, we will make the form interactive &mdash; we will start responding to the user's actions on the form in real-time. In our example, the service's API returns the trip price depending on the selected route.
+<img src="http://img-fotki.yandex.ru/get/6703/148869347.0/0_a0ae9_b9739a01_orig">
 
-<img src=http://img-fotki.yandex.ru/get/6829/148869347.0/0_a0afb_9b6d17df_orig>
+####Транзакция на СЕРПе в интерфейсе
+В некоторых случаях, когда это выгодно и пользователю, и владельцу сайта, транзакцию можно будет полностью провести на странице результатов поиска. Например,  зарегистрироватся на рейс или забронировать столик. Для этого мы по-прежнему будем использовать язык описания форм и API для real-time взаимодействия. В первом случае необходимо описать поля по вводу данных для совершения транзакции, во втором - расширить возможности API и возвращать Яндексу соответствующие статусы по транзакции (&laquo;возможна&raquo;, &laquo;в процессе&raquo;, &laquo;проведена&raquo;, &laquo;отменена&raquo;).
 
-####Transaction on SERP in the interface
-In certain cases, when it is to the advantage of both the user and the website owner, the transaction can be completed entirely on the search results page. Examples of this are checking in for a flight or reserving a table at a restaurant. To do this, we still use the form description language and the API for real-time interaction. In the first case, we must describe the fields for entering data for completing the transaction, and in the second case, we will need to expand the API features to send Yandex status updates for the transaction (possible, pending, confirmed, rejected).
+В нашем примере осталось ввести свое имя, контактный телефон и указать время подачи такси. Если API сервиса подтвердит оформление заказа, Яндекс сообщит об этом пользователю.
 
-The only step left in our example is to enter the name, phone number, and the time to deliver the taxi. If the service's API confirms the order, Yandex will notify the user.
-
-<img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0b04_e635852d_orig>
+<img src="http://img-fotki.yandex.ru/get/6722/148869347.0/0_a0b24_6d6c769a_orig">
