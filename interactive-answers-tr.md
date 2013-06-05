@@ -71,7 +71,7 @@ Az sayıda alan içeren basit formlar için açıklamanın sayfadaki form html e
 Karmaşık arama formları ve büyük sözlükler içeren siteler için, formun ayrı bir dosyada açıklanması daha uygundur. Bu seçenek, web uzmanlarına yönelik [interaktif yanıtlar beta sürümü'nde](http://interactive-answers.webmaster.yandex.com.tr/) desteklenmektedir. Form düzenleyicisinden yararlanabilirsiniz: Alanlarla ilgili açıklamayı iletebilir ve algoritmamızın işleyişini test edebilirsiniz. Burada [ayrıntılı belgeler](http://help.yandex.com/webmaster/?id=1127882) de bulunmaktadır.
 
 **Örnek:** Otomobillerle ilgili site için arama formu 
-<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0b11_fe663071_orig>
+<img src=http://img-fotki.yandex.ru/get/6718/148869347.0/0_a30a0_3c16a67e_orig>
 
 ##Gerçek zamanlı interaktif API
 Kullanıcıyla gerçek zamanlı etkileşim amacına yönelik etkileşimli yanıtlar oluşturmak için, sitenizde API'yi uygulamaya geçirmek gerekir. Sitenizde böyle bir API kullanılmaya başlandığını bize [Open Graph işaretlemesi](#open-graph-standardna-gre-api-belirtimi) kullanarak veya özel Yandex.Webmaster bölümünde bildirebilirsiniz. Şimdi de, arama sonuçları sayfalarında desteklemeyi planladığımız API özelliklerini vereceğiz.
@@ -124,7 +124,7 @@ Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
   <head>
     <meta property="og:type" content="..." />
     ...
-    <!--Возможность забронировать номер в отеле -->
+    <!--Hotel reservation feature -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
     <meta property="og:interaction:http_handler:response_type" content="GET" />
