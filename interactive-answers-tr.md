@@ -1,7 +1,7 @@
 #İnteraktif yanıtlar
 
 ##Giriş
-Yandex, site sahiplerinin arama sonuçlarındaki yanıtları interaktif hale getirmelerine yardımcı olan yeni bir arabirim ve yeni araçlar olarak "[Adalar](http://beta.yandex.com.tr/)" platformunu piyasaya sürdü:
+Yandex, site sahiplerinin arama sonuçlarındaki yanıtları interaktif hale getirmelerine yardımcı olan yeni bir arabirim ve yeni araçlar olarak "[Adalar](http://adalar.yandex.com.tr/)" platformunu piyasaya sürdü:
 * Veri girişini arama sonuçları sayfasına taşıma
 *	Sunulan bilgileri gerçek zamanlı biçimde iletme
 *	İşlemleri arama sonuçları sayfasına taşıma
