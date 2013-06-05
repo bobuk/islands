@@ -132,9 +132,9 @@ Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
   ...
 </html>
 ```
-По условиям примера пользователь указывает дату заезда (arrival), выезда (departure) и количества гостей (guests), а параметры &mdash; валюта цены (currency) и язык ответа (lang) мы понимаем из его текущего контекста. Тогда полный запрос к API от Яндекса будет выглядеть так: **http://host/prefix?hotel=433&arrival=2014-12-10&departure=2014-12-21&currency=RUB&lang=RU&guests=2**. 
+Örnekteki koşullara göre, kullanıcı geliş tarihini (arrival), ayrılış tarihini (departure) ve konuk sayısını (guests) belirtir; para birimi (currency) ve yanıt dili (lang) parametrelerini de geçerli bağlamından anlarız. Böylece Yandex'ten API'ye gönderilen tam sorgu şöyle görünür: **http://host/prefix?hotel=433&arrival=2014-12-10&departure=2014-12-21&currency=RUB&lang=RU&guests=2**.
 
-В ответ API сервиса должен вернуть цену номера в отеле на выбранные даты, а также URL, на котором происходит следующий шаг транзакции. Например, так:
+API servisinin yanıt olarak, seçilen tarihler için otel odası fiyatını ve ayrıca sonraki işlem adımının gerçekleştiği URL'yi vermesi gerekir. Örneğin:
 ```json
 {
    "price" : {
@@ -145,34 +145,36 @@ Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
 }
 ```
 
-##Примеры интерактивных ответов
-Рассмотрим различные варианты интерактивных ответов на примере кейса &laquo;заказ такси&raquo;. Будем последовательно добавлять функциональные элементы, опираясь на описанные выше технологии. 
+##İnteraktif yanıtlara örnekler
+"Taksi çağırma" örnek olay incelemesinde farklı interaktif yanıt seçeneklerini inceleyeceğiz. Yukarıda açıklanan teknolojilere dayanarak işlevsel öğeleri sırayla ekleyeceğiz.
 
-####Ответ real-time данными
-Вначале добавим real-time данные в интерактивный ответ. Для этого Яндекс вместе с загрузкой страницы результатов поиска асинхронно запрашивает API сервиса. После того, как API отдает данные, например, количество свободных машин, они догружаются в ответ.
+####Gerçek zamanlı verilerle yanıt
+Öncelikle, interaktif yanıta gerçek zamanlı verileri ekleyeceğiz. Yandex bunun için, arama sonuçları sayfasının yüklenmesiyle eşzamansız olarak servis API'sini sorgular. Bundan sonra API, verileri gönderdikçe (örneğin, boş otomobil sayısı) bu veriler yanıta yüklenmeye devam eder.
 
 <img src="http://img-fotki.yandex.ru/get/6801/148869347.0/0_a0ae6_8a78dfb5_orig">
 
-####Транзакционная кнопка
-Теперь укажем на возможность совершить транзакцию на сайте, в данном случае &mdash; заказать такси. Сайт должен передать Яндексу правильный внутренний URL, на котором выполняется действие. Для некоторых случаев транзакция может выполняться сторонним сервисом и на отдельном URL (например, покупка билета в кино). 
+####İşlem düğmesi
+Şimdi de sitede bir işlem yapma, yani bu örneğe göre taksi çağırma olanağını belirteceğiz. Sitenin, işlemin gerçekleştirildiği doğru dahili URL'yi Yandex'e göndermesi gerekir. Bazı durumlarda bu işlem üçüncü taraf servislerce ve ayrı bir URL'de gerçekleştirilebilir (örneğin, sinema için bilet alma).
 
 <img src="http://img-fotki.yandex.ru/get/6706/148869347.0/0_a0ae7_b133c343_orig">
 
-####Транзакционная форма
-Добавим несколько полей, чтобы пользователь мог указать маршут поездки или сообщить его в поисковом запросе. Например, в запросе [заказ такси до ленинградского вокзала] мы распознаем географию и проставим ее в поле &laquo;Куда&raquo;. По клику на кнопку &laquo;Заказать&raquo; пользователь переходит на сайт для продолжения транзакции, а Яндекс передает сайту параметры указанного маршрута.
+####İşlem formu
+Kullanıcının yolculuk güzergahını belirtebilmesi veya arama sorgusunda bunu bildirebilmesi için birkaç alan ekleyelim. Örneğin, [Haydarpaşa Garı'na gitmek için taksi çağırma] sorgusunda konumu algılayacağız ve "Nereye" alanına yerleştireceğiz. "Sipariş et" düğmesine basıldığında kullanıcı işleme devam edeceği siteye gider ve Yandex de belirtilen güzergahın parametrelerini siteye iletir.
 
 <img src="http://img-fotki.yandex.ru/get/6714/148869347.0/0_a0ae8_d4c52ee1_orig">
 
-Для демонстрации поискового интерактивного ответа мы подготовили [работающий пример для сервиса Яндекс.Авто](http://interactive-answers.webmaster.yandex.ru/).
+Arama interaktif yanıtını demo olarak göstermek için [Yandex.Oto]() servisi için kullanıma hazır bir örnek hazırladık.
 
-####Транзакционная форма с real-time предпросмотром результата 
-Наконец, добавим форме интерактивности &mdash; начнем real-time отвечать на работу пользователя с формой. В нашем примере API сервиса возвращает стоимость поездки в зависимости от указанного маршрута.
+Для демонстрации поискового интерактивного ответа мы подготовили [работающий пример для сервиса Яндекс.Авто](http://interactive-answers.webmaster.yandex.com.tr/).
+
+####Gerçek zamanlı önizleme sonucunu içeren işlem formu
+Son olarak, forma etkileşim özelliğini ekleyeceğiz ve kullanıcının işlemine gerçek zamanlı olarak yanıt vermeye başlayacağız. Örneğimizde servis API'si, belirtilen güzergaha göre yolculuk maliyetini döndürmektedir.
 
 <img src="http://img-fotki.yandex.ru/get/6703/148869347.0/0_a0ae9_b9739a01_orig">
 
-####Транзакция на СЕРПе в интерфейсе
-В некоторых случаях, когда это выгодно и пользователю, и владельцу сайта, транзакцию можно будет полностью провести на странице результатов поиска. Например,  зарегистрироватся на рейс или забронировать столик. Для этого мы по-прежнему будем использовать язык описания форм и API для real-time взаимодействия. В первом случае необходимо описать поля по вводу данных для совершения транзакции, во втором - расширить возможности API и возвращать Яндексу соответствующие статусы по транзакции (&laquo;возможна&raquo;, &laquo;в процессе&raquo;, &laquo;проведена&raquo;, &laquo;отменена&raquo;).
+####Arabirimde SERP (Arama Motoru Sonuç Sayfası) üzerinde işlem
+Bazı durumlarda, hem kullanıcı hem de site sahibi için uygun olduğunda, işlem tümüyle arama sonuçları sayfasında gerçekleştirilebilecektir. Örneğin, uçuş kaydı veya masa rezervasyonu yapılabilecektir. Bunun için daha önce olduğu gibi form açıklama dilini ve gerçek zamanlı interaktif API'yi kullanırız. Birincisinde, işlemin tamamlanması için veri girişi yapılacak alan açıklanmalı ve ikincisinde de API özelliği genişletilmeli ve işleme göre uygun durum bilgileri ("olası", "işlemde", "gerçekleştirildi", "iptal edildi") Yandex'e geri gönderilmelidir.
 
-В нашем примере осталось ввести свое имя, контактный телефон и указать время подачи такси. Если API сервиса подтвердит оформление заказа, Яндекс сообщит об этом пользователю.
+Örneğimizde, ad ve iletişim bilgilerini girilmesi ve taksi gönderilme saatinin belirtilmesi kalır. Servis API'si siparişin onaylandığını doğrularsa Yandex bunu kullanıcıya bildirir.
 
 <img src="http://img-fotki.yandex.ru/get/6722/148869347.0/0_a0b24_6d6c769a_orig">
