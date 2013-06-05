@@ -35,7 +35,7 @@ gerçekleştiriliyorsa arama sonuçlarına işlem düğmesi koyabilirsiniz. Kull
 
 **Örnek:** Uçuş kaydı için işlem düğmesi
 
-<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0b02_6e7681fd_orig>
+<img src=http://img-fotki.yandex.ru/get/9229/148869347.0/0_a3128_e9c7c1a6_orig>
 
 #### Open Graph standardında işaretleme örneği
 İşlem yapma olanağını belirtmek için, bu işlemi ilişkilendirmek istediğiniz sayfaya iki meta etiketi eklenmesi gerekir. Bir kafede masa rezervasyonu için görünüm şöyle olur: 
@@ -63,7 +63,7 @@ Az sayıda alan içeren basit formlar için açıklamanın sayfadaki form html e
 
 **Örnek:** Uçuş kaydı için basit bir form
 
-<img src=http://img-fotki.yandex.ru/get/6715/148869347.0/0_a0b01_399afda6_orig>
+<img src=http://img-fotki.yandex.ru/get/9153/148869347.0/0_a3127_b9f83a41_orig>
 
 **todo:** [XForms](http://en.wikipedia.org/wiki/XForms) standardını kullanma olasılığını değerlendirme
 
@@ -85,8 +85,8 @@ API giriş parametreleri isteğe bağlı olabilir ve alan açıklamaları ve for
 Ayrıca API için yanıt biçimi (xml/json), yanıt zaman aşımı (konuya bağlı olarak), izin verilen başvuru sıklığı belirtilecektir. API'nin yüksek bir hızla (300-400 ms) yanıt vermesini ve belirli bir yükü kaldırmasını bekliyoruz.
 
 
-**Örnek:** Tarih ve uzman türü seçimi doktorların güncel çizelgesini göstermektedir  
-<img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0ac5_c7519c39_orig>
+**Örnek:** Örnek: belirli bir sinema seçildiğinde, bu sinemadaki güncel film seansları gösterilir 
+<img src=http://img-fotki.yandex.ru/get/9220/148869347.0/0_a3129_512786dd_orig>
 
 
 ###Open Graph standardına göre API belirtimi
