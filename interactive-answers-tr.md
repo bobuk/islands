@@ -57,43 +57,44 @@ Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık 
 
 Ayrıca standardın bir gereği olarak html veya head etiketinde prefix="og: http://ogp.me/ns#" öneki belirtilmelidir.
 
-###Простая форма
-Для простых форм, которые содержат небольшое количество полей, описание удобно выполнять на самой странице внутри html-тега **form**. Если параметры в тематике зафиксированы в страндартах schema.org или Open Graph, то описание формы можно будет сделать c помощью разметки.
+###Basit form
+Az sayıda alan içeren basit formlar için açıklamanın sayfadaki form html etiketinin içinde yapılması uygundur. Schema.org veya Open Graph standartlarında konudaki parametreler sabit ise, form açıklaması işaretleme kullanılarak yapılabilecektir.
 
-**Пример:** простая форма для регистрации на рейс
+**Örnek:** Uçuş kaydı için basit bir form
 <img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0ac3_77715c8_orig>
 
-**todo:** рассмотреть возможность использования стандарта [XForms](http://en.wikipedia.org/wiki/XForms)
+**todo:** [XForms](http://en.wikipedia.org/wiki/XForms) standardını kullanma olasılığını değerlendirme
 
-###Сложная форма и словари
-Для сайтов, которые содержат сложные поисковые формы и большие словари значений, форму удобнее описывать в отдельном файле. Этот вариант поддержан в **[бета-версии интерактивных ответов](http://interactive-answers.webmaster.yandex.ru/)** для вебмастеров. Вы можете воспользоваться  редактором форм: передать описание полей и протестировать работу нашего алгоритма. Там же размещена **[подробная документация](http://help.yandex.ru/webmaster/?id=1127879)**.
+###Karmaşık form ve sözlükler
+Karmaşık arama formları ve büyük sözlükler içeren siteler için, formun ayrı bir dosyada açıklanması daha uygundur. Bu seçenek, web uzmanlarına yönelik interaktif yanıtlar beta sürümü'nde desteklenmektedir. Form düzenleyicisinden yararlanabilirsiniz: Alanlarla ilgili açıklamayı iletebilir ve algoritmamızın işleyişini test edebilirsiniz. Burada ayrıntılı belgeler de bulunmaktadır.
 
-**Пример:** поисковая форма для сайта про автомобили
+**Örnek:** Otomobillerle ilgili site için arama formu 
 <img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0ac7_800b06d0_orig> 
 
-##API для real-time взаимодействия
-Для создания интерактивных ответов, которые предполагают реал-тайм взаимодействие c пользователем, на вашем сайте необходимо реализовать API. Сообщить нам о появлении такого API можно будет с помощью  [разметки в Open Graph](#-api---open-graph) или в специальном разделе Яндекс.Вебмастера. Далее приводим возможности API, которые собираемся поддерживать на страницах результатов поиска.
+##Gerçek zamanlı interaktif API
+Kullanıcıyla gerçek zamanlı etkileşim amacına yönelik etkileşimli yanıtlar oluşturmak için, sitenizde API'yi uygulamaya geçirmek gerekir. Sitenizde böyle bir API kullanılmaya başlandığını bize Open Graph işaretlemesi kullanarak veya özel Yandex.Webmaster bölümünde bildirebilirsiniz. Şimdi de, arama sonuçları sayfalarında desteklemeyi planladığımız API özelliklerini vereceğiz.
 
-####API может возвращать real-time данные для конкретной страницы
-Например, для сервиса это могут быть погода на сегодня или табло аэропорта, для страницы товара &mdash; его цена и наличие; для страницы, которая содержит списки объектов, &mdash; количество найденного или диапазон цен. В этом случае API должен быть привязан к конкретной странице сайта.
+####API, belirli bir sayfa için gerçek zamanlı verileri sonuç olarak getirebilir
+Buna örnek olarak bir servis için bugünkü hava durumu veya havaalanı tarifesi, bir ürün sayfası için ürünün fiyatı ve stok durumu, varlık listesini içeren bir sayfa için bulunanların sayısı veya fiyat aralığı verilebilir. Bu durumda API, sitenin belirli bir sayfasıyla ilişkilendirilmelidir.
 
-####API может возвращать real-time данные, в зависимости от входящих параметров
-Параметры на входе API могут быть произвольными и передаваться Яндексу через описание полей и значений формы. В некоторых случаях параметры будут фиксироваться для конкретной тематики (см. подробнее [о семантике](#-1)). Помимо ответа real-time данными API сервиса может перенаправлять пользователя на правильный URL (deep link), который соответствует набранным параметрам в форме и учитывает контекст пользователя (например, регион и язык). 
+####API, giriş parametrelerine bağlı olarak gerçek zamanlı verileri sonuç olarak getirebilir
+API giriş parametreleri isteğe bağlı olabilir ve alan açıklamaları ve form değerleri aracılığıyla Yandex'e iletilebilir. Bazı durumlarda parametreler belirli bir konu için sabit olacaktır (bkz. semantik hakkında ayrıntılı bilgi). Gerçek zamanlı verilerle sunulan yanıta ek olarak servis API'si, kullanıcıyı, formda girilen parametrelere uygun düşen ve kullanıcının bağlamını (örneğin, bölge ve dil) dikkate alan doğru URL'ye (deep link) yönlendirebilir.
 
-Также для API будут специфицированы формат ответа (xml/json), время устаревания ответа (зависит от тематики), разрешенная частота обращений. Мы ожидаем, что API будут отвечать с высокой скоростью (300-400 мсек) и выдерживать некоторую нагрузку.
+Ayrıca API için yanıt biçimi (xml/json), yanıt zaman aşımı (konuya bağlı olarak), izin verilen başvuru sıklığı belirtilecektir. API'nin yüksek bir hızla (300-400 ms) yanıt vermesini ve belirli bir yükü kaldırmasını bekliyoruz.
 
-**Пример:** выбор даты и вида специалиста показывает актуальное расписание врачей
+
+**Örnek:** Tarih ve uzman türü seçimi doktorların güncel çizelgesini göstermektedir  
 <img src=http://img-fotki.yandex.ru/get/6701/148869347.0/0_a0ac5_c7519c39_orig>
 
 
-###Спецификация API по стандарту Open Graph
+###Open Graph standardına göre API belirtimi
 
-Покажем на примере, как с помощью разметки в Open Graph может быть специфицировано API и его ответ в конкретной тематике &mdash; &laquo;бронирование отелей&raquo;. 
+Open Graph'ta işaretlemeyi kullanarak belirli bir konuda ("otel rezervasyonu") API'nin ve yanıtının nasıl belirtilebileceğini bir örnek üzerinde göstereceğiz.
 
-Представим, что мы хотим показать цену на номер в отеле в зависимости от дат заезда (arrival), выезда (departure) и количества гостей (guests). При этом для корректного отображения необходимо также задать валюту цены (currency) и язык ответа (lang). Изменяя время заезда и выезда пользователь без перехода на сайт получает цену номера в отеле на выбранные даты, а также URL, по которому можно продолжить транзакцию.
+Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayısına (guests) göre otel odası fiyatını göstermek istediğimizi düşünelim. Bununla birlikte, doğru şekilde görüntüleme için para biriminin (currency) ve yanıt dilinin (lang) belirtilmesi de gerekmektedir. Kullanıcı siteye gitmeden geliş ve ayrılış zamanını değiştirerek seçtiği tarihler için otel odası fiyatını ve işleme devam edebileceği URL'yi alır.
 
-#####Пример описания работы API
-Разметка может выглядеть как часть описания объекта:
+#####API işleyişinin açıklanmasıyla ilgili örnek
+İşaretleme, nesne açıklamasının bir parçası olarak görünebilir:
 
 ```html
 <html prefix="og: http://ogp.me/ns#">
@@ -108,15 +109,14 @@ Ayrıca standardın bir gereği olarak html veya head etiketinde prefix="og: htt
   ...
 </html>
 ```
+Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
 
-Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
+*  **interaction:http_handler** (URL): URL API'sini belirten zorunlu etiket. Bu nedenle, URL'nin kullanıcı tarafından girilen parametrelere bağlı olarak yanıt alma olanağı olmalıdır.
+*	**interaction:http_handler:response_type** (enum): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
+*	**interaction:http_handler:response_format** (enum): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
+*	**interaction:paid_service** (Boolean): İşlem adımlarından birinde kullanıcının para ödemesi gerekebileceğini belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
-* **interaction:http_handler** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
-* **interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
-* **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
-* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю может потребоваться заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
-
-То же, но с указанием необязательных параметров:
+Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
 ```html
 <html prefix="og: http://ogp.me/ns#">
   <head>
