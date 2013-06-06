@@ -165,7 +165,7 @@ Kullanıcının yolculuk güzergahını belirtebilmesi veya arama sorgusunda bun
 
 <img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0afa_e8171299_orig>
 
-Arama interaktif yanıtını demo olarak göstermek için [Yandex.Oto](http://interactive-answers.webmaster.yandex.com.tr/) servisi için kullanıma hazır bir örnek hazırladık.
+Arama interaktif yanıtını demo olarak göstermek için [Arabam.com](http://interactive-answers.webmaster.yandex.com.tr/) servisi için kullanıma hazır bir örnek hazırladık.
 
 ####Gerçek zamanlı önizleme sonucunu içeren işlem formu
 Son olarak, forma etkileşim özelliğini ekleyeceğiz ve kullanıcının işlemine gerçek zamanlı olarak yanıt vermeye başlayacağız. Örneğimizde servis API'si, belirtilen güzergaha göre yolculuk maliyetini döndürmektedir.
