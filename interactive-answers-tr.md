@@ -153,28 +153,28 @@ API servisinin yanıt olarak, seçilen tarihler için otel odası fiyatını ve 
 ####Gerçek zamanlı verilerle yanıt
 Öncelikle, interaktif yanıta gerçek zamanlı verileri ekleyeceğiz. Yandex bunun için, arama sonuçları sayfasının yüklenmesiyle eşzamansız olarak servis API'sini sorgular. Bundan sonra API, verileri gönderdikçe (örneğin, boş otomobil sayısı) bu veriler yanıta yüklenmeye devam eder.
 
-<img src=http://img-fotki.yandex.ru/get/6721/148869347.0/0_a0afd_177fa34d_orig>
+<img src=http://img-fotki.yandex.ru/get/6708/148869347.0/0_a3177_4120a800_orig>
 
 ####İşlem düğmesi
 Şimdi de sitede bir işlem yapma, yani bu örneğe göre taksi çağırma olanağını belirteceğiz. Sitenin, işlemin gerçekleştirildiği doğru dahili URL'yi Yandex'e göndermesi gerekir. Bazı durumlarda bu işlem üçüncü taraf servislerce ve ayrı bir URL'de gerçekleştirilebilir (örneğin, sinema için bilet alma).
 
-<img src=http://img-fotki.yandex.ru/get/6719/148869347.0/0_a0afe_b69a9c99_orig>
+<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a3173_3ae7083e_orig>
 
 ####İşlem formu
 Kullanıcının yolculuk güzergahını belirtebilmesi veya arama sorgusunda bunu bildirebilmesi için birkaç alan ekleyelim. Örneğin, [Haydarpaşa Garı'na gitmek için taksi çağırma] sorgusunda konumu algılayacağız ve "Nereye" alanına yerleştireceğiz. "Sipariş et" düğmesine basıldığında kullanıcı işleme devam edeceği siteye gider ve Yandex de belirtilen güzergahın parametrelerini siteye iletir.
 
-<img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a0afa_e8171299_orig>
+<img src=http://img-fotki.yandex.ru/get/9113/148869347.0/0_a3171_41ec6bcd_orig>
 
 Arama interaktif yanıtını demo olarak göstermek için [Arabam.com](http://interactive-answers.webmaster.yandex.com.tr/) servisi için kullanıma hazır bir örnek hazırladık.
 
 ####Gerçek zamanlı önizleme sonucunu içeren işlem formu
 Son olarak, forma etkileşim özelliğini ekleyeceğiz ve kullanıcının işlemine gerçek zamanlı olarak yanıt vermeye başlayacağız. Örneğimizde servis API'si, belirtilen güzergaha göre yolculuk maliyetini döndürmektedir.
 
-<img src=http://img-fotki.yandex.ru/get/6829/148869347.0/0_a0afb_9b6d17df_orig>
+<img src=http://img-fotki.yandex.ru/get/9113/148869347.0/0_a3171_41ec6bcd_orig>
 
 ####Arabirimde SERP (Arama Motoru Sonuç Sayfası) üzerinde işlem
 Bazı durumlarda, hem kullanıcı hem de site sahibi için uygun olduğunda, işlem tümüyle arama sonuçları sayfasında gerçekleştirilebilecektir. Örneğin, uçuş kaydı veya masa rezervasyonu yapılabilecektir. Bunun için daha önce olduğu gibi form açıklama dilini ve gerçek zamanlı interaktif API'yi kullanırız. Birincisinde, işlemin tamamlanması için veri girişi yapılacak alan açıklanmalı ve ikincisinde de API özelliği genişletilmeli ve işleme göre uygun durum bilgileri ("olası", "işlemde", "gerçekleştirildi", "iptal edildi") Yandex'e geri gönderilmelidir.
 
 Örneğimizde, ad ve iletişim bilgilerini girilmesi ve taksi gönderilme saatinin belirtilmesi kalır. Servis API'si siparişin onaylandığını doğrularsa Yandex bunu kullanıcıya bildirir.
 
-<img src=http://img-fotki.yandex.ru/get/6709/148869347.0/0_a0b04_e635852d_orig>
+<img src=http://img-fotki.yandex.ru/get/9060/148869347.0/0_a3172_a5a899bf_orig>
