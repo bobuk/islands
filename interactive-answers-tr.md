@@ -31,7 +31,7 @@ Alan adları ve alan değerleri isteğe bağlı ya da sabit olabilir. Bazı duru
 Şimdi de şu örnekleri inceleyeceğiz: işlem düğmesi, birkaç alanı içeren basit form ve büyük değer sözlükleri içeren karmaşık form.
 
 ###İşlem düğmesi
-gerçekleştiriliyorsa arama sonuçlarına işlem düğmesi koyabilirsiniz. Kullanıcı bu düğmeyi tıkladığında sitenizde işlemi gerçekleştireceği sayfaya gider.
+Sitenizde çevrimiçi ticari işlemler (rezervasyon, kaydolma, kaydetme, satın alma) gerçekleştiriliyorsa arama sonuçlarına işlem düğmesi koyabilirsiniz. Kullanıcı bu düğmeyi tıkladığında sitenizde işlemi gerçekleştireceği sayfaya gider.
 
 **Örnek:** Uçuş kaydı için işlem düğmesi
 
@@ -85,7 +85,7 @@ API giriş parametreleri isteğe bağlı olabilir ve alan açıklamaları ve for
 Ayrıca API için yanıt biçimi (xml/json), yanıt zaman aşımı (konuya bağlı olarak), izin verilen başvuru sıklığı belirtilecektir. API'nin yüksek bir hızla (300-400 ms) yanıt vermesini ve belirli bir yükü kaldırmasını bekliyoruz.
 
 
-**Örnek:** Örnek: belirli bir sinema seçildiğinde, bu sinemadaki güncel film seansları gösterilir 
+**Örnek:** belirli bir sinema seçildiğinde, bu sinemadaki güncel film seansları gösterilir.
 <img src=http://img-fotki.yandex.ru/get/9220/148869347.0/0_a3129_512786dd_orig>
 
 
@@ -151,7 +151,7 @@ API servisinin yanıt olarak, seçilen tarihler için otel odası fiyatını ve 
 "Taksi çağırma" örnek olay incelemesinde farklı interaktif yanıt seçeneklerini inceleyeceğiz. Yukarıda açıklanan teknolojilere dayanarak işlevsel öğeleri sırayla ekleyeceğiz.
 
 ####Gerçek zamanlı verilerle yanıt
-Öncelikle, interaktif yanıta gerçek zamanlı verileri ekleyeceğiz. Yandex bunun için, arama sonuçları sayfasının yüklenmesiyle eşzamansız olarak servis API'sini sorgular. Bundan sonra API, verileri gönderdikçe (örneğin, boş otomobil sayısı) bu veriler yanıta yüklenmeye devam eder.
+Öncelikle, interaktif yanıta gerçek zamanlı verileri ekleyeceğiz. Yandex bunun için, arama sonuçları sayfasının yüklenmesiyle eşzamansız olarak servis API'sini sorgular. Bundan sonra API, verileri gönderdikçe (örneğin, müsait araç sayısı) bu veriler yanıta yüklenmeye devam eder.
 
 <img src=http://img-fotki.yandex.ru/get/6708/148869347.0/0_a3177_4120a800_orig>
 
@@ -161,7 +161,7 @@ API servisinin yanıt olarak, seçilen tarihler için otel odası fiyatını ve 
 <img src=http://img-fotki.yandex.ru/get/6711/148869347.0/0_a3173_3ae7083e_orig>
 
 ####İşlem formu
-Kullanıcının yolculuk güzergahını belirtebilmesi veya arama sorgusunda bunu bildirebilmesi için birkaç alan ekleyelim. Örneğin, [Haydarpaşa Garı'na gitmek için taksi çağırma] sorgusunda konumu algılayacağız ve "Nereye" alanına yerleştireceğiz. "Sipariş et" düğmesine basıldığında kullanıcı işleme devam edeceği siteye gider ve Yandex de belirtilen güzergahın parametrelerini siteye iletir.
+Kullanıcının yolculuk güzergahını belirtebilmesi veya arama sorgusunda bunu bildirebilmesi için birkaç alan ekleyelim. Örneğin, [Haydarpaşa Garı'na gitmek için taksi çağırma] sorgusunda konumu algılayacağız ve "Nereye" alanına yerleştireceğiz. "Taksi çağır" düğmesine basıldığında kullanıcı işleme devam edeceği siteye gider ve Yandex de belirtilen güzergahın parametrelerini siteye iletir.
 
 <img src=http://img-fotki.yandex.ru/get/9113/148869347.0/0_a3171_41ec6bcd_orig>
 
