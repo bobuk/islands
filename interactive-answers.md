@@ -114,7 +114,7 @@
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
 * **interaction:http_handler** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
-* **interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
+* **interaction:http_handler:method** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
 * **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
 * **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю может потребоваться заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
 
@@ -127,7 +127,7 @@
     <!--Возможность забронировать номер в отеле -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:response_type" content="GET" />
+    <meta property="og:interaction:http_handler:method" content="GET" />
     <meta property="og:interaction:http_handler:response_format" content="JSON" />
     ...
   </head>

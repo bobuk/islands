@@ -114,7 +114,7 @@ Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayıs
 Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
 
 *  **interaction:http_handler** ([URL](http://ogp.me/#url)): URL API'sini belirten zorunlu etiket. Bu nedenle, URL'nin kullanıcı tarafından girilen parametrelere bağlı olarak yanıt alma olanağı olmalıdır.
-*	**interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
+*	**interaction:http_handler:method** ([enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
 *	**interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
 *	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerekebileceğini belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
@@ -127,7 +127,7 @@ Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
     <!--Hotel reservation feature -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:response_type" content="GET" />
+    <meta property="og:interaction:http_handler:method" content="GET" />
     <meta property="og:interaction:http_handler:response_format" content="JSON" />
     ...
   </head>
