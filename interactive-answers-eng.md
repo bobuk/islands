@@ -113,7 +113,7 @@ The markup may look like a part of an object description:
 Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
 
 * **interaction:http_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the URL of the API. This URL must work for getting a response that depends on parameters set by the user. 
-* **interaction:http_handler:response_type** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of API request. If omitted, by default the type is assumed to be GET. Acceptable values are GET and POST.
+* **interaction:http_handler:method** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of API request. If omitted, by default the type is assumed to be GET. Acceptable values are GET and POST.
 * **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of response. If omitted, by default the type is assumed to be JSON. Acceptable values are JSON and XML.
 * **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise.
 
@@ -129,7 +129,7 @@ The same thing, but with optional parameters:
     <!--Hotel reservation feature -->
     <meta property="og:interaction" content="BookHotel" /> 
     <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:response_type" content="GET" />
+    <meta property="og:interaction:http_handler:method" content="GET" />
     <meta property="og:interaction:http_handler:response_format" content="JSON" />
     ...
   </head>
