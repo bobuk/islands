@@ -40,12 +40,12 @@
 #### Пример разметки в стандарте Open Graph
 Чтобы указать на возможность проведения транзакции, нужно добавить два мета-тега на страницу, к которой вы хотите привязать это действие. Для бронирования столика в кафе это выглядит так: 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="og:interaction" content="BookTable" /> 
-    <meta property="og:interaction:web_handler" content="http://menu.ru/order/table" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/goods/124123#buy" />
   ...
   </head>
   ...
@@ -53,11 +53,12 @@
 ```
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
-* **interaction** (interaction [array](http://ogp.me/#array)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "BookTable"), бронирование отеля (значение "BookHotel") и др. Конкретные действия и значения к ним мы будем публиковать постепенно по мере появления продуктов.
-* **interaction:web_handler** ([URL](http://ogp.me/#url)) &mdash; **обязательный** тег, обозначающий адрес страницы, на которую нужно перейти для совершения действия. Это может быть как страница на вашем сайте, если действие можно совершить на нём, так и страница на другом сайте (сайте агрегатора), если ваш сайт такой возможности не предоставляет. 
-* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю потребуется заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
+* **interaction** ([array](http://ogp.me/#array)) &mdash; **обязательный** тег, показывающей какого типа интерактивный ответ описан. Для транзакционных кнопок значение должно быть "BUTTON"
+* **interaction:type** ([array](http://ogp.me/#array)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "BookAction"), покупка товара (значение "BuyAction") и др. Текущий перечень доступных действий опубликован в [документации] (http://help.yandex.ru/webmaster/?id=1127950#actions)
+* **interaction:url** ([URL](http://ogp.me/#url)) &mdash; **обязательный** тег, обозначающий адрес страницы, на которую нужно перейти для совершения действия. Это может быть как страница на вашем сайте, если действие можно совершить на нём, так и страница на другом сайте (сайте агрегатора), если ваш сайт такой возможности не предоставляет. 
 
-Также требуется указать prefix="og: http://ogp.me/ns#" в теге html или head &mdash; это требование стандарта.
+
+Также требуется указать prefix="ya: http://webmaster.yandex.ru/vocabularies/" в теге html или head &mdash; это требование стандарта.
 
 ###Простая форма
 Для простых форм, которые содержат небольшое количество полей, описание удобно выполнять на самой странице внутри html-тега **form**. Если параметры в тематике зафиксированы в страндартах schema.org или Open Graph, то описание формы можно будет сделать c помощью разметки.
@@ -98,13 +99,12 @@
 Разметка может выглядеть как часть описания объекта:
 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="BUTTON" />
     ...
-    <!--Возможность забронировать номер в отеле -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/hotel/124123#book" />
   ...
   </head>
   ...
@@ -113,22 +113,22 @@
 
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
-* **interaction:http_handler** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
-* **interaction:http_handler:method** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
-* **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
+* **interaction:url** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
+* **interaction:url:method** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
+* **interaction:url:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
 * **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю может потребоваться заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
 
 То же, но с указанием необязательных параметров:
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
     ...
     <!--Возможность забронировать номер в отеле -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:method" content="GET" />
-    <meta property="og:interaction:http_handler:response_format" content="JSON" />
+    <meta property="ya:interaction" content="BUTTON" />
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
+    <meta property="ya:interaction:url:method" content="GET" />
+    <meta property="ya:interaction:url:response_format" content="JSON" />
     ...
   </head>
   ...
