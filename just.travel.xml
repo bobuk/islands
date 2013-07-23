@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="/ru/yandex/serpapi/xsd/site-0.0.1.xsd"
-      xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1">
+<site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
     <title>Найти авиабилеты</title>
     <rootUrl>http://www.just.travel/avia/search/</rootUrl>
     <protocol>HTTP</protocol>
