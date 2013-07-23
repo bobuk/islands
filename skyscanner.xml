@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="/ru/yandex/serpapi/xsd/site-0.0.1.xsd"
+      xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1">
+
+    <rootUrl>http://www.skyscanner.ru/?associateid=AFF_DIR_00047_00001&amp;utm_medium=organic&amp;utm_source=yandex&amp;utm_campaign=islands</rootUrl>
+    <title>Найти авиабилеты</title>
+    <description>Скайсканер – бесплатный поисковик дешевых авиабилетов онлайн. Сравните тысячи рейсов и выбирайте самое выгодное предложение.
+    </description>
+    <metricaCounterId>541364</metricaCounterId>
+    <resource>
+        <fixed name="http://www.skyscanner.ru/flights">
+            <placeholder name="oplace">
+                <placeholder name="iplace">
+                    <placeholder name="odate">
+                        <placeholder name="idate" required="false"/>
+                    </placeholder>
+                </placeholder>
+            </placeholder>
+        </fixed>
+    </resource>
+    <filters>
+        <constant key="associateid">
+            <description caption="associateid">
+                <setParameter name="AFF_DIR_00047_00001"/>
+            </description>
+        </constant>
+        <constant key="utm_medium">
+            <description caption="utm_medium">
+                <setParameter name="organic"/>
+            </description>
+        </constant>
+        <constant key="utm_source">
+            <description caption="utm_source">
+                <setParameter name="yandex"/>
+            </description>
+        </constant>
+        <constant key="utm_campaign">
+            <description caption="utm_campaign">
+                <setParameter name="islands"/>
+            </description>
+        </constant>
+        <rangeGeo>
+            <description caption="Маршрут">
+                <modifyResource placeholder="oplace"/>
+                <modifyResource placeholder="iplace"/>
+            </description>
+            <geoValue key="MOSC" caption="Москва, Россия, MOSC" />
+            <geoValue key="LED" caption="Санкт-Петербург, Россия, LED" />
+            <geoValue key="SVX" caption="Екатеринбург, Россия, SVX" />
+            <geoValue key="OVB" caption="Новосибирск, Россия, OVB" />
+            <geoValue caption="Сочи, Россия, AER" key="AER"/>
+            <geoValue key="AES" caption="Аалезунд Вигра, Норвегия, AES" />
+            <geoValue key="AAR" caption="Аархус, Дания, AAR" />
+            <geoValue key="ABZ" caption="Абердин, Великобритания, ABZ" />
+            <geoValue key="AUH" caption="Абу-Даби Интернешнл, Объединённые Арабские Эмираты, AUH" />
+            <geoValue key="ABV" caption="Абуджа, Нигерия, ABV" />
+            <geoValue key="AHB" caption="Абха, Саудовская Аравия, AHB" />
+            <geoValue key="AVN" caption="Авиньон, Франция, AVN" />
+            <geoValue key="AGA" caption="Агадир, Марокко, AGA" />
+            <geoValue key="BQN" caption="Агуадилла, Пуэрто-Рико, BQN" />
+            <geoValue key="ADA" caption="Адана, Турция, ADA" />
+            <geoValue key="ADL" caption="Аделаида, Австралия, ADL" />
+            <geoValue key="ADE" caption="Аден, Йемен, ADE" />
+            <geoValue key="AEG" caption="Аек Годанг, Индонезия, AEG" />
+            <geoValue key="IDA" caption="Айдахо Фоллс, США, IDA" />
+            <geoValue key="YIV" caption="Айленд Лейк, Канада, YIV" />
+            <geoValue key="AQJ" caption="Акаба, Иордания, AQJ" />
+            <geoValue key="ACD" caption="Аканди, Колумбия, ACD" />
+            <geoValue key="AEY" caption="Акюрейри, Исландия, AEY" />
+            <geoValue key="ALS" caption="Аламоза, США, ALS" />
+            <geoValue key="AHO" caption="Алгэро Сардиния, Италия, AHO" />
+            <geoValue key="HBE" caption="Александрия Борг Эль Араб , Египет, HBE" />
+            <geoValue key="AXD" caption="Александроаполис Димокритос, Греция, AXD" />
+            <geoValue key="ALG" caption="Алжир, Алжир, ALG" />
+            <geoValue key="ALC" caption="Аликанте, Испания, ALC" />
+            <geoValue key="ASP" caption="Алис-Спрингс, Австралия, ASP" />
+            <geoValue key="ALA" caption="Алма-Ата, Казахстан, ALA" />
+            <geoValue key="LEI" caption="Алмерия, Испания, LEI" />
+            <geoValue key="ARD" caption="Алор Айленд, Индонезия, ARD" />
+            <geoValue key="AOR" caption="Алор Сетар, Малайзия, AOR" />
+            <geoValue key="GUR" caption="Алотау, Папуа-Новая Гвинея, GUR" />
+            <geoValue key="AAY" caption="Аль Гэйда, Йемен, AAY" />
+            <geoValue key="AHU" caption="Аль Хосеима Чариф Идр, Марокко, AHU" />
+            <geoValue key="AAN" caption="Аль-Айн, Объединённые Арабские Эмираты, AAN" />
+            <geoValue key="ACH" caption="Альтенрхеин, Швейцария, ACH" />
+            <geoValue key="AMM" caption="Амман Куин Алия, Иордания, AMM" />
+            <geoValue key="ATQ" caption="Амритсар, Индия, ATQ" />
+            <geoValue key="AMS" caption="Амстердамский Схипхол, Нидерланды, AMS" />
+            <geoValue key="VLY" caption="Англези, Великобритания, VLY" />
+            <geoValue key="ESB" caption="Анкара Эзенбога, Турция, ESB" />
+            <geoValue key="AOI" caption="Анкона, Италия, AOI" />
+            <geoValue key="ANC" caption="Анкоридж Интернешнл, США, ANC" />
+            <geoValue key="AYT" caption="Анталья, Турция, AYT" />
+            <geoValue key="ANR" caption="Антверпен, Бельгия, ANR" />
+            <geoValue key="AOJ" caption="Аомори, Япония, AOJ" />
+            <geoValue key="MFM" caption="Аомынь, Аомынь, MFM" />
+            <geoValue key="APO" caption="Апартадо, Колумбия, APO" />
+            <geoValue key="ATW" caption="Апплетон, США, ATW" />
+            <geoValue key="ARW" caption="Арад, Румыния, ARW" />
+            <geoValue key="GPA" caption="Араксос, Греция, GPA" />
+            <geoValue key="AXM" caption="Армения, Колумбия, AXM" />
+            <geoValue key="AUA" caption="Аруба, Аруба, AUA" />
+            <geoValue key="ARK" caption="Аруша, Танзания, ARK" />
+            <geoValue key="TSE" caption="Астана, Казахстан, TSE" />
+            <geoValue key="OVD" caption="Астурия, Испания, OVD" />
+            <geoValue key="ATZ" caption="Асьют, Египет, ATZ" />
+            <geoValue key="AXK" caption="Атак, Йемен, AXK" />
+            <geoValue key="ABU" caption="Атамбуа, Индонезия, ABU" />
+            <geoValue key="ATL" caption="Атланта Хартсфилд-Джаксон АТЛ, США, ATL" />
+            <geoValue key="ACY" caption="Атлантик-Сити Интернешнл, США, ACY" />
+            <geoValue key="ATH" caption="Афины Интернешнл, Греция, ATH" />
+            <geoValue key="AHN" caption="Афины, США, AHN" />
+            <geoValue key="AMD" caption="Ахмадабад, Индия, AMD" />
+            <geoValue key="AVL" caption="Ашвилл, США, AVL" />
+            <geoValue key="HTS" caption="Ашланд, США, HTS" />
+            <geoValue key="ZRI" caption="Аэропорт Серуи (Суджарво Тьондронегоро), Индонезия, ZRI" />
+            <geoValue key="AJA" caption="Аяччо, Франция, AJA" />
+            <geoValue key="BGW" caption="Багдад Ал Матана, Ирак, BGW" />
+            <geoValue key="BJW" caption="Баджоа, Индонезия, BJW" />
+            <geoValue key="NKM" caption="База ВВС Нагоя (Комаки), Япония, NKM" />
+            <geoValue key="BSL" caption="Базель Мюльхаус Фрайбург, Швейцария, BSL" />
+            <geoValue key="BGA" caption="Бакараманга, Колумбия, BGA" />
+            <geoValue key="BKZ" caption="Бакоба, Танзания, BKZ" />
+            <geoValue key="BCD" caption="Баколод, Филиппины, BCD" />
+            <geoValue key="GYD" caption="Баку Гайдар Алиев, Азербайджан, GYD" />
+            <geoValue key="BPN" caption="Баликпапан, Индонезия, BPN" />
+            <geoValue key="BUL" caption="Балоло, Папуа-Новая Гвинея, BUL" />
+            <geoValue key="BWI" caption="Балтимор Болт / Уош, США, BWI" />
+            <geoValue key="BLR" caption="Бангалор, Индия, BLR" />
+            <geoValue key="DMK" caption="Бангкок Дон Мунг, Таиланд, DMK" />
+            <geoValue key="BKK" caption="Бангкок Суварнабхуми, Таиланд, BKK" />
+            <geoValue key="BKKT" caption="Бангкок, Таиланд, BKKT" />
+            <geoValue key="BGR" caption="Бангор, США, BGR" />
+            <geoValue key="BTJ" caption="Банда Асех, Индонезия, BTJ" />
+            <geoValue key="BDO" caption="Банданг, Индонезия, BDO" />
+            <geoValue key="TKG" caption="Бандар Лампанг, Индонезия, TKG" />
+            <geoValue key="BWN" caption="Бандар-Сери-Бегаван, Бруней, BWN" />
+            <geoValue key="BDJ" caption="Банджармазин, Индонезия, BDJ" />
+            <geoValue key="BJL" caption="Банжул, Гамбия, BJL" />
+            <geoValue key="BAV" caption="Баотоу, Китай, BAV" />
+            <geoValue key="BRI" caption="Бари, Италия, BRI" />
+            <geoValue key="BRR" caption="Барра, Великобритания, BRR" />
+            <geoValue key="BAQ" caption="Барранкуилла, Колумбия, BAQ" />
+            <geoValue key="BCN" caption="Барселона, Испания, BCN" />
+            <geoValue key="BSR" caption="Басра, Ирак, BSR" />
+            <geoValue key="BQB" caption="Басселтон, Австралия, BQB" />
+            <geoValue key="BIA" caption="Бастия-Корсика, Франция, BIA" />
+            <geoValue key="BSC" caption="Бахия Солано, Колумбия, BSC" />
+            <geoValue key="BAH" caption="Бахрейн, Бахрейн, BAH" />
+            <geoValue key="BZR" caption="Безирс, Франция, BZR" />
+            <geoValue key="BEY" caption="Бейрут, Ливан, BEY" />
+            <geoValue key="BEG" caption="Белград Никола Тесла, Сербия, BEG" />
+            <geoValue key="BLV" caption="Беллевилл, США, BLV" />
+            <geoValue key="BLI" caption="Беллинэм, США, BLI" />
+            <geoValue key="BHD" caption="Белфаст Сити, Великобритания, BHD" />
+            <geoValue key="BELF" caption="Белфаст, Великобритания, BELF" />
+            <geoValue key="BFS" caption="Белфастский Международный, Великобритания, BFS" />
+            <geoValue key="BEB" caption="Бенбекала, Великобритания, BEB" />
+            <geoValue key="BKS" caption="Бенгкалу, Индонезия, BKS" />
+            <geoValue key="BUR" caption="Бербанк, США, BUR" />
+            <geoValue key="BGO" caption="Берген, Норвегия, BGO" />
+            <geoValue key="YBV" caption="Беренс Ривер, Канада, YBV" />
+            <geoValue key="EGC" caption="Бержерак, Франция, EGC" />
+            <geoValue key="TXL" caption="Берлин Тегель, Германия, TXL" />
+            <geoValue key="SXF" caption="Берлин Шонефельд, Германия, SXF" />
+            <geoValue key="BERL" caption="Берлин, Германия, BERL" />
+            <geoValue key="BRL" caption="Берлингтон, США, BRL" />
+            <geoValue key="BRN" caption="Берн, Швейцария, BRN" />
+            <geoValue key="BEJ" caption="Беро, Индонезия, BEJ" />
+            <geoValue key="BIK" caption="Биак, Индонезия, BIK" />
+            <geoValue key="BIQ" caption="Биарритз, Франция, BIQ" />
+            <geoValue key="BLL" caption="Билланд , Дания, BLL" />
+            <geoValue key="BIL" caption="Биллингс, США, BIL" />
+            <geoValue key="BIO" caption="Бильбао, Испания, BIO" />
+            <geoValue key="BMU" caption="Бима, Индонезия, BMU" />
+            <geoValue key="BTU" caption="Бинталу, Малайзия, BTU" />
+            <geoValue key="BHX" caption="Бирмингем, Великобритания, BHX" />
+            <geoValue key="BIS" caption="Бисмарк, США, BIS" />
+            <geoValue key="BHE" caption="Бленхеим, Новая Зеландия, BHE" />
+            <geoValue key="BMI" caption="Блумингтон-Нормал, США, BMI" />
+            <geoValue key="BLK" caption="Блэкпул, Великобритания, BLK" />
+            <geoValue key="BVC" caption="Боа Виста, Кабо-Верде, BVC" />
+            <geoValue key="BUW" caption="Бобо, Индонезия, BUW" />
+            <geoValue key="BOG" caption="Богота, Колумбия, BOG" />
+            <geoValue key="BJV" caption="Бодрум, Турция, BJV" />
+            <geoValue key="BZN" caption="Боземан, США, BZN" />
+            <geoValue key="BOI" caption="Боиз, США, BOI" />
+            <geoValue key="BOC" caption="Бокас Дэль Торо, Панама, BOC" />
+            <geoValue key="BLQ" caption="Болонья Интернэшнл, Италия, BLQ" />
+            <geoValue key="BOD" caption="Бордо, Франция, BOD" />
+            <geoValue key="BOH" caption="Борнмут, Великобритания, BOH" />
+            <geoValue key="BOS" caption="Бостон Логан Интернешнл, США, BOS" />
+            <geoValue key="YBR" caption="Брандон, Канада, YBR" />
+            <geoValue key="BTS" caption="Братислава, Словакия, BTS" />
+            <geoValue key="BRE" caption="Бремен, Германия, BRE" />
+            <geoValue key="BES" caption="Брест, Франция, BES" />
+            <geoValue key="BVE" caption="Брив – Валле-де-ла-Дордонь, Франция, BVE" />
+            <geoValue key="BGI" caption="Бриджтаун, Барбадос, BGI" />
+            <geoValue key="BDS" caption="Бриндизи, Италия, BDS" />
+            <geoValue key="BNE" caption="Брисбен, Австралия, BNE" />
+            <geoValue key="BRS" caption="Бристоль, Великобритания, BRS" />
+            <geoValue key="BRQ" caption="Брно-Туржаны, Чешская республика, BRQ" />
+            <geoValue key="YBT" caption="Брочет, Канада, YBT" />
+            <geoValue key="BME" caption="Брум, Австралия, BME" />
+            <geoValue key="BRU" caption="Брюссель Интернэшнл, Бельгия, BRU" />
+            <geoValue key="CRL" caption="Брюссель С. Шарлеруа, Бельгия, CRL" />
+            <geoValue key="BRUS" caption="Брюссель, Бельгия, BRUS" />
+            <geoValue key="BUD" caption="Будапешт, Венгрия, BUD" />
+            <geoValue key="BUA" caption="Бука, Папуа-Новая Гвинея, BUA" />
+            <geoValue key="UOL" caption="Буол, Индонезия, UOL" />
+            <geoValue key="BOJ" caption="Бургас, Болгария, BOJ" />
+            <geoValue key="OTP" caption="Бухарест Отопени, Румыния, OTP" />
+            <geoValue key="BZG" caption="Быдгощ, Польша, BZG" />
+            <geoValue key="BTH" caption="Бэйтам, Индонезия, BTH" />
+            <geoValue key="BAL" caption="Бэтмен, Турция, BAL" />
+            <geoValue key="VXO" caption="Ваксджо, Швеция, VXO" />
+            <geoValue key="VDE" caption="Валверд Хирро, Испания, VDE" />
+            <geoValue key="VLC" caption="Валенсия, Испания, VLC" />
+            <geoValue key="VLL" caption="Вальядолид, Испания, VLL" />
+            <geoValue key="VAI" caption="Ванимо, Папуа-Новая Гвинея, VAI" />
+            <geoValue key="YVR" caption="Ванкувер Интернешнл, Канада, YVR" />
+            <geoValue key="VRA" caption="Варадеро, Куба, VRA" />
+            <geoValue key="VNS" caption="Варанаси, Индия, VNS" />
+            <geoValue key="VRK" caption="Варкос, Финляндия, VRK" />
+            <geoValue key="VAR" caption="Варна, Болгария, VAR" />
+            <geoValue key="WMI" caption="Варшава Модлин, Польша, WMI" />
+            <geoValue key="WARS" caption="Варшава, Польша, WARS" />
+            <geoValue key="WUH" caption="Вахан, Китай, WUH" />
+            <geoValue key="IAD" caption="Вашингтон Далльз, США, IAD" />
+            <geoValue key="DCA" caption="Вашингтон Рональд Рейган, США, DCA" />
+            <geoValue key="WASA" caption="Вашингтон, США, WASA" />
+            <geoValue key="WLG" caption="Веллингтон, Новая Зеландия, WLG" />
+            <geoValue key="VIE" caption="Вена, Австрия, VIE" />
+            <geoValue key="VCE" caption="Венеция Марко Поло, Италия, VCE" />
+            <geoValue key="TSF" caption="Венеция Тревизо, Италия, TSF" />
+            <geoValue key="VENI" caption="Венеция, Италия, VENI" />
+            <geoValue key="WNZ" caption="Венжоу, Китай, WNZ" />
+            <geoValue key="VEL" caption="Вернал, США, VEL" />
+            <geoValue key="VRN" caption="Верона Интернэшнл, Италия, VRN" />
+            <geoValue key="PBI" caption="Вест-Палм-Бич Интернешнл, США, PBI" />
+            <geoValue key="WWK" caption="Веуок, Папуа-Новая Гвинея, WWK" />
+            <geoValue key="VGO" caption="Виго, Испания, VGO" />
+            <geoValue key="VIS" caption="Визалия, США, VIS" />
+            <geoValue key="WIC" caption="Вик, Великобритания, WIC" />
+            <geoValue key="ISN" caption="Виллистон, США, ISN" />
+            <geoValue key="VNO" caption="Вильнюс, Литва, VNO" />
+            <geoValue key="YWG" caption="Виннипег, Канада, YWG" />
+            <geoValue key="VBY" caption="Висби, Швеция, VBY" />
+            <geoValue key="ICT" caption="Вичита Мид-Континент, США, ICT" />
+            <geoValue key="VOL" caption="Волос, Греция, VOL" />
+            <geoValue key="WRO" caption="Вроцлав, Польша, WRO" />
+            <geoValue key="VTE" caption="Вьентьян, Лаос, VTE" />
+            <geoValue key="HAV" caption="Гавана, Куба, HAV" />
+            <geoValue key="GZT" caption="Газиантеп, Турция, GZT" />
+            <geoValue key="GZP" caption="Газипаса, Турция, GZP" />
+            <geoValue key="HAM" caption="Гамбург Интернэшнл, Германия, HAM" />
+            <geoValue key="LBC" caption="Гамбург Любек, Германия, LBC" />
+            <geoValue key="HAMB" caption="Гамбург, Германия, HAMB" />
+            <geoValue key="HAJ" caption="Ганновер, Германия, HAJ" />
+            <geoValue key="KUV" caption="Гансан, Корея (Южная), KUV" />
+            <geoValue key="ELQ" caption="Гассим, Саудовская Аравия, ELQ" />
+            <geoValue key="GAY" caption="Гая, Индия, GAY" />
+            <geoValue key="GUA" caption="Гватемала Сити, Гватемала, GUA" />
+            <geoValue key="GDN" caption="Гданьск, Польша, GDN" />
+            <geoValue key="GOA" caption="Генуя, Италия, GOA" />
+            <geoValue key="GCI" caption="Гернси, Гернси, GCI" />
+            <geoValue key="GIB" caption="Гибралтар, Гибралтар, GIB" />
+            <geoValue key="GLA" caption="Глазго Интернэшнл, Великобритания, GLA" />
+            <geoValue key="PIK" caption="Глазго Прествик, Великобритания, PIK" />
+            <geoValue key="GLAS" caption="Глазго, Великобритания, GLAS" />
+            <geoValue key="GLO" caption="Глостершир, Великобритания, GLO" />
+            <geoValue key="GOI" caption="Гоа, Индия, GOI" />
+            <geoValue key="YGO" caption="Годс Нарроус, Канада, YGO" />
+            <geoValue key="ZGI" caption="Годс-Ривер, Канада, ZGI" />
+            <geoValue key="OOL" caption="Голд Коаст, Австралия, OOL" />
+            <geoValue key="GLF" caption="Голфито, Коста-Рика, GLF" />
+            <geoValue key="HKG" caption="Гонконг Интернешнл, Гонконг, HKG" />
+            <geoValue key="HNL" caption="Гонолулу Интернэшнл, США, HNL" />
+            <geoValue key="GKA" caption="Горока, Папуа-Новая Гвинея, GKA" />
+            <geoValue key="GOT" caption="Готенбург Ландветтер, Швеция, GOT" />
+            <geoValue key="GSE" caption="Готенбург Сэйв, Швеция, GSE" />
+            <geoValue key="GOTH" caption="Готенбург, Швеция, GOTH" />
+            <geoValue key="LPA" caption="Гран Канария, Испания, LPA" />
+            <geoValue key="GRX" caption="Гранада, Испания, GRX" />
+            <geoValue key="GRI" caption="Гранд Айленд, США, GRI" />
+            <geoValue key="GJT" caption="Гранд Джанкшн, США, GJT" />
+            <geoValue key="GFK" caption="Гранд Форкс, США, GFK" />
+            <geoValue key="GRR" caption="Гранд-Рапидс, США, GRR" />
+            <geoValue key="GRZ" caption="Грац, Австрия, GRZ" />
+            <geoValue key="GBD" caption="Грейт Бенд, США, GBD" />
+            <geoValue key="GTF" caption="Грейт Фоллз Интернешнл, США, GTF" />
+            <geoValue key="PIA" caption="Грейтер Пеория, США, PIA" />
+            <geoValue key="GNB" caption="Гренобль, Франция, GNB" />
+            <geoValue key="GRY" caption="Гримси, Исландия, GRY" />
+            <geoValue key="GNI" caption="Грин Айленд, Тайвань, GNI" />
+            <geoValue key="GSP" caption="Гринвилл-Спартансбург, США, GSP" />
+            <geoValue key="GSO" caption="Гринсборо / Хай-Пойнт, США, GSO" />
+            <geoValue key="GRQ" caption="Гронинджен, Нидерланды, GRQ" />
+            <geoValue key="GTZ" caption="Грумети, Танзания, GTZ" />
+            <geoValue key="CAN" caption="Гуанчжоу, Китай, CAN" />
+            <geoValue key="KWL" caption="Гуилин, Китай, KWL" />
+            <geoValue key="KWE" caption="Гуиьянг, Китай, KWE" />
+            <geoValue key="GST" caption="Густавус Арпт, США, GST" />
+            <geoValue key="KVD" caption="Гянджа, Азербайджан, KVD" />
+            <geoValue key="DAD" caption="Да Нанг, Вьетнам, DAD" />
+            <geoValue key="DVO" caption="Давао, Филиппины, DVO" />
+            <geoValue key="DAC" caption="Дакка, Бангладеш, DAC" />
+            <geoValue key="DLM" caption="Даламан, Турция, DLM" />
+            <geoValue key="DLH" caption="Далат Интернэшнл, США, DLH" />
+            <geoValue key="DFW" caption="Даллас - Форт Уорт Интернешнл, США, DFW" />
+            <geoValue key="DAL" caption="Даллас Лав Филд, США, DAL" />
+            <geoValue key="DFWA" caption="Даллас, США, DFWA" />
+            <geoValue key="DLC" caption="Далянь, Китай, DLC" />
+            <geoValue key="DMM" caption="Даммам, Саудовская Аравия, DMM" />
+            <geoValue key="DAR" caption="Дар-эс-Салам, Танзания, DAR" />
+            <geoValue key="DRW" caption="Дарвин, Австралия, DRW" />
+            <geoValue key="DAU" caption="Дару, Папуа-Новая Гвинея, DAU" />
+            <geoValue key="DSM" caption="Де-Мойн, США, DSM" />
+            <geoValue key="DEB" caption="Дебрецен, Венгрия, DEB" />
+            <geoValue key="DVL" caption="Девилс Лэйк, США, DVL" />
+            <geoValue key="DEC" caption="Декатер, США, DEC" />
+            <geoValue key="DEL" caption="Дели, Индия, DEL" />
+            <geoValue key="DEN" caption="Денвер Интернэшнл, США, DEN" />
+            <geoValue key="DPS" caption="Денпаcар Бали, Индонезия, DPS" />
+            <geoValue key="DCN" caption="Дерби Кертин, Австралия, DCN" />
+            <geoValue key="LDY" caption="Дерри, Великобритания, LDY" />
+            <geoValue key="DTW" caption="Детроит Вэйн Каунти, США, DTW" />
+            <geoValue key="JUB" caption="Джаба, Южный Судан, JUB" />
+            <geoValue key="JAI" caption="Джайпур, Индия, JAI" />
+            <geoValue key="CGK" caption="Джакарта Соекарно-Хатта, Индонезия, CGK" />
+            <geoValue key="HLP" caption="Джакарта Халим Перданакусума, Индонезия, HLP" />
+            <geoValue key="CGKI" caption="Джакарта, Индонезия, CGKI" />
+            <geoValue key="DJB" caption="Джамби, Индонезия, DJB" />
+            <geoValue key="DJJ" caption="Джаяпера, Индонезия, DJJ" />
+            <geoValue key="JMS" caption="Джеймстаун, США, JMS" />
+            <geoValue key="MKL" caption="Джексон, США, MKL" />
+            <geoValue key="DJE" caption="Джерба, Тунис, DJE" />
+            <geoValue key="XRY" caption="Джерез, Испания, XRY" />
+            <geoValue key="GET" caption="Джеролдтон, Австралия, GET" />
+            <geoValue key="JER" caption="Джерси, Великобритания, JER" />
+            <geoValue key="JIB" caption="Джибути, Джибути, JIB" />
+            <geoValue key="JED" caption="Джидда, Саудовская Аравия, JED" />
+            <geoValue key="JOG" caption="Джокьякарта, Индонезия, JOG" />
+            <geoValue key="JKG" caption="Джонкопинг Аксамо, Швеция, JKG" />
+            <geoValue key="JHB" caption="Джохор-Бахру, Малайзия, JHB" />
+            <geoValue key="JNU" caption="Джуно, США, JNU" />
+            <geoValue key="DIK" caption="Дикинсон, США, DIK" />
+            <geoValue key="DIL" caption="Дили, Восточный Тимор, DIL" />
+            <geoValue key="DNR" caption="Динард, Франция, DNR" />
+            <geoValue key="DIY" caption="Диярбакыр, Турция, DIY" />
+            <geoValue key="DDC" caption="Додж Сити, США, DDC" />
+            <geoValue key="DSN" caption="Донгшенг, Китай, DSN" />
+            <geoValue key="CFN" caption="Донегал, Ирландия, CFN" />
+            <geoValue key="DOK" caption="Донецк, Украина, DOK" />
+            <geoValue key="DSA" caption="Донкастер Шеффилд, Великобритания, DSA" />
+            <geoValue key="DTM" caption="Дортмунд, Германия, DTM" />
+            <geoValue key="YDA" caption="Досон Сити, Канада, YDA" />
+            <geoValue key="DLE" caption="Доул Таво, Франция, DLE" />
+            <geoValue key="YDN" caption="Дофин, Канада, YDN" />
+            <geoValue key="DOH" caption="Доха, Катар, DOH" />
+            <geoValue key="DRS" caption="Дрезден, Германия, DRS" />
+            <geoValue key="DRK" caption="Дрейк-Бэй, Коста-Рика, DRK" />
+            <geoValue key="DXBA" caption="Дубай, Объединённые Арабские Эмираты, DXBA" />
+            <geoValue key="DUB" caption="Дублин, Ирландия, DUB" />
+            <geoValue key="DBV" caption="Дубровник, Хорватия, DBV" />
+            <geoValue key="MME" caption="Дурхам, Великобритания, MME" />
+            <geoValue key="NRN" caption="Дюссельдорф Визе, Германия, NRN" />
+            <geoValue key="DUS" caption="Дюссельдорф Интернешнл, Германия, DUS" />
+            <geoValue key="DUSS" caption="Дюссельдорф, Германия, DUSS" />
+            <geoValue key="NBE" caption="Енфидха, Тунис, NBE" />
+            <geoValue key="EVN" caption="Ереван, Армения, EVN" />
+            <geoValue key="GVA" caption="Женева, Швейцария, GVA" />
+            <geoValue key="RZE" caption="Жешув, Польша, RZE" />
+            <geoValue key="GRO" caption="Жирона, Испания, GRO" />
+            <geoValue key="ZUH" caption="Жухэй, Китай, ZUH" />
+            <geoValue key="ZAG" caption="Загреб, Хорватия, ZAG" />
+            <geoValue key="ZAD" caption="Задар, Хорватия, ZAD" />
+            <geoValue key="ZTH" caption="Закинтос, Греция, ZTH" />
+            <geoValue key="SZG" caption="Зальцбург, Австрия, SZG" />
+            <geoValue key="ZNZ" caption="Занзибар, Танзания, ZNZ" />
+            <geoValue key="CGO" caption="Зэнгжоу, Китай, CGO" />
+            <geoValue key="IBZ" caption="Ивиса, Испания, IBZ" />
+            <geoValue key="IFJ" caption="Изафджордер, Исландия, IFJ" />
+            <geoValue key="ADB" caption="Измир, Турция, ADB" />
+            <geoValue key="JIK" caption="Икария, Греция, JIK" />
+            <geoValue key="ZIH" caption="Икстапа / Зихуатейнджо, Мексика, ZIH" />
+            <geoValue key="JAV" caption="Илалиссат, Гренландия, JAV" />
+            <geoValue key="ILO" caption="Илоило, Филиппины, ILO" />
+            <geoValue key="IPL" caption="Империал Каунти, США, IPL" />
+            <geoValue key="YEV" caption="Инавик, Канада, YEV" />
+            <geoValue key="INV" caption="Инвернесс, Великобритания, INV" />
+            <geoValue key="INN" caption="Инсбрук, Австрия, INN" />
+            <geoValue key="IPH" caption="Ипох, Малайзия, IPH" />
+            <geoValue key="IRI" caption="Иринга, Танзания, IRI" />
+            <geoValue key="IWD" caption="Иронвуд, США, IWD" />
+            <geoValue key="ISB" caption="Исламабад, Пакистан, ISB" />
+            <geoValue key="ILY" caption="Ислей, Великобритания, ILY" />
+            <geoValue key="ISC" caption="Исльз-оф-Скилли Сент-Мэриз, Великобритания, ISC" />
+            <geoValue key="EMA" caption="Ист-Мидлэндс, Великобритания, EMA" />
+            <geoValue key="ZAC" caption="Йорк Лэндинг, Канада, ZAC" />
+            <geoValue key="RSU" caption="Йосу, Корея (Южная), RSU" />
+            <geoValue key="KBL" caption="Кабул, Афганистан, KBL" />
+            <geoValue key="KVA" caption="Кавала Александрос, Греция, KVA" />
+            <geoValue key="KVG" caption="Кавинг, Папуа-Новая Гвинея, KVG" />
+            <geoValue key="CGY" caption="Кагаьян Ди Оро, Филиппины, CGY" />
+            <geoValue key="KOJ" caption="Кагошима, Япония, KOJ" />
+            <geoValue key="KZN" caption="Казань, Россия, KZN" />
+            <geoValue key="CAI" caption="Кайр, Египет, CAI" />
+            <geoValue key="CUC" caption="Каката, Колумбия, CUC" />
+            <geoValue key="KLX" caption="Каламата, Греция, KLX" />
+            <geoValue key="CLY" caption="Калви, Франция, CLY" />
+            <geoValue key="YYC" caption="Калгари, Канада, YYC" />
+            <geoValue key="KGI" caption="Калгурли, Австралия, KGI" />
+            <geoValue key="CLO" caption="Кали, Колумбия, CLO" />
+            <geoValue key="KLO" caption="Калибо, Филиппины, KLO" />
+            <geoValue key="FCA" caption="Калиспелл, США, FCA" />
+            <geoValue key="KLR" caption="Калмар, Швеция, KLR" />
+            <geoValue key="KUS" caption="Калузук Айленд, Гренландия, KUS" />
+            <geoValue key="CCU" caption="Калькутта, Индия, CCU" />
+            <geoValue key="CAG" caption="Кальяри, Италия, CAG" />
+            <geoValue key="KMJ" caption="Камамото, Япония, KMJ" />
+            <geoValue key="KNX" caption="Кананерра, Австралия, KNX" />
+            <geoValue key="MCI" caption="Канзас-Сити Интернешнл, США, MCI" />
+            <geoValue key="CUN" caption="Канкун, Мексика, CUN" />
+            <geoValue key="KMG" caption="Канминг, Китай, KMG" />
+            <geoValue key="KHH" caption="Каохсиунг, Тайвань, KHH" />
+            <geoValue key="KOE" caption="Капанга, Индонезия, KOE" />
+            <geoValue key="CCS" caption="Каракас, Венесуэла, CCS" />
+            <geoValue key="KHI" caption="Карачи, Пакистан, KHI" />
+            <geoValue key="CWL" caption="Кардифф, Великобритания, CWL" />
+            <geoValue key="CCF" caption="Каркассона, Франция, CCF" />
+            <geoValue key="FKB" caption="Карлсруэ / Баден-Баден, Германия, FKB" />
+            <geoValue key="KSD" caption="Карлштад, Швеция, KSD" />
+            <geoValue key="MRY" caption="Кармэль Монтерей Пенинсула, США, MRY" />
+            <geoValue key="CTG" caption="Картаджена, Колумбия, CTG" />
+            <geoValue key="CMN" caption="Касабланка Mohammed V, Марокко, CMN" />
+            <geoValue key="IOM" caption="Каслтаун, Великобритания, IOM" />
+            <geoValue key="CPR" caption="Каспер, США, CPR" />
+            <geoValue key="KSF" caption="Кассель, Германия, KSF" />
+            <geoValue key="KSO" caption="Кастория Аристотлис, Греция, KSO" />
+            <geoValue key="CTA" caption="Катания Фонтанаросса, Италия, CTA" />
+            <geoValue key="KTM" caption="Катманду, Непал, KTM" />
+            <geoValue key="KTW" caption="Катовице, Польша, KTW" />
+            <geoValue key="KUN" caption="Каунас, Литва, KUN" />
+            <geoValue key="OGG" caption="Кахалуи, США, OGG" />
+            <geoValue key="KAJ" caption="Каяани, Финляндия, KAJ" />
+            <geoValue key="KWJ" caption="Кванджу, Корея (Южная), KWJ" />
+            <geoValue key="YLW" caption="Келоуна, Канада, YLW" />
+            <geoValue key="CGN" caption="Кёльн, Германия, CGN" />
+            <geoValue key="CBG" caption="Кембридж, Великобритания, CBG" />
+            <geoValue key="KEM" caption="Кеми / Торнио, Финляндия, KEM" />
+            <geoValue key="KDI" caption="Кендари, Индонезия, KDI" />
+            <geoValue key="EAR" caption="Керней, США, EAR" />
+            <geoValue key="KIR" caption="Керри, Ирландия, KIR" />
+            <geoValue key="KTE" caption="Кертех, Малайзия, KTE" />
+            <geoValue key="KTG" caption="Кетапанг, Индонезия, KTG" />
+            <geoValue key="UET" caption="Кетта, Пакистан, UET" />
+            <geoValue key="KBP" caption="Киев Борисполь, Украина, KBP" />
+            <geoValue key="IEV" caption="Киев Жуляны, Украина, IEV" />
+            <geoValue key="KIEV" caption="Киев, Украина, KIEV" />
+            <geoValue key="KIS" caption="Кизуму, Кения, KIS" />
+            <geoValue key="JRO" caption="Килиманджаро, Танзания, JRO" />
+            <geoValue key="TAO" caption="Кингдао, Китай, TAO" />
+            <geoValue key="IGM" caption="Кингман, США, IGM" />
+            <geoValue key="KIN" caption="Кингстон Норман Манлей, Ямайка, KIN" />
+            <geoValue key="SHP" caption="Кинхуангдао, Китай, SHP" />
+            <geoValue key="KTT" caption="Киттила, Финляндия, KTT" />
+            <geoValue key="UNG" caption="Киунга, Папуа-Новая Гвинея, UNG" />
+            <geoValue key="KIT" caption="Кифера, Греция, KIT" />
+            <geoValue key="KIV" caption="Кишинёв, Молдавия, KIV" />
+            <geoValue key="KLU" caption="Клагенфурт, Австрия, KLU" />
+            <geoValue key="CFE" caption="Клермон-Ферран, Франция, CFE" />
+            <geoValue key="PIE" caption="Клируотер Интернешнл, США, PIE" />
+            <geoValue key="CVN" caption="Кловис Мунисипал, США, CVN" />
+            <geoValue key="CLJ" caption="Клуж-Напока, Румыния, CLJ" />
+            <geoValue key="CCJ" caption="Кожикоуд, Индия, CCJ" />
+            <geoValue key="CZM" caption="Козамэль, Мексика, CZM" />
+            <geoValue key="KZI" caption="Козани Филайппос, Греция, KZI" />
+            <geoValue key="CAQ" caption="Коказия, Колумбия, CAQ" />
+            <geoValue key="KOK" caption="Коккола / Пиетарсаари Круунупии, Финляндия, KOK" />
+            <geoValue key="COL" caption="Колл Айленд, Великобритания, COL" />
+            <geoValue key="CMB" caption="Коломбо Бандаранаяк, Шри-Ланка, CMB" />
+            <geoValue key="CSA" caption="Колонси Из, Великобритания, CSA" />
+            <geoValue key="COS" caption="Колорадо Спрингс Петерсон Филд, США, COS" />
+            <geoValue key="LCK" caption="Колумбус Рикенбакер, США, LCK" />
+            <geoValue key="CIY" caption="Комизо, Италия, CIY" />
+            <geoValue key="LBJ" caption="Комодо (Лабуан Баджо), Индонезия, LBJ" />
+            <geoValue key="CCI" caption="Конкордия, Бразилия, CCI" />
+            <geoValue key="CND" caption="Константа Когалникину, Румыния, CND" />
+            <geoValue key="CPH" caption="Копенгаген, Дания, CPH" />
+            <geoValue key="ORK" caption="Корк, Ирландия, ORK" />
+            <geoValue key="CZU" caption="Корозал, Колумбия, CZU" />
+            <geoValue key="CEZ" caption="Кортез, США, CEZ" />
+            <geoValue key="CFU" caption="Корфу, Греция, CFU" />
+            <geoValue key="KGS" caption="Кос, Греция, KGS" />
+            <geoValue key="KBR" caption="Кота Бхару, Малайзия, KBR" />
+            <geoValue key="BKI" caption="Кота Кинабалу, Малайзия, BKI" />
+            <geoValue key="KBU" caption="Котабару, Индонезия, KBU" />
+            <geoValue key="CFS" caption="Коффс Харбор, Австралия, CFS" />
+            <geoValue key="USM" caption="Кох Самуи, Таиланд, USM" />
+            <geoValue key="CBB" caption="Кочабамба, Боливия, CBB" />
+            <geoValue key="COK" caption="Кочи, Индия, COK" />
+            <geoValue key="KCZ" caption="Кочи, Япония, KCZ" />
+            <geoValue key="CSO" caption="Кочстедт, Германия, CSO" />
+            <geoValue key="KSC" caption="Кошице, Словакия, KSC" />
+            <geoValue key="CJB" caption="Коямпуттур, Индия, CJB" />
+            <geoValue key="XQP" caption="Кпос, Коста-Рика, XQP" />
+            <geoValue key="KBV" caption="Краби, Таиланд, KBV" />
+            <geoValue key="CRA" caption="Крайова, Румыния, CRA" />
+            <geoValue key="KRK" caption="Краков, Польша, KRK" />
+            <geoValue key="KSU" caption="Кристианзунд, Норвегия, KSU" />
+            <geoValue key="KRS" caption="Кристианштад Кджевик, Норвегия, KRS" />
+            <geoValue key="KID" caption="Кристианштад, Швеция, KID" />
+            <geoValue key="HER" caption="Крит Ираклион, Греция, HER" />
+            <geoValue key="CHQ" caption="Крит Чания, Греция, CHQ" />
+            <geoValue key="CRET" caption="Крит, Греция, CRET" />
+            <geoValue key="YCR" caption="Кросс Лэйк, Канада, YCR" />
+            <geoValue key="SZB" caption="Куала Лампер Салтан Абдул Аззиз Ша, Малайзия, SZB" />
+            <geoValue key="KUL" caption="Куала Лумпур Интернешнл, Малайзия, KUL" />
+            <geoValue key="TGG" caption="Куала Теренггану, Малайзия, TGG" />
+            <geoValue key="KULM" caption="Куала-Лумпур, Малайзия, KULM" />
+            <geoValue key="KUA" caption="Куантан, Малайзия, KUA" />
+            <geoValue key="KWI" caption="Кувейт, Кувейт, KWI" />
+            <geoValue key="UIB" caption="Куибдо, Колумбия, UIB" />
+            <geoValue key="CWB" caption="Куритиба, Бразилия, CWB" />
+            <geoValue key="KUT" caption="Кутаиси, Грузия, KUT" />
+            <geoValue key="KCH" caption="Кучинг, Малайзия, KCH" />
+            <geoValue key="CUF" caption="Кьюно, Италия, CUF" />
+            <geoValue key="ASR" caption="Кэйзери, Турция, ASR" />
+            <geoValue key="CCC" caption="Кэйо Коко, Куба, CCC" />
+            <geoValue key="CYO" caption="Кэйо Ларго Дэль Сер, Куба, CYO" />
+            <geoValue key="CAL" caption="Кэмпбелтаун, Великобритания, CAL" />
+            <geoValue key="CNS" caption="Кэрнс, Австралия, CNS" />
+            <geoValue key="GMZ" caption="Ла Гомера Тенерифе, Испания, GMZ" />
+            <geoValue key="SPC" caption="Ла Палма, Испания, SPC" />
+            <geoValue key="LRM" caption="Ла Романа, Доминиканская республика, LRM" />
+            <geoValue key="LCG" caption="Ла-Корунья, Испания, LCG" />
+            <geoValue key="LPB" caption="Ла-Пас, Боливия, LPB" />
+            <geoValue key="LRH" caption="Ла-Рошель, Франция, LRH" />
+            <geoValue key="LAE" caption="Ла, Папуа-Новая Гвинея, LAE" />
+            <geoValue key="LBU" caption="Лабуан, Малайзия, LBU" />
+            <geoValue key="LOS" caption="Лагос, Нигерия, LOS" />
+            <geoValue key="LAJ" caption="Ладжес, Бразилия, LAJ" />
+            <geoValue key="CRK" caption="Лазон Из, Филиппины, CRK" />
+            <geoValue key="XLB" caption="Лак Брочет, Канада, XLB" />
+            <geoValue key="LKO" caption="Лакхнау, Индия, LKO" />
+            <geoValue key="STL" caption="Ламберт-Ст Луис, США, STL" />
+            <geoValue key="SUF" caption="Ламеция Терме, Италия, SUF" />
+            <geoValue key="LMP" caption="Лампендуза, Италия, LMP" />
+            <geoValue key="LAU" caption="Ламу, Кения, LAU" />
+            <geoValue key="LGK" caption="Лангкави, Малайзия, LGK" />
+            <geoValue key="LEQ" caption="Ландс Энд, Великобритания, LEQ" />
+            <geoValue key="ACE" caption="Лансароте, Испания, ACE" />
+            <geoValue key="LAN" caption="Лансинг, США, LAN" />
+            <geoValue key="LAO" caption="Лаоаг, Филиппины, LAO" />
+            <geoValue key="LPP" caption="Лаппеенранта, Финляндия, LPP" />
+            <geoValue key="LKA" caption="Ларантака, Индонезия, LKA" />
+            <geoValue key="LCA" caption="Ларнака, Кипр, LCA" />
+            <geoValue key="LAS" caption="Лас Вегас Маккарран, США, LAS" />
+            <geoValue key="LBE" caption="Латроуб, США, LBE" />
+            <geoValue key="LHE" caption="Лахор, Пакистан, LHE" />
+            <geoValue key="EUN" caption="Лаэйоун Хассан Ай, Марокко, EUN" />
+            <geoValue key="LEJ" caption="Лейпциг, Германия, LEJ" />
+            <geoValue key="LRD" caption="Лейрдо, США, LRD" />
+            <geoValue key="LEX" caption="Лексингтон Блу Грасс, США, LEX" />
+            <geoValue key="LXS" caption="Лемнос, Греция, LXS" />
+            <geoValue key="LEA" caption="Лермонт, Австралия, LEA" />
+            <geoValue key="LWE" caption="Леуолеба, Индонезия, LWE" />
+            <geoValue key="LBL" caption="Либерал, США, LBL" />
+            <geoValue key="LIR" caption="Либерия, Коста-Рика, LIR" />
+            <geoValue key="LPL" caption="Ливерпуль, Великобритания, LPL" />
+            <geoValue key="LBA" caption="Лидс, Великобритания, LBA" />
+            <geoValue key="LIL" caption="Лилль, Франция, LIL" />
+            <geoValue key="LIM" caption="Лима, Перу, LIM" />
+            <geoValue key="LIG" caption="Лимож, Франция, LIG" />
+            <geoValue key="LNZ" caption="Линц, Австрия, LNZ" />
+            <geoValue key="LYS" caption="Лион, Франция, LYS" />
+            <geoValue key="LIS" caption="Лиссабон, Португалия, LIS" />
+            <geoValue key="LIT" caption="Литтл Рок, США, LIT" />
+            <geoValue key="LNV" caption="Лихир Айленд, Папуа-Новая Гвинея, LNV" />
+            <geoValue key="LOK" caption="Лодвар, Кения, LOK" />
+            <geoValue key="LCJ" caption="Лодзь, Польша, LCJ" />
+            <geoValue key="LDE" caption="Лоердес, Франция, LDE" />
+            <geoValue key="LGW" caption="Лондон Гатвик, Великобритания, LGW" />
+            <geoValue key="LTN" caption="Лондон Лутон, Великобритания, LTN" />
+            <geoValue key="SEN" caption="Лондон Саутенд, Великобритания, SEN" />
+            <geoValue key="LCY" caption="Лондон Сити, Великобритания, LCY" />
+            <geoValue key="STN" caption="Лондон Станстед, Великобритания, STN" />
+            <geoValue key="LHR" caption="Лондон Хитроу, Великобритания, LHR" />
+            <geoValue key="LOND" caption="Лондон, Великобритания, LOND" />
+            <geoValue key="LAX" caption="Лос-Анджелес Интернешнл, США, LAX" />
+            <geoValue key="LUG" caption="Лугано, Швейцария, LUG" />
+            <geoValue key="MLA" caption="Лука Мальта, Мальта, MLA" />
+            <geoValue key="LXR" caption="Луксор, Египет, LXR" />
+            <geoValue key="LWO" caption="Львов, Украина, LWO" />
+            <geoValue key="LGG" caption="Льеж, Бельгия, LGG" />
+            <geoValue key="LKY" caption="Лэйк Маньяра, Танзания, LKY" />
+            <geoValue key="LJU" caption="Любляна, Словения, LJU" />
+            <geoValue key="LUX" caption="Люксембург, Люксембург, LUX" />
+            <geoValue key="MST" caption="Маастрихт, Нидерланды, MST" />
+            <geoValue key="MRU" caption="Маврикий, Маврикий, MRU" />
+            <geoValue key="MAG" caption="Маданг, Папуа-Новая Гвинея, MAG" />
+            <geoValue key="FNC" caption="Мадейра, Португалия, FNC" />
+            <geoValue key="IXM" caption="Мадерэй, Индия, IXM" />
+            <geoValue key="MAD" caption="Мадрид, Испания, MAD" />
+            <geoValue key="MXB" caption="Мазамба, Индонезия, MXB" />
+            <geoValue key="MZT" caption="Мазатлан, Мексика, MZT" />
+            <geoValue key="MCW" caption="Мазон Сити, США, MCW" />
+            <geoValue key="MIA" caption="Майами Интернэшнл, США, MIA" />
+            <geoValue key="MZG" caption="Маканг, Тайвань, MZG" />
+            <geoValue key="UPG" caption="Макассар, Индонезия, UPG" />
+            <geoValue key="MKY" caption="Маккей, Австралия, MKY" />
+            <geoValue key="MCK" caption="Маккук, США, MCK" />
+            <geoValue key="MPC" caption="Мако-Мако, Индонезия, MPC" />
+            <geoValue key="MFE" caption="Маколлен, США, MFE" />
+            <geoValue key="AGP" caption="Малага, Испания, AGP" />
+            <geoValue key="MKZ" caption="Малакка, Малайзия, MKZ" />
+            <geoValue key="MLG" caption="Маланг, Индонезия, MLG" />
+            <geoValue key="MLX" caption="Малатья, Турция, MLX" />
+            <geoValue key="MLE" caption="Мале, Мальдивы, MLE" />
+            <geoValue key="YYV" caption="Малинау, Индонезия, YYV" />
+            <geoValue key="MYD" caption="Малинди, Кения, MYD" />
+            <geoValue key="MMX" caption="Малмо Стерап, Швеция, MMX" />
+            <geoValue key="MUX" caption="Малтан, Пакистан, MUX" />
+            <geoValue key="MLH" caption="Малхаус, Франция, MLH" />
+            <geoValue key="MJU" caption="Мамаджу, Индонезия, MJU" />
+            <geoValue key="MGA" caption="Манагуа, Никарагуа, MGA" />
+            <geoValue key="MDC" caption="Манадо, Индонезия, MDC" />
+            <geoValue key="MAS" caption="Манас Айленд, Папуа-Новая Гвинея, MAS" />
+            <geoValue key="IXE" caption="Мангалор, Индия, IXE" />
+            <geoValue key="MDL" caption="Мандалай, Мьянма, MDL" />
+            <geoValue key="MZL" caption="Манизальз, Колумбия, MZL" />
+            <geoValue key="MNL" caption="Манила Ниной Акуино, Филиппины, MNL" />
+            <geoValue key="MKW" caption="Маноквари, Индонезия, MKW" />
+            <geoValue key="MAN" caption="Манчестер, Великобритания, MAN" />
+            <geoValue key="MHQ" caption="Мариехамн, Финляндия, MHQ" />
+            <geoValue key="RAK" caption="Марракеш Менара, Марокко, RAK" />
+            <geoValue key="RMF" caption="Марса Оллам, Египет, RMF" />
+            <geoValue key="MRS" caption="Марсель, Франция, MRS" />
+            <geoValue key="MCT" caption="Маскат, Оман, MCT" />
+            <geoValue key="MUN" caption="Материн, Венесуэла, MUN" />
+            <geoValue key="MMJ" caption="Матсумото, Япония, MMJ" />
+            <geoValue key="HGU" caption="Маунт Хаджен, Папуа-Новая Гвинея, HGU" />
+            <geoValue key="MWZ" caption="Мванза, Танзания, MWZ" />
+            <geoValue key="MES" caption="Медан, Индонезия, MES" />
+            <geoValue key="MDE" caption="Меделлин Джоз Мари Кордова, Колумбия, MDE" />
+            <geoValue key="EOH" caption="Меделлин Энрик Олая Эррера, Колумбия, EOH" />
+            <geoValue key="MDEA" caption="Меделлин, Колумбия, MDEA" />
+            <geoValue key="MED" caption="Медина, Саудовская Аравия, MED" />
+            <geoValue key="MFR" caption="Медфорд, США, MFR" />
+            <geoValue key="MEL" caption="Мельбурн Тулламарин, Австралия, MEL" />
+            <geoValue key="FMM" caption="Мемминген-Альгау, Германия, FMM" />
+            <geoValue key="MEM" caption="Мемфис Интернэшнл, США, MEM" />
+            <geoValue key="MDU" caption="Менди, Папуа-Новая Гвинея, MDU" />
+            <geoValue key="MAH" caption="Менорка, Испания, MAH" />
+            <geoValue key="MKQ" caption="Мерок, Индонезия, MKQ" />
+            <geoValue key="MCE" caption="Мерсед Мунисипал Арпт, США, MCE" />
+            <geoValue key="MEQ" caption="Меулабох, Индонезия, MEQ" />
+            <geoValue key="MHD" caption="Мешхед, Иран, MHD" />
+            <geoValue key="JMK" caption="Миконос, Греция, JMK" />
+            <geoValue key="BGY" caption="Милан Бергамо, Италия, BGY" />
+            <geoValue key="LIN" caption="Милан Линэйт, Италия, LIN" />
+            <geoValue key="MXP" caption="Милан Малпенса, Италия, MXP" />
+            <geoValue key="MILA" caption="Милан, Италия, MILA" />
+            <geoValue key="MSP" caption="Миннеполис Ст Пол, США, MSP" />
+            <geoValue key="MOT" caption="Минот Интернэшнл, США, MOT" />
+            <geoValue key="MSQ" caption="Минск Интернэшнл 2, Белоруссия, MSQ" />
+            <geoValue key="MYY" caption="Мири, Малайзия, MYY" />
+            <geoValue key="MYR" caption="Миртл Бич АФБ, США, MYR" />
+            <geoValue key="MSO" caption="Миссоула, США, MSO" />
+            <geoValue key="MJT" caption="Митилена, Греция, MJT" />
+            <geoValue key="CNY" caption="Моаб, США, CNY" />
+            <geoValue key="MOL" caption="Молд Аро, Норвегия, MOL" />
+            <geoValue key="MLI" caption="Молин, США, MLI" />
+            <geoValue key="MBA" caption="Момбасa, Кения, MBA" />
+            <geoValue key="MOF" caption="Момер, Индонезия, MOF" />
+            <geoValue key="MIR" caption="Монастир, Тунис, MIR" />
+            <geoValue key="MPL" caption="Монпелье, Франция, MPL" />
+            <geoValue key="MBJ" caption="Монтего Бей, Ямайка, MBJ" />
+            <geoValue key="MTR" caption="Монтерия, Колумбия, MTR" />
+            <geoValue key="MNI" caption="Монтсеррат, Монтсеррат, MNI" />
+            <geoValue key="VKO" caption="Москва Внуково, Россия, VKO" />
+            <geoValue key="DME" caption="Москва Домодедово, Россия, DME" />
+            <geoValue key="SVO" caption="Москва Шереметьево, Россия, SVO" />
+            <geoValue key="BOM" caption="Мумбаи, Индия, BOM" />
+            <geoValue key="MJV" caption="Мурсия, Испания, MJV" />
+            <geoValue key="MIG" caption="Мьян-Янг, Китай, MIG" />
+            <geoValue key="LOP" caption="Мэйтарам, Индонезия, LOP" />
+            <geoValue key="FMO" caption="Мюнстер Оснабрюк, Германия, FMO" />
+            <geoValue key="MUC" caption="Мюнхен, Германия, MUC" />
+            <geoValue key="NBX" caption="Набайр, Индонезия, NBX" />
+            <geoValue key="NGO" caption="Нагоя Чабу Синтрэйр, Япония, NGO" />
+            <geoValue key="JNGO" caption="Нагоя, Япония, JNGO" />
+            <geoValue key="NAG" caption="Нагпур, Индия, NAG" />
+            <geoValue key="NJF" caption="Наджаф, Ирак, NJF" />
+            <geoValue key="NAN" caption="Нади, Фиджи, NAN" />
+            <geoValue key="NDR" caption="Надор, Марокко, NDR" />
+            <geoValue key="NBO" caption="Найроби Джомо Кеньятта, Кения, NBO" />
+            <geoValue key="NQU" caption="Накуи, Колумбия, NQU" />
+            <geoValue key="NNX" caption="Нанакан, Индонезия, NNX" />
+            <geoValue key="NKG" caption="Нанкин, Китай, NKG" />
+            <geoValue key="NNG" caption="Наннинг, Китай, NNG" />
+            <geoValue key="NTE" caption="Нант, Франция, NTE" />
+            <geoValue key="NAW" caption="Наратиуот, Таиланд, NAW" />
+            <geoValue key="UAK" caption="Нарсарсуак, Гренландия, UAK" />
+            <geoValue key="NTX" caption="Натана Ранэй, Индонезия, NTX" />
+            <geoValue key="NST" caption="Нахон Си Таммарат, Таиланд, NST" />
+            <geoValue key="KOP" caption="Нахон Фаном, Таиланд, KOP" />
+            <geoValue key="NAP" caption="Неаполь Интернешнл, Италия, NAP" />
+            <geoValue key="NVT" caption="Нейвгэйнтс, Бразилия, NVT" />
+            <geoValue key="NSN" caption="Нельсон, Новая Зеландия, NSN" />
+            <geoValue key="IAG" caption="Ниагара Фоллс, США, IAG" />
+            <geoValue key="KIJ" caption="Ниигата, Япония, KIJ" />
+            <geoValue key="FNI" caption="Ним, Франция, FNI" />
+            <geoValue key="NGB" caption="Нинбо, Китай, NGB" />
+            <geoValue key="CNP" caption="Нирлерит Инаат, Гренландия, CNP" />
+            <geoValue key="NCE" caption="Ницца, Франция, NCE" />
+            <geoValue key="MSY" caption="Новый Орлеан Луи Армстронг, США, MSY" />
+            <geoValue key="NOB" caption="Нозара Бич, Коста-Рика, NOB" />
+            <geoValue key="NOC" caption="Нок, Ирландия, NOC" />
+            <geoValue key="TYS" caption="Ноксвилл, США, TYS" />
+            <geoValue key="YNE" caption="Норвей Хаус, Канада, YNE" />
+            <geoValue key="NWI" caption="Норидж, Великобритания, NWI" />
+            <geoValue key="NRK" caption="Норркопинг Кангсанджен, Швеция, NRK" />
+            <geoValue key="OTH" caption="Норт Бенд, США, OTH" />
+            <geoValue key="LBF" caption="Норт Плэйтт, США, LBF" />
+            <geoValue key="NOS" caption="Носси-би, Мадагаскар, NOS" />
+            <geoValue key="GOH" caption="Нуук, Гренландия, GOH" />
+            <geoValue key="CXR" caption="Нха Транг Кам Ранх, Вьетнам, CXR" />
+            <geoValue key="JFK" caption="Нью-Йорк Джон Ф Кеннеди, США, JFK" />
+            <geoValue key="LGA" caption="Нью-Йорк Ла Гуардия, США, LGA" />
+            <geoValue key="EWR" caption="Нью-Йорк НьюАрк, США, EWR" />
+            <geoValue key="NYCA" caption="Нью-Йорк, США, NYCA" />
+            <geoValue key="NCL" caption="Ньюкасл, Великобритания, NCL" />
+            <geoValue key="NQY" caption="Ньюкуей, Великобритания, NQY" />
+            <geoValue key="ZNE" caption="Ньюман, Австралия, ZNE" />
+            <geoValue key="PHF" caption="Ньюпорт-Ньюс / Вильямсбург, США, PHF" />
+            <geoValue key="BNA" caption="Нэшвилл, США, BNA" />
+            <geoValue key="NUE" caption="Нюрнберг, Германия, NUE" />
+            <geoValue key="OBN" caption="Обан Коннэль, Великобритания, OBN" />
+            <geoValue key="VDA" caption="Овда, Израиль, VDA" />
+            <geoValue key="OGD" caption="Огден Мунисипал, США, OGD" />
+            <geoValue key="ODS" caption="Одесса Сентрал, Украина, ODS" />
+            <geoValue key="OKA" caption="Окинава Наха, Япония, OKA" />
+            <geoValue key="OAK" caption="Окленд Метрополитан Оак, США, OAK" />
+            <geoValue key="YOH" caption="Оксфорд Хаус, Канада, YOH" />
+            <geoValue key="OXF" caption="Оксфорд, Великобритания, OXF" />
+            <geoValue key="ALH" caption="Олбани, Австралия, ALH" />
+            <geoValue key="YOC" caption="Олд Кроу, Канада, YOC" />
+            <geoValue key="ACI" caption="Олдерни, Великобритания, ACI" />
+            <geoValue key="ABE" caption="Оллентаун, США, ABE" />
+            <geoValue key="OLB" caption="Ольбия, Италия, OLB" />
+            <geoValue key="AAL" caption="Ольборг, Дания, AAL" />
+            <geoValue key="HOG" caption="Ольгин, Куба, HOG" />
+            <geoValue key="ORN" caption="Оран Эс Сения, Алжир, ORN" />
+            <geoValue key="KYD" caption="Оркид Айленд, Тайвань, KYD" />
+            <geoValue key="KOI" caption="Оркнейские острова, Великобритания, KOI" />
+            <geoValue key="MCO" caption="Орландо Интернэшнл, США, MCO" />
+            <geoValue key="SFB" caption="Орландо Сэнфорд, США, SFB" />
+            <geoValue key="ORLB" caption="Орландо Флорида, США, ORLB" />
+            <geoValue key="OER" caption="Орнсколдсвик, Швеция, OER" />
+            <geoValue key="KIX" caption="Осака Кансай Интернешнл, Япония, KIX" />
+            <geoValue key="OSL" caption="Осло Гардермуен, Норвегия, OSL" />
+            <geoValue key="RYG" caption="Осло Ригге, Норвегия, RYG" />
+            <geoValue key="TRF" caption="Осло Торп, Норвегия, TRF" />
+            <geoValue key="OSLO" caption="Осло, Норвегия, OSLO" />
+            <geoValue key="OST" caption="Остенде - Брюгге, Бельгия, OST" />
+            <geoValue key="AUS" caption="Остин-Бергстром, США, AUS" />
+            <geoValue key="OSR" caption="Острава, Чешская республика, OSR" />
+            <geoValue key="SXM" caption="Остров Святого Мартина, Сен-Мартен, SXM" />
+            <geoValue key="OUD" caption="Оуджда Л. Ангэйдс, Марокко, OUD" />
+            <geoValue key="OWB" caption="Оуэнсборо, США, OWB" />
+            <geoValue key="OHD" caption="Охрид, Македония, OHD" />
+            <geoValue key="PDG" caption="Паданг, Индонезия, PDG" />
+            <geoValue key="PAD" caption="Падерборн, Германия, PAD" />
+            <geoValue key="PLM" caption="Палембанг, Индонезия, PLM" />
+            <geoValue key="PMO" caption="Палермо, Италия, PMO" />
+            <geoValue key="PSP" caption="Палм Спрингс Мунисипал, США, PSP" />
+            <geoValue key="PMZ" caption="Палмар, Коста-Рика, PMZ" />
+            <geoValue key="PLW" caption="Палу, Индонезия, PLW" />
+            <geoValue key="PMI" caption="Пальма - Майорка, Испания, PMI" />
+            <geoValue key="PNA" caption="Памплона, Испания, PNA" />
+            <geoValue key="PTY" caption="Панама Сити Токумен Интернешнл, Панама, PTY" />
+            <geoValue key="PKN" caption="Пангкаланбуун, Индонезия, PKN" />
+            <geoValue key="PGK" caption="Пангкалпинанг, Индонезия, PGK" />
+            <geoValue key="PNL" caption="Пантеллерия, Италия, PNL" />
+            <geoValue key="PPQ" caption="Парапарому, Новая Зеландия, PPQ" />
+            <geoValue key="BVA" caption="Париж Бове, Франция, BVA" />
+            <geoValue key="ORY" caption="Париж Орли, Франция, ORY" />
+            <geoValue key="CDG" caption="Париж Шарль де Голль, Франция, CDG" />
+            <geoValue key="PARI" caption="Париж, Франция, PARI" />
+            <geoValue key="PMF" caption="Парма, Италия, PMF" />
+            <geoValue key="PSC" caption="Паско, США, PSC" />
+            <geoValue key="PFB" caption="Пассо Фандо, Бразилия, PFB" />
+            <geoValue key="PFO" caption="Пафос, Кипр, PFO" />
+            <geoValue key="PGA" caption="Пейдж, США, PGA" />
+            <geoValue key="PKU" caption="Пеканбару, Индонезия, PKU" />
+            <geoValue key="PEK" caption="Пекин, Китай, PEK" />
+            <geoValue key="PET" caption="Пелотас, Бразилия, PET" />
+            <geoValue key="PEN" caption="Пенанг, Малайзия, PEN" />
+            <geoValue key="PDT" caption="Пендлтон, США, PDT" />
+            <geoValue key="PEI" caption="Переира, Колумбия, PEI" />
+            <geoValue key="PGF" caption="Перпиньян, Франция, PGF" />
+            <geoValue key="PER" caption="Перт, Австралия, PER" />
+            <geoValue key="PEG" caption="Перуджа, Италия, PEG" />
+            <geoValue key="PSR" caption="Пескара, Италия, PSR" />
+            <geoValue key="PEW" caption="Пешавар, Пакистан, PEW" />
+            <geoValue key="PSA" caption="Пиза, Италия, PSA" />
+            <geoValue key="YPM" caption="Пиканджикам, Канада, YPM" />
+            <geoValue key="PBG" caption="Платтсбург АФБ, США, PBG" />
+            <geoValue key="PLH" caption="Плимут, Великобритания, PLH" />
+            <geoValue key="PDV" caption="Пловдив, Болгария, PDV" />
+            <geoValue key="PNH" caption="Пномпень, Камбоджа, PNH" />
+            <geoValue key="TGD" caption="Подгорица, Черногория, TGD" />
+            <geoValue key="POZ" caption="Познань, Польша, POZ" />
+            <geoValue key="PSJ" caption="Позо, Индонезия, PSJ" />
+            <geoValue key="PDL" caption="Понта Делгада, Португалия, PDL" />
+            <geoValue key="PNK" caption="Понтианак, Индонезия, PNK" />
+            <geoValue key="PNP" caption="Попондетта, Папуа-Новая Гвинея, PNP" />
+            <geoValue key="PMV" caption="Порламар, Венесуэла, PMV" />
+            <geoValue key="PHC" caption="Порт Харкорт, Нигерия, PHC" />
+            <geoValue key="PHE" caption="Порт Хедланд, Австралия, PHE" />
+            <geoValue key="POM" caption="Порт-Морсби, Папуа-Новая Гвинея, POM" />
+            <geoValue key="PAP" caption="Порт-о-Пренс, Гаити, PAP" />
+            <geoValue key="PDX" caption="Портланд, США, PDX" />
+            <geoValue key="PXO" caption="Порто Санто, Португалия, PXO" />
+            <geoValue key="POA" caption="Порту-Алегри, Бразилия, POA" />
+            <geoValue key="OPO" caption="Порту, Португалия, OPO" />
+            <geoValue key="PRG" caption="Прага, Чешская республика, PRG" />
+            <geoValue key="RAI" caption="Прая, Кабо-Верде, RAI" />
+            <geoValue key="PVK" caption="Превеца, Греция, PVK" />
+            <geoValue key="PRC" caption="Прескотт, США, PRC" />
+            <geoValue key="PRN" caption="Приштина, Косово, PRN" />
+            <geoValue key="PVU" caption="Прово, США, PVU" />
+            <geoValue key="PIS" caption="Пуатье, Франция, PIS" />
+            <geoValue key="PVG" caption="Пудун, Китай, PVG" />
+            <geoValue key="PUB" caption="Пуебло, США, PUB" />
+            <geoValue key="PVR" caption="Пуерто Волларта, Мексика, PVR" />
+            <geoValue key="PJM" caption="Пуерто Джименез, Коста-Рика, PJM" />
+            <geoValue key="PZO" caption="Пуерто Ордаз, Венесуэла, PZO" />
+            <geoValue key="PPS" caption="Пуерто Принсеза, Филиппины, PPS" />
+            <geoValue key="HKT" caption="Пукет, Таиланд, HKT" />
+            <geoValue key="PUY" caption="Пула, Хорватия, PUY" />
+            <geoValue key="PNQ" caption="Пуна, Индия, PNQ" />
+            <geoValue key="PGD" caption="Пунта Горда, США, PGD" />
+            <geoValue key="PBP" caption="Пунта Ислита, Коста-Рика, PBP" />
+            <geoValue key="PUJ" caption="Пунта Кана, Доминиканская республика, PUJ" />
+            <geoValue key="PUS" caption="Пусан, Корея (Южная), PUS" />
+            <geoValue key="PSU" caption="Путуссибо, Индонезия, PSU" />
+            <geoValue key="KPO" caption="Пхохан, Корея (Южная), KPO" />
+            <geoValue key="PIR" caption="Пьер, США, PIR" />
+            <geoValue key="RBA" caption="Рабат Сэйл, Марокко, RBA" />
+            <geoValue key="RAB" caption="Рабол, Папуа-Новая Гвинея, RAB" />
+            <geoValue key="RAP" caption="Рапид Сити Реджионал, США, RAP" />
+            <geoValue key="RTG" caption="Ратенг, Индонезия, RTG" />
+            <geoValue key="RYK" caption="Рахим Яр Хан, Пакистан, RYK" />
+            <geoValue key="REG" caption="Регджио Калабрия, Италия, REG" />
+            <geoValue key="YRS" caption="Ред Сакер Лэйк, Канада, YRS" />
+            <geoValue key="RVT" caption="Рейвенсторп, Австралия, RVT" />
+            <geoValue key="RKV" caption="Рейкьявик Доместик, Исландия, RKV" />
+            <geoValue key="KEF" caption="Рейкьявик Кефлавик, Исландия, KEF" />
+            <geoValue key="REYK" caption="Рейкьявик, Исландия, REYK" />
+            <geoValue key="RNS" caption="Ренн, Франция, RNS" />
+            <geoValue key="RNO" caption="Рено / Тахо, США, RNO" />
+            <geoValue key="RBQ" caption="Рерренабак, Боливия, RBQ" />
+            <geoValue key="REU" caption="Реус, Испания, REU" />
+            <geoValue key="RIW" caption="Ривертон, США, RIW" />
+            <geoValue key="RIX" caption="Рига, Латвия, RIX" />
+            <geoValue key="RJK" caption="Риека, Хорватия, RJK" />
+            <geoValue key="FCO" caption="Рим Фьюмичино, Италия, FCO" />
+            <geoValue key="CIA" caption="Рим Чампино, Италия, CIA" />
+            <geoValue key="ROME" caption="Рим, Италия, ROME" />
+            <geoValue key="RMI" caption="Римини, Италия, RMI" />
+            <geoValue key="RIG" caption="Рио-Гранде, Бразилия, RIG" />
+            <geoValue key="RCH" caption="Риоача, Колумбия, RCH" />
+            <geoValue key="RIY" caption="Риьян Маколла, Йемен, RIY" />
+            <geoValue key="ROA" caption="Роаноук, США, ROA" />
+            <geoValue key="RDZ" caption="Родез, Франция, RDZ" />
+            <geoValue key="RHO" caption="Родос, Греция, RHO" />
+            <geoValue key="ROV" caption="Ростов-на-Дону, Россия, ROV" />
+            <geoValue key="RLG" caption="Росток, Германия, RLG" />
+            <geoValue key="RTM" caption="Роттердам, Нидерланды, RTM" />
+            <geoValue key="RST" caption="Рочестер Мунисипал, США, RST" />
+            <geoValue key="SCN" caption="Саарбрюккен, Германия, SCN" />
+            <geoValue key="SVL" caption="Савонлинна, Финляндия, SVL" />
+            <geoValue key="CXP" caption="Сайлакап, Индонезия, CXP" />
+            <geoValue key="CBL" caption="Сайудад Боливар, Венесуэла, CBL" />
+            <geoValue key="SKZ" caption="Саккер, Пакистан, SKZ" />
+            <geoValue key="SCK" caption="Сакраменто Стоктон, США, SCK" />
+            <geoValue key="SID" caption="Сал, Кабо-Верде, SID" />
+            <geoValue key="SLL" caption="Салала, Оман, SLL" />
+            <geoValue key="SLN" caption="Салина, США, SLN" />
+            <geoValue key="SKG" caption="Салоники, Греция, SKG" />
+            <geoValue key="SRI" caption="Самаринда, Индонезия, SRI" />
+            <geoValue key="LSI" caption="Самберг Шетландс, Великобритания, LSI" />
+            <geoValue key="SWQ" caption="Самбоа, Индонезия, SWQ" />
+            <geoValue key="SMI" caption="Самос, Греция, SMI" />
+            <geoValue key="SMQ" caption="Сампит, Индонезия, SMQ" />
+            <geoValue key="SZF" caption="Самсан Карсамба, Турция, SZF" />
+            <geoValue key="ADZ" caption="Сан-Андрес Айленд, Колумбия, ADZ" />
+            <geoValue key="SVZ" caption="Сан-Антонио, Венесуэла, SVZ" />
+            <geoValue key="SJD" caption="Сан-Джоз Кабо, Мексика, SJD" />
+            <geoValue key="SJC" caption="Сан-Джоз Мунисипал, США, SJC" />
+            <geoValue key="SAN" caption="Сан-Диего Линдберг Флд С.Диего, США, SAN" />
+            <geoValue key="SAP" caption="Сан-Педро Сала, Гондурас, SAP" />
+            <geoValue key="SAL" caption="Сан-Сальвадор, Сальвадор, SAL" />
+            <geoValue key="EAS" caption="Сан-Себастьян, Испания, EAS" />
+            <geoValue key="SFO" caption="Сан-Франциско Интернешнл, США, SFO" />
+            <geoValue key="SYQ" caption="Сан-Хосе Тобиас Боланос, Коста-Рика, SYQ" />
+            <geoValue key="SJO" caption="Сан-Хосе Хуан Сантамария, Коста-Рика, SJO" />
+            <geoValue key="SJOA" caption="Сан-Хосе, Коста-Рика, SJOA" />
+            <geoValue key="SJU" caption="Сан-Хуан Луис Маноз Марин, Пуэрто-Рико, SJU" />
+            <geoValue key="SAH" caption="Сана'а, Йемен, SAH" />
+            <geoValue key="SDK" caption="Сандакан, Малайзия, SDK" />
+            <geoValue key="SFQ" caption="Санлиурфа, Турция, SFQ" />
+            <geoValue key="VVI" caption="Санта Круз Виру Виру, Боливия, VVI" />
+            <geoValue key="RIA" caption="Санта Мария, Бразилия, RIA" />
+            <geoValue key="SMX" caption="Санта Мария, США, SMX" />
+            <geoValue key="SMR" caption="Санта Марта, Колумбия, SMR" />
+            <geoValue key="SRA" caption="Санта Роза, Бразилия, SRA" />
+            <geoValue key="SAF" caption="Санта Фе, США, SAF" />
+            <geoValue key="SDR" caption="Сантандр, Испания, SDR" />
+            <geoValue key="GEL" caption="Санто Анджело, Бразилия, GEL" />
+            <geoValue key="SDQ" caption="Санто Доминго Лас Америкас, Доминиканская республика, SDQ" />
+            <geoValue key="STD" caption="Санто-Доминго, Венесуэла, STD" />
+            <geoValue key="JTR" caption="Санторини (Тира), Греция, JTR" />
+            <geoValue key="SCQ" caption="Сантьяго-де-Компостела, Испания, SCQ" />
+            <geoValue key="STI" caption="Сантьяго, Доминиканская республика, STI" />
+            <geoValue key="SCU" caption="Сантьяго, Куба, SCU" />
+            <geoValue key="MCY" caption="Саншин Коаст, Австралия, MCY" />
+            <geoValue key="SYX" caption="Санья, Китай, SYX" />
+            <geoValue key="SQX" caption="Сао Мигуэль Ду Оест, Бразилия, SQX" />
+            <geoValue key="CTS" caption="Саппоро Читоз, Япония, CTS" />
+            <geoValue key="ZAZ" caption="Сарагоса, Испания, ZAZ" />
+            <geoValue key="SJJ" caption="Сараево, Босния и Герцеговина, SJJ" />
+            <geoValue key="SBN" caption="Саут Бенд, США, SBN" />
+            <geoValue key="XSI" caption="Саут Индиан Лэйк, Канада, XSI" />
+            <geoValue key="SOU" caption="Саутгемптон, Великобритания, SOU" />
+            <geoValue key="ZPB" caption="Сачиго-Лейк, Канада, ZPB" />
+            <geoValue key="SVQ" caption="Севилья, Испания, SVQ" />
+            <geoValue key="GXF" caption="Сеиюн, Йемен, GXF" />
+            <geoValue key="SRG" caption="Семаранг, Индонезия, SRG" />
+            <geoValue key="STT" caption="Сент Томас Кирил И Кинг, Виргинские о-ва (США), STT" />
+            <geoValue key="ANU" caption="Сент-Джонс Антигуа, Антигуа и Барбуда, ANU" />
+            <geoValue key="STC" caption="Сент-Клауд, США, STC" />
+            <geoValue key="SEU" caption="Серонера, Танзания, SEU" />
+            <geoValue key="GMP" caption="Сеул Джимпо, Корея (Южная), GMP" />
+            <geoValue key="ICN" caption="Сеул Инчхон, Корея (Южная), ICN" />
+            <geoValue key="SELA" caption="Сеул, Корея (Южная), SELA" />
+            <geoValue key="XIY" caption="Сиань Сяньян, Китай, XIY" />
+            <geoValue key="SBW" caption="Сибу, Малайзия, SBW" />
+            <geoValue key="CEB" caption="Сибу, Филиппины, CEB" />
+            <geoValue key="CID" caption="Сидар Рапидс, США, CID" />
+            <geoValue key="FSZ" caption="Сидзуока, Япония, FSZ" />
+            <geoValue key="SYD" caption="Сидней Кингсфорт Смит, Австралия, SYD" />
+            <geoValue key="SVC" caption="Силвер Сити, США, SVC" />
+            <geoValue key="REP" caption="Сим Рип, Камбоджа, REP" />
+            <geoValue key="SIN" caption="Сингапур Чанджи, Сингапур, SIN" />
+            <geoValue key="SQG" caption="Синтанг, Индонезия, SQG" />
+            <geoValue key="SKT" caption="Сиолкот, Пакистан, SKT" />
+            <geoValue key="JSH" caption="Сития, Греция, JSH" />
+            <geoValue key="SEA" caption="Сиэттл / Такома Интернешнл, США, SEA" />
+            <geoValue key="SGY" caption="Скагвей, США, SGY" />
+            <geoValue key="SFT" caption="Скеллефтеа, Швеция, SFT" />
+            <geoValue key="JSI" caption="Скиатос-Айленд Нэшнл, Греция, JSI" />
+            <geoValue key="SKU" caption="Скирос, Греция, SKU" />
+            <geoValue key="SKP" caption="Скопье, Македония, SKP" />
+            <geoValue key="BFF" caption="Скоттсблафф, США, BFF" />
+            <geoValue key="SCT" caption="Сокотра, Йемен, SCT" />
+            <geoValue key="SOC" caption="Соло Сити, Индонезия, SOC" />
+            <geoValue key="SGX" caption="Сонгеа, Танзания, SGX" />
+            <geoValue key="FAE" caption="Сорвагер, Фарерские острова, FAE" />
+            <geoValue key="SOQ" caption="Соронг, Индонезия, SOQ" />
+            <geoValue key="SOF" caption="София, Болгария, SOF" />
+            <geoValue key="HMB" caption="Сохаг, Египет, HMB" />
+            <geoValue key="SPU" caption="Сплит, Хорватия, SPU" />
+            <geoValue key="GEG" caption="Спокэйн Интернэшнл, США, GEG" />
+            <geoValue key="SGF" caption="Спрингфилд-Брансон Рг, США, SGF" />
+            <geoValue key="SPI" caption="Спрингфилд, США, SPI" />
+            <geoValue key="UVF" caption="Ст Лусия Хеуонорра, Сент-Люсия, UVF" />
+            <geoValue key="YST" caption="Ст Тэрез Поинт, Канада, YST" />
+            <geoValue key="EBU" caption="Ст Этинн, Франция, EBU" />
+            <geoValue key="SVG" caption="Ставангер, Норвегия, SVG" />
+            <geoValue key="IST" caption="Стамбул Ататюрк, Турция, IST" />
+            <geoValue key="SAW" caption="Стамбул Сабиха, Турция, SAW" />
+            <geoValue key="ISTA" caption="Стамбул, Турция, ISTA" />
+            <geoValue key="ARN" caption="Стокгольм Арланда, Швеция, ARN" />
+            <geoValue key="BMA" caption="Стокгольм Бромма, Швеция, BMA" />
+            <geoValue key="VST" caption="Стокгольм Вастерас, Швеция, VST" />
+            <geoValue key="NYO" caption="Стокгольм-Скавста, Швеция, NYO" />
+            <geoValue key="STOC" caption="Стокгольм, Швеция, STOC" />
+            <geoValue key="SYY" caption="Сторноуей, Великобритания, SYY" />
+            <geoValue key="SXB" caption="Страсбург, Франция, SXB" />
+            <geoValue key="FSD" caption="Су-Фолс, США, FSD" />
+            <geoValue key="SRE" caption="Сукре, Боливия, SRE" />
+            <geoValue key="SUB" caption="Сурабая, Индонезия, SUB" />
+            <geoValue key="URT" caption="Сураттани, Таиланд, URT" />
+            <geoValue key="ZSJ" caption="Сэнди-Лейк, Канада, ZSJ" />
+            <geoValue key="TCP" caption="Таба, Египет, TCP" />
+            <geoValue key="TBG" caption="Табабил, Папуа-Новая Гвинея, TBG" />
+            <geoValue key="TAG" caption="Тагбиларан, Филиппины, TAG" />
+            <geoValue key="XTL" caption="Таду Лэйк, Канада, XTL" />
+            <geoValue key="TPE" caption="Тайбэй Тайвань Таоыуан, Тайвань, TPE" />
+            <geoValue key="TAC" caption="Таклобан, Филиппины, TAC" />
+            <geoValue key="TLL" caption="Таллин, Эстония, TLL" />
+            <geoValue key="TNO" caption="Тамариндо, Коста-Рика, TNO" />
+            <geoValue key="TMC" caption="Тамболака, Индонезия, TMC" />
+            <geoValue key="TMU" caption="Тамбор, Коста-Рика, TMU" />
+            <geoValue key="TPA" caption="Тампа Интернэшнл, США, TPA" />
+            <geoValue key="TMP" caption="Тампере, Финляндия, TMP" />
+            <geoValue key="TJQ" caption="Танджанг Пандан, Индонезия, TJQ" />
+            <geoValue key="TNJ" caption="Танджанг Пинанг, Индонезия, TNJ" />
+            <geoValue key="TJS" caption="Танджанг Селор, Индонезия, TJS" />
+            <geoValue key="TNG" caption="Танжер, Марокко, TNG" />
+            <geoValue key="TRK" caption="Таракан, Индонезия, TRK" />
+            <geoValue key="TIZ" caption="Тари, Папуа-Новая Гвинея, TIZ" />
+            <geoValue key="TJA" caption="Тариджа, Боливия, TJA" />
+            <geoValue key="TAY" caption="Тарту, Эстония, TAY" />
+            <geoValue key="IKA" caption="Тегеран Имам Хомеини, Иран, IKA" />
+            <geoValue key="TEX" caption="Теллерид, США, TEX" />
+            <geoValue key="TLV" caption="Тель-Авив, Израиль, TLV" />
+            <geoValue key="TIM" caption="Тембагапера, Индонезия, TIM" />
+            <geoValue key="TFN" caption="Тенерифе Норт, Испания, TFN" />
+            <geoValue key="TFS" caption="Тенерифе Южный, Испания, TFS" />
+            <geoValue key="TENE" caption="Тенерифе, Испания, TENE" />
+            <geoValue key="TTU" caption="Тетуан С. Рамэль, Марокко, TTU" />
+            <geoValue key="TSR" caption="Тимишоара, Румыния, TSR" />
+            <geoValue key="TIA" caption="Тирана, Албания, TIA" />
+            <geoValue key="TGM" caption="Тиргу Мерес, Румыния, TGM" />
+            <geoValue key="TRE" caption="Тири, Великобритания, TRE" />
+            <geoValue key="TRV" caption="Тируванантапурам, Индия, TRV" />
+            <geoValue key="TRZ" caption="Тиручирапалли, Индия, TRZ" />
+            <geoValue key="TVF" caption="Тиф Ривер Фоллс, США, TVF" />
+            <geoValue key="NRT" caption="Токио Нарита, Япония, NRT" />
+            <geoValue key="HND" caption="Токио Ханэда, Япония, HND" />
+            <geoValue key="TYOA" caption="Токио, Япония, TYOA" />
+            <geoValue key="TLC" caption="Толака, Мексика, TLC" />
+            <geoValue key="TOL" caption="Толедо Экспресс, США, TOL" />
+            <geoValue key="TLI" caption="Толитоли, Индонезия, TLI" />
+            <geoValue key="TLU" caption="Толу, Колумбия, TLU" />
+            <geoValue key="YTH" caption="Томпсон, Канада, YTH" />
+            <geoValue key="TWU" caption="Тоо, Малайзия, TWU" />
+            <geoValue key="TTQ" caption="Тортукро, Коста-Рика, TTQ" />
+            <geoValue key="THO" caption="Торшофн, Исландия, THO" />
+            <geoValue key="TZX" caption="Трабзон, Турция, TZX" />
+            <geoValue key="TST" caption="Транг, Таиланд, TST" />
+            <geoValue key="TPS" caption="Трапани Бирджи, Италия, TPS" />
+            <geoValue key="TRI" caption="Три-Ситиз, США, TRI" />
+            <geoValue key="TRS" caption="Триест, Италия, TRS" />
+            <geoValue key="TDD" caption="Тринидад, Боливия, TDD" />
+            <geoValue key="THN" caption="Тролльхеттен, Швеция, THN" />
+            <geoValue key="TRD" caption="Тронхейм, Норвегия, TRD" />
+            <geoValue key="TZL" caption="Тузла, Босния и Герцеговина, TZL" />
+            <geoValue key="TLN" caption="Тулон-Йэр, Франция, TLN" />
+            <geoValue key="TLS" caption="Тулуза, Франция, TLS" />
+            <geoValue key="TUN" caption="Тунис Картадж, Тунис, TUN" />
+            <geoValue key="TRN" caption="Турин, Италия, TRN" />
+            <geoValue key="TKU" caption="Турку, Финляндия, TKU" />
+            <geoValue key="TUF" caption="Турс, Франция, TUF" />
+            <geoValue key="TAE" caption="Тэгу, Корея (Южная), TAE" />
+            <geoValue key="TAI" caption="Тэйз, Йемен, TAI" />
+            <geoValue key="TTT" caption="Тэйтанг, Тайвань, TTT" />
+            <geoValue key="TIF" caption="Тэйф, Саудовская Аравия, TIF" />
+            <geoValue key="TSN" caption="Тяньцзинь, Китай, TSN" />
+            <geoValue key="TVS" caption="Тяньшань, Китай, TVS" />
+            <geoValue key="YXY" caption="Уайтхорс, Канада, YXY" />
+            <geoValue key="UBP" caption="Убон Рачатани, Таиланд, UBP" />
+            <geoValue key="UTH" caption="Удон-Тхани, Таиланд, UTH" />
+            <geoValue key="AVP" caption="Уилкс-Барр Интернешнл, США, AVP" />
+            <geoValue key="USN" caption="Ульсан, Корея (Южная), USN" />
+            <geoValue key="UME" caption="Умеа, Швеция, UME" />
+            <geoValue key="WOT" caption="Уонан, Тайвань, WOT" />
+            <geoValue key="WJU" caption="Уонджу, Корея (Южная), WJU" />
+            <geoValue key="WBM" caption="Уопенаманда, Папуа-Новая Гвинея, WBM" />
+            <geoValue key="WRL" caption="Уорланд, США, WRL" />
+            <geoValue key="ATY" caption="Уотертаун, США, ATY" />
+            <geoValue key="WAT" caption="Уотерфорд, Ирландия, WAT" />
+            <geoValue key="OMH" caption="Урмих, Иран, OMH" />
+            <geoValue key="UFA" caption="Уфа, Россия, UFA" />
+            <geoValue key="WGP" caption="Уэйнгапу, Индонезия, WGP" />
+            <geoValue key="UYU" caption="Уюни, Боливия, UYU" />
+            <geoValue key="FAR" caption="Фарго, США, FAR" />
+            <geoValue key="FMN" caption="Фармингтон, США, FMN" />
+            <geoValue key="FAO" caption="Фаро, Португалия, FAO" />
+            <geoValue key="AZA" caption="Феникс-Меса Гейтвей, США, AZA" />
+            <geoValue key="FEZ" caption="Фес, Марокко, FEZ" />
+            <geoValue key="FSC" caption="Фигари Сад Корс, Франция, FSC" />
+            <geoValue key="PHL" caption="Филадельфия Интернешнл, США, PHL" />
+            <geoValue key="PHX" caption="Финикс Скай Харбор, США, PHX" />
+            <geoValue key="PHXA" caption="Финикс, США, PHXA" />
+            <geoValue key="FLR" caption="Флоренция, Италия, FLR" />
+            <geoValue key="FLN" caption="Флорианополис, Бразилия, FLN" />
+            <geoValue key="FOD" caption="Форт Додж, США, FOD" />
+            <geoValue key="FLL" caption="Форт Лодердэйл Интернешнл, США, FLL" />
+            <geoValue key="RSW" caption="Форт Майерс Саузвест Флорида Рег, США, RSW" />
+            <geoValue key="FWA" caption="Форт Уэйн, США, FWA" />
+            <geoValue key="FON" caption="Фортуна, Коста-Рика, FON" />
+            <geoValue key="HHN" caption="Франкфурт Хан, Германия, HHN" />
+            <geoValue key="FRA" caption="Франкфурт-на-Майне, Германия, FRA" />
+            <geoValue key="FRAN" caption="Франкфурт, Германия, FRAN" />
+            <geoValue key="FAT" caption="Фресно Йозмайт, США, FAT" />
+            <geoValue key="FDH" caption="Фридрихсхафен, Германия, FDH" />
+            <geoValue key="FUE" caption="Фуертевентура, Испания, FUE" />
+            <geoValue key="FOC" caption="Фужоу, Китай, FOC" />
+            <geoValue key="FUK" caption="Фукуока, Япония, FUK" />
+            <geoValue key="XNA" caption="Фэйеттевилл Нортвест Аркансас Ргн, США, XNA" />
+            <geoValue key="FAI" caption="Фэрбанкс Интернэшнл, США, FAI" />
+            <geoValue key="HGR" caption="Хаджерстаун, США, HGR" />
+            <geoValue key="HYD" caption="Хайдарабад, Индия, HYD" />
+            <geoValue key="HUY" caption="Хамберсайд, Великобритания, HUY" />
+            <geoValue key="HNA" caption="Ханамаки, Япония, HNA" />
+            <geoValue key="HAN" caption="Ханой, Вьетнам, HAN" />
+            <geoValue key="HGH" caption="Ханчжоу, Китай, HGH" />
+            <geoValue key="HRL" caption="Харлинджен, США, HRL" />
+            <geoValue key="HRO" caption="Харризон, США, HRO" />
+            <geoValue key="MDT" caption="Харрисбург Интернешнл, США, MDT" />
+            <geoValue key="KRT" caption="Хартум, Судан, KRT" />
+            <geoValue key="HRK" caption="Харьков, Украина, HRK" />
+            <geoValue key="HDY" caption="Хат Яй (Хатъяй), Таиланд, HDY" />
+            <geoValue key="AGH" caption="Хелсингборг Анджелхом, Швеция, AGH" />
+            <geoValue key="HEL" caption="Хельсинки Вантаа, Финляндия, HEL" />
+            <geoValue key="HON" caption="Херон, США, HON" />
+            <geoValue key="HBA" caption="Хобарт, Австралия, HBA" />
+            <geoValue key="HOD" caption="Ходейда, Йемен, HOD" />
+            <geoValue key="HAU" caption="Ходжезунд, Норвегия, HAU" />
+            <geoValue key="HIR" caption="Хониара, Соломоновы Острова, HIR" />
+            <geoValue key="HKN" caption="Хоскинс, Папуа-Новая Гвинея, HKN" />
+            <geoValue key="HOT" caption="Хот-Спрингс, США, HOT" />
+            <geoValue key="HET" caption="Хоххот, Китай, HET" />
+            <geoValue key="SGN" caption="Хошимин, Вьетнам, SGN" />
+            <geoValue key="HNH" caption="Хуна, США, HNH" />
+            <geoValue key="HRG" caption="Хургада, Египет, HRG" />
+            <geoValue key="IAH" caption="Хьюстон Джордж Буш Интеркнтл., США, IAH" />
+            <geoValue key="HAK" caption="Хэйкоу, Китай, HAK" />
+            <geoValue key="HAS" caption="Хэйл, Саудовская Аравия, HAS" />
+            <geoValue key="HLD" caption="Хэйлар, Китай, HLD" />
+            <geoValue key="HNS" caption="Хэйнес, США, HNS" />
+            <geoValue key="HYS" caption="Хэйс, США, HYS" />
+            <geoValue key="ZRH" caption="Цюрих, Швейцария, ZRH" />
+            <geoValue key="CDR" caption="Чадрон, США, CDR" />
+            <geoValue key="CMJ" caption="Чай Мей, Тайвань, CMJ" />
+            <geoValue key="XCR" caption="Чалонс Сер Мэйрн, Франция, XCR" />
+            <geoValue key="CMF" caption="Чамберай, Франция, CMF" />
+            <geoValue key="CSX" caption="Чанша, Китай, CSX" />
+            <geoValue key="CRW" caption="Чарлстон, США, CRW" />
+            <geoValue key="CHA" caption="Чаттануга, США, CHA" />
+            <geoValue key="CJU" caption="Чеджу, Корея (Южная), CJU" />
+            <geoValue key="XAP" caption="Чейпко, Бразилия, XAP" />
+            <geoValue key="CTU" caption="Ченгду, Китай, CTU" />
+            <geoValue key="MAA" caption="Ченнаи, Индия, MAA" />
+            <geoValue key="CNX" caption="Чианг-Май, Таиланд, CNX" />
+            <geoValue key="CEI" caption="Чианг-Рай, Таиланд, CEI" />
+            <geoValue key="GYY" caption="Чикаго Гэри Реджионал, США, GYY" />
+            <geoValue key="MDW" caption="Чикаго Мидвей, США, MDW" />
+            <geoValue key="ORD" caption="Чикаго О’Хара Интернешнл, США, ORD" />
+            <geoValue key="RFD" caption="Чикаго Рокфорд, США, RFD" />
+            <geoValue key="CHIA" caption="Чикаго, США, CHIA" />
+            <geoValue key="HIN" caption="Чинджу, Корея (Южная), HIN" />
+            <geoValue key="JKH" caption="Чиос, Греция, JKH" />
+            <geoValue key="CGP" caption="Читтагонг, Бангладеш, CGP" />
+            <geoValue key="CKG" caption="Чунцин, Китай, CKG" />
+            <geoValue key="CJJ" caption="Чхонджу, Корея (Южная), CJJ" />
+            <geoValue key="CYS" caption="Шайенн, США, CYS" />
+            <geoValue key="ZTM" caption="Шаматтава, Канада, ZTM" />
+            <geoValue key="SHA" caption="Шанхай Хонгкьяо, Китай, SHA" />
+            <geoValue key="CSHA" caption="Шанхай, Китай, CSHA" />
+            <geoValue key="SHJ" caption="Шарджа, Объединённые Арабские Эмираты, SHJ" />
+            <geoValue key="SSH" caption="Шарм-эль-Шейх, Египет, SSH" />
+            <geoValue key="SHR" caption="Шеридан, США, SHR" />
+            <geoValue key="SJW" caption="Шиджиажуанг, Китай, SJW" />
+            <geoValue key="SYZ" caption="Ширац, Иран, SYZ" />
+            <geoValue key="SOW" caption="Шоу Лоу, США, SOW" />
+            <geoValue key="SHV" caption="Шревепорт Реджионал, США, SHV" />
+            <geoValue key="STR" caption="Штутгарт, Германия, STR" />
+            <geoValue key="SNN" caption="Шэннон, Ирландия, SNN" />
+            <geoValue key="SZX" caption="Шэньчжэнь, Китай, SZX" />
+            <geoValue key="SHE" caption="Шэньян, Китай, SHE" />
+            <geoValue key="SZZ" caption="Щецин, Польша, SZZ" />
+            <geoValue key="EGS" caption="Эджилсстадир, Исландия, EGS" />
+            <geoValue key="EDI" caption="Эдинбург, Великобритания, EDI" />
+            <geoValue key="YEG" caption="Эдмонтон Интернэшнл, Канада, YEG" />
+            <geoValue key="EIN" caption="Эйндховен, Нидерланды, EIN" />
+            <geoValue key="EXT" caption="Эксетер, Великобритания, EXT" />
+            <geoValue key="EZS" caption="Элациг, Турция, EZS" />
+            <geoValue key="EDL" caption="Элдорет, Кения, EDL" />
+            <geoValue key="AIA" caption="Эллианс, США, AIA" />
+            <geoValue key="ELM" caption="Элмира, США, ELM" />
+            <geoValue key="ELD" caption="Эль Дорадо, США, ELD" />
+            <geoValue key="EBA" caption="Эльба-Айленд, Италия, EBA" />
+            <geoValue key="ENE" caption="Энде, Индонезия, ENE" />
+            <geoValue key="RUH" caption="Эр-Рияд, Саудовская Аравия, RUH" />
+            <geoValue key="EBL" caption="Эрбиль, Ирак, EBL" />
+            <geoValue key="ERM" caption="Эречим, Бразилия, ERM" />
+            <geoValue key="ERC" caption="Эрзинкан, Турция, ERC" />
+            <geoValue key="ERZ" caption="Эрзурум, Турция, ERZ" />
+            <geoValue key="HDF" caption="Эрингсдорф, Германия, HDF" />
+            <geoValue key="ECN" caption="Эркан, Кипр, ECN" />
+            <geoValue key="ERF" caption="Эрфурт, Германия, ERF" />
+            <geoValue key="EBJ" caption="Эсберг, Дания, EBJ" />
+            <geoValue key="EPR" caption="Эсперанс, Австралия, EPR" />
+            <geoValue key="ESU" caption="Эссаоюра, Марокко, ESU" />
+            <geoValue key="JYV" caption="Ювяскюля, Финляндия, JYV" />
+            <geoValue key="EUG" caption="Югин, США, EUG" />
+            <geoValue key="YNG" caption="Юнгстаун, США, YNG" />
+            <geoValue key="YNB" caption="Янбу, Саудовская Аравия, YNB" />
+            <geoValue key="RGN" caption="Янгон, Мьянма, RGN" />
+            <geoValue key="DWC" caption="Al Maktoum International Airport, Объединённые Арабские Эмираты, DWC" />
+            <geoValue key="EFL" caption="Argostoli, Греция, EFL" />
+            <geoValue key="LUZ" caption="Lublin, Польша, LUZ" />
+            <geoValue key="KXH" caption="Muara Teweh, Индонезия, KXH" />
+            <geoValue key="WWO" caption="Siborong Borong, Индонезия, WWO" />
+            <geoValue key="LSG" caption="Sinabang, Индонезия, LSG" />
+            <geoValue key="ZQZ" caption="Zhangjiakou, Китай, ZQZ" />
+        </rangeGeo>
+        <rangeDate format="YYMMdd" defaultFrom="0" defaultTo="7" captionFrom="Туда" captionTo="Обратно">
+            <description caption="Когда">
+                <modifyResource placeholder="odate"/>
+                <modifyResource placeholder="idate"/>
+            </description>
+        </rangeDate>
+    </filters>
+</site>
