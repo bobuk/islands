@@ -37,12 +37,12 @@ If your website performs online transactions (such as reservations, registration
 
 To indicate that a transaction can be made, you need to add two metatags to the page on your website that you want to bind this action to. For reserving a table at a restaurant, it looks like this: 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="og:interaction" content="BookTable" /> 
-    <meta property="og:interaction:web_handler" content="http://menu.ru/order/table" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/goods/124123#buy" /> 
   ...
   </head>
   ...
@@ -51,11 +51,11 @@ To indicate that a transaction can be made, you need to add two metatags to the 
 
 Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
 
-* **interaction** (interaction [array](http://ogp.me/#array)) &mdash; **mandatory** tag that defines possible actions. Examples are making a reservation at a restaurant ("BookTable" value), reserving a hotel room ("BookHotel" value) and others. We will be publishing specific actions and values for them as products are added.
-* **interaction:web_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the address of the page to go to for completing the action. This can be a page on your website if you can complete the action there, or a page on another website (an aggregator's site) if your site does not offer this feature. 
-* **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise. 
+* **interaction** ([array](http://ogp.me/#array)) &mdash; **mandatory** tag that shows what type of interactive snippet is described. The value should be "BUTTON" for transaction buttons
+* **interaction:type** ([array](http://ogp.me/#array)) &mdash; **mandatory** tag that defines the possible action. Examples of this are making a reservation at a restaurant ("BookAction" value), purchasing merchandise ("BuyAction" value) and others. The current list of available actions are published in [documentation] (http://help.yandex.com/webmaster/?id=1127950#actions)
+* **interaction:url** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the web address where the user must go to complete an action. This can be a page on your site if the action can be completed on your site, or a page on another site (aggregator site), if your site does not offer this possibility. 
 
-Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdash; this is required by the protocol.
+Don't forget to set prefix="ya: http://webmaster.yandex.ru/vocabularies/" in the html tag or head &mdash; this is required by the protocol.
 
 ###Basic forms
 For simple forms that contain a small number of fields, it is convenient to put the description on the page itself, inside the HTML tag **form**. If the parameters are thematically established by a standard (schema.org or OpenGraph), the form description can be created using markup.
@@ -97,13 +97,12 @@ Let's imagine that we want to show the price of a hotel room based on the check-
 The markup may look like a part of an object description:
 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="BUTTON" />
     ...
-    <!--Hotel reservation feature -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/hotel/124123#book" />
   ...
   </head>
   ...
@@ -112,25 +111,25 @@ The markup may look like a part of an object description:
 
 Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
 
-* **interaction:http_handler** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the URL of the API. This URL must work for getting a response that depends on parameters set by the user. 
-* **interaction:http_handler:method** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of API request. If omitted, by default the type is assumed to be GET. Acceptable values are GET and POST.
-* **interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of response. If omitted, by default the type is assumed to be JSON. Acceptable values are JSON and XML.
+* **interaction:url** ([URL](http://ogp.me/#url)) **mandatory** tag that defines the API URL. There should be the possibility of receiving an answer through this URL depending on the parameters set by the user.
+* **interaction:url:method** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the kind of request to the API. If the tag is not shown, it is considered to be GET by default. Possible values are GET, POST.
+* **interaction:url:response_format** ([enum]((http://ogp.me/#enum)) &mdash; optional tag that defines the type of answer. If the tag is now shown, it is considered to be JSON by default. Possible values are JSON, XML.
 * **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; optional tag indicating that the user may be required to pay money at some point during the transaction. If omitted, by default the entire transaction is assumed to be free of charge. An example of a paid service is purchasing merchandise.
 
-Don't forget to set prefix="og: http://ogp.me/ns#" in the html tag or head &mdash; this is required by the protocol.
+Don't forget to set prefix="http://webmaster.yandex.ru/vocabularies/" in the html tag or head &mdash; this is required by the protocol.
 
 The same thing, but with optional parameters:
 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
     ...
     <!--Hotel reservation feature -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:method" content="GET" />
-    <meta property="og:interaction:http_handler:response_format" content="JSON" />
+    <meta property="ya:interaction" content="BUTTON" />
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
+    <meta property="ya:interaction:url:method" content="GET" />
+    <meta property="ya:interaction:url:response_format" content="JSON" />
     ...
   </head>
   ...
