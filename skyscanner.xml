@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<site xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="/ru/yandex/serpapi/xsd/site-0.0.1.xsd"
-      xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1">
-
+<site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
     <rootUrl>http://www.skyscanner.ru/?associateid=AFF_DIR_00047_00001&amp;utm_medium=organic&amp;utm_source=yandex&amp;utm_campaign=islands</rootUrl>
     <title>Найти авиабилеты</title>
     <description>Скайсканер – бесплатный поисковик дешевых авиабилетов онлайн. Сравните тысячи рейсов и выбирайте самое выгодное предложение.
@@ -45,7 +44,7 @@
                 <modifyResource placeholder="oplace"/>
                 <modifyResource placeholder="iplace"/>
             </description>
-            <geoValue key="MOSC" caption="Москва, Россия, MOSC" />
+            <geoValue key="MOSC" caption="Москва, Россия" />
             <geoValue key="LED" caption="Санкт-Петербург, Россия, LED" />
             <geoValue key="SVX" caption="Екатеринбург, Россия, SVX" />
             <geoValue key="OVB" caption="Новосибирск, Россия, OVB" />
@@ -130,7 +129,7 @@
             <geoValue key="BLR" caption="Бангалор, Индия, BLR" />
             <geoValue key="DMK" caption="Бангкок Дон Мунг, Таиланд, DMK" />
             <geoValue key="BKK" caption="Бангкок Суварнабхуми, Таиланд, BKK" />
-            <geoValue key="BKKT" caption="Бангкок, Таиланд, BKKT" />
+            <geoValue key="BKKT" caption="Бангкок, Таиланд" />
             <geoValue key="BGR" caption="Бангор, США, BGR" />
             <geoValue key="BTJ" caption="Банда Асех, Индонезия, BTJ" />
             <geoValue key="BDO" caption="Банданг, Индонезия, BDO" />
@@ -154,7 +153,7 @@
             <geoValue key="BLV" caption="Беллевилл, США, BLV" />
             <geoValue key="BLI" caption="Беллинэм, США, BLI" />
             <geoValue key="BHD" caption="Белфаст Сити, Великобритания, BHD" />
-            <geoValue key="BELF" caption="Белфаст, Великобритания, BELF" />
+            <geoValue key="BELF" caption="Белфаст, Великобритания" />
             <geoValue key="BFS" caption="Белфастский Международный, Великобритания, BFS" />
             <geoValue key="BEB" caption="Бенбекала, Великобритания, BEB" />
             <geoValue key="BKS" caption="Бенгкалу, Индонезия, BKS" />
@@ -164,7 +163,7 @@
             <geoValue key="EGC" caption="Бержерак, Франция, EGC" />
             <geoValue key="TXL" caption="Берлин Тегель, Германия, TXL" />
             <geoValue key="SXF" caption="Берлин Шонефельд, Германия, SXF" />
-            <geoValue key="BERL" caption="Берлин, Германия, BERL" />
+            <geoValue key="BERL" caption="Берлин, Германия" />
             <geoValue key="BRL" caption="Берлингтон, США, BRL" />
             <geoValue key="BRN" caption="Берн, Швейцария, BRN" />
             <geoValue key="BEJ" caption="Беро, Индонезия, BEJ" />
@@ -205,7 +204,7 @@
             <geoValue key="BME" caption="Брум, Австралия, BME" />
             <geoValue key="BRU" caption="Брюссель Интернэшнл, Бельгия, BRU" />
             <geoValue key="CRL" caption="Брюссель С. Шарлеруа, Бельгия, CRL" />
-            <geoValue key="BRUS" caption="Брюссель, Бельгия, BRUS" />
+            <geoValue key="BRUS" caption="Брюссель, Бельгия" />
             <geoValue key="BUD" caption="Будапешт, Венгрия, BUD" />
             <geoValue key="BUA" caption="Бука, Папуа-Новая Гвинея, BUA" />
             <geoValue key="UOL" caption="Буол, Индонезия, UOL" />
@@ -225,16 +224,16 @@
             <geoValue key="VRK" caption="Варкос, Финляндия, VRK" />
             <geoValue key="VAR" caption="Варна, Болгария, VAR" />
             <geoValue key="WMI" caption="Варшава Модлин, Польша, WMI" />
-            <geoValue key="WARS" caption="Варшава, Польша, WARS" />
+            <geoValue key="WARS" caption="Варшава, Польша" />
             <geoValue key="WUH" caption="Вахан, Китай, WUH" />
             <geoValue key="IAD" caption="Вашингтон Далльз, США, IAD" />
             <geoValue key="DCA" caption="Вашингтон Рональд Рейган, США, DCA" />
-            <geoValue key="WASA" caption="Вашингтон, США, WASA" />
+            <geoValue key="WASA" caption="Вашингтон, США" />
             <geoValue key="WLG" caption="Веллингтон, Новая Зеландия, WLG" />
             <geoValue key="VIE" caption="Вена, Австрия, VIE" />
             <geoValue key="VCE" caption="Венеция Марко Поло, Италия, VCE" />
             <geoValue key="TSF" caption="Венеция Тревизо, Италия, TSF" />
-            <geoValue key="VENI" caption="Венеция, Италия, VENI" />
+            <geoValue key="VENI" caption="Венеция, Италия" />
             <geoValue key="WNZ" caption="Венжоу, Китай, WNZ" />
             <geoValue key="VEL" caption="Вернал, США, VEL" />
             <geoValue key="VRN" caption="Верона Интернэшнл, Италия, VRN" />
@@ -256,7 +255,7 @@
             <geoValue key="GZP" caption="Газипаса, Турция, GZP" />
             <geoValue key="HAM" caption="Гамбург Интернэшнл, Германия, HAM" />
             <geoValue key="LBC" caption="Гамбург Любек, Германия, LBC" />
-            <geoValue key="HAMB" caption="Гамбург, Германия, HAMB" />
+            <geoValue key="HAMB" caption="Гамбург, Германия" />
             <geoValue key="HAJ" caption="Ганновер, Германия, HAJ" />
             <geoValue key="KUV" caption="Гансан, Корея (Южная), KUV" />
             <geoValue key="ELQ" caption="Гассим, Саудовская Аравия, ELQ" />
@@ -268,7 +267,7 @@
             <geoValue key="GIB" caption="Гибралтар, Гибралтар, GIB" />
             <geoValue key="GLA" caption="Глазго Интернэшнл, Великобритания, GLA" />
             <geoValue key="PIK" caption="Глазго Прествик, Великобритания, PIK" />
-            <geoValue key="GLAS" caption="Глазго, Великобритания, GLAS" />
+            <geoValue key="GLAS" caption="Глазго, Великобритания" />
             <geoValue key="GLO" caption="Глостершир, Великобритания, GLO" />
             <geoValue key="GOI" caption="Гоа, Индия, GOI" />
             <geoValue key="YGO" caption="Годс Нарроус, Канада, YGO" />
@@ -280,7 +279,7 @@
             <geoValue key="GKA" caption="Горока, Папуа-Новая Гвинея, GKA" />
             <geoValue key="GOT" caption="Готенбург Ландветтер, Швеция, GOT" />
             <geoValue key="GSE" caption="Готенбург Сэйв, Швеция, GSE" />
-            <geoValue key="GOTH" caption="Готенбург, Швеция, GOTH" />
+            <geoValue key="GOTH" caption="Готенбург, Швеция" />
             <geoValue key="LPA" caption="Гран Канария, Испания, LPA" />
             <geoValue key="GRX" caption="Гранада, Испания, GRX" />
             <geoValue key="GRI" caption="Гранд Айленд, США, GRI" />
@@ -310,7 +309,7 @@
             <geoValue key="DLH" caption="Далат Интернэшнл, США, DLH" />
             <geoValue key="DFW" caption="Даллас - Форт Уорт Интернешнл, США, DFW" />
             <geoValue key="DAL" caption="Даллас Лав Филд, США, DAL" />
-            <geoValue key="DFWA" caption="Даллас, США, DFWA" />
+            <geoValue key="DFWA" caption="Даллас, США" />
             <geoValue key="DLC" caption="Далянь, Китай, DLC" />
             <geoValue key="DMM" caption="Даммам, Саудовская Аравия, DMM" />
             <geoValue key="DAR" caption="Дар-эс-Салам, Танзания, DAR" />
@@ -330,7 +329,7 @@
             <geoValue key="JAI" caption="Джайпур, Индия, JAI" />
             <geoValue key="CGK" caption="Джакарта Соекарно-Хатта, Индонезия, CGK" />
             <geoValue key="HLP" caption="Джакарта Халим Перданакусума, Индонезия, HLP" />
-            <geoValue key="CGKI" caption="Джакарта, Индонезия, CGKI" />
+            <geoValue key="CGKI" caption="Джакарта, Индонезия" />
             <geoValue key="DJB" caption="Джамби, Индонезия, DJB" />
             <geoValue key="DJJ" caption="Джаяпера, Индонезия, DJJ" />
             <geoValue key="JMS" caption="Джеймстаун, США, JMS" />
@@ -361,13 +360,13 @@
             <geoValue key="DOH" caption="Доха, Катар, DOH" />
             <geoValue key="DRS" caption="Дрезден, Германия, DRS" />
             <geoValue key="DRK" caption="Дрейк-Бэй, Коста-Рика, DRK" />
-            <geoValue key="DXBA" caption="Дубай, Объединённые Арабские Эмираты, DXBA" />
+            <geoValue key="DXBA" caption="Дубай, Объединённые Арабские Эмираты" />
             <geoValue key="DUB" caption="Дублин, Ирландия, DUB" />
             <geoValue key="DBV" caption="Дубровник, Хорватия, DBV" />
             <geoValue key="MME" caption="Дурхам, Великобритания, MME" />
             <geoValue key="NRN" caption="Дюссельдорф Визе, Германия, NRN" />
             <geoValue key="DUS" caption="Дюссельдорф Интернешнл, Германия, DUS" />
-            <geoValue key="DUSS" caption="Дюссельдорф, Германия, DUSS" />
+            <geoValue key="DUSS" caption="Дюссельдорф, Германия" />
             <geoValue key="NBE" caption="Енфидха, Тунис, NBE" />
             <geoValue key="EVN" caption="Ереван, Армения, EVN" />
             <geoValue key="GVA" caption="Женева, Швейцария, GVA" />
@@ -458,7 +457,7 @@
             <geoValue key="UET" caption="Кетта, Пакистан, UET" />
             <geoValue key="KBP" caption="Киев Борисполь, Украина, KBP" />
             <geoValue key="IEV" caption="Киев Жуляны, Украина, IEV" />
-            <geoValue key="KIEV" caption="Киев, Украина, KIEV" />
+            <geoValue key="KIEV" caption="Киев, Украина" />
             <geoValue key="KIS" caption="Кизуму, Кения, KIS" />
             <geoValue key="JRO" caption="Килиманджаро, Танзания, JRO" />
             <geoValue key="TAO" caption="Кингдао, Китай, TAO" />
@@ -514,12 +513,12 @@
             <geoValue key="KID" caption="Кристианштад, Швеция, KID" />
             <geoValue key="HER" caption="Крит Ираклион, Греция, HER" />
             <geoValue key="CHQ" caption="Крит Чания, Греция, CHQ" />
-            <geoValue key="CRET" caption="Крит, Греция, CRET" />
+            <geoValue key="CRET" caption="Крит, Греция" />
             <geoValue key="YCR" caption="Кросс Лэйк, Канада, YCR" />
             <geoValue key="SZB" caption="Куала Лампер Салтан Абдул Аззиз Ша, Малайзия, SZB" />
             <geoValue key="KUL" caption="Куала Лумпур Интернешнл, Малайзия, KUL" />
             <geoValue key="TGG" caption="Куала Теренггану, Малайзия, TGG" />
-            <geoValue key="KULM" caption="Куала-Лумпур, Малайзия, KULM" />
+            <geoValue key="KULM" caption="Куала-Лумпур, Малайзия" />
             <geoValue key="KUA" caption="Куантан, Малайзия, KUA" />
             <geoValue key="KWI" caption="Кувейт, Кувейт, KWI" />
             <geoValue key="UIB" caption="Куибдо, Колумбия, UIB" />
@@ -588,7 +587,7 @@
             <geoValue key="LCY" caption="Лондон Сити, Великобритания, LCY" />
             <geoValue key="STN" caption="Лондон Станстед, Великобритания, STN" />
             <geoValue key="LHR" caption="Лондон Хитроу, Великобритания, LHR" />
-            <geoValue key="LOND" caption="Лондон, Великобритания, LOND" />
+            <geoValue key="LOND" caption="Лондон, Великобритания" />
             <geoValue key="LAX" caption="Лос-Анджелес Интернешнл, США, LAX" />
             <geoValue key="LUG" caption="Лугано, Швейцария, LUG" />
             <geoValue key="MLA" caption="Лука Мальта, Мальта, MLA" />
@@ -646,7 +645,7 @@
             <geoValue key="MES" caption="Медан, Индонезия, MES" />
             <geoValue key="MDE" caption="Меделлин Джоз Мари Кордова, Колумбия, MDE" />
             <geoValue key="EOH" caption="Меделлин Энрик Олая Эррера, Колумбия, EOH" />
-            <geoValue key="MDEA" caption="Меделлин, Колумбия, MDEA" />
+            <geoValue key="MDEA" caption="Меделлин, Колумбия" />
             <geoValue key="MED" caption="Медина, Саудовская Аравия, MED" />
             <geoValue key="MFR" caption="Медфорд, США, MFR" />
             <geoValue key="MEL" caption="Мельбурн Тулламарин, Австралия, MEL" />
@@ -662,7 +661,7 @@
             <geoValue key="BGY" caption="Милан Бергамо, Италия, BGY" />
             <geoValue key="LIN" caption="Милан Линэйт, Италия, LIN" />
             <geoValue key="MXP" caption="Милан Малпенса, Италия, MXP" />
-            <geoValue key="MILA" caption="Милан, Италия, MILA" />
+            <geoValue key="MILA" caption="Милан, Италия" />
             <geoValue key="MSP" caption="Миннеполис Ст Пол, США, MSP" />
             <geoValue key="MOT" caption="Минот Интернэшнл, США, MOT" />
             <geoValue key="MSQ" caption="Минск Интернэшнл 2, Белоруссия, MSQ" />
@@ -691,7 +690,7 @@
             <geoValue key="MUC" caption="Мюнхен, Германия, MUC" />
             <geoValue key="NBX" caption="Набайр, Индонезия, NBX" />
             <geoValue key="NGO" caption="Нагоя Чабу Синтрэйр, Япония, NGO" />
-            <geoValue key="JNGO" caption="Нагоя, Япония, JNGO" />
+            <geoValue key="JNGO" caption="Нагоя, Япония" />
             <geoValue key="NAG" caption="Нагпур, Индия, NAG" />
             <geoValue key="NJF" caption="Наджаф, Ирак, NJF" />
             <geoValue key="NAN" caption="Нади, Фиджи, NAN" />
@@ -731,7 +730,7 @@
             <geoValue key="JFK" caption="Нью-Йорк Джон Ф Кеннеди, США, JFK" />
             <geoValue key="LGA" caption="Нью-Йорк Ла Гуардия, США, LGA" />
             <geoValue key="EWR" caption="Нью-Йорк НьюАрк, США, EWR" />
-            <geoValue key="NYCA" caption="Нью-Йорк, США, NYCA" />
+            <geoValue key="NYCA" caption="Нью-Йорк, США" />
             <geoValue key="NCL" caption="Ньюкасл, Великобритания, NCL" />
             <geoValue key="NQY" caption="Ньюкуей, Великобритания, NQY" />
             <geoValue key="ZNE" caption="Ньюман, Австралия, ZNE" />
@@ -758,13 +757,13 @@
             <geoValue key="KOI" caption="Оркнейские острова, Великобритания, KOI" />
             <geoValue key="MCO" caption="Орландо Интернэшнл, США, MCO" />
             <geoValue key="SFB" caption="Орландо Сэнфорд, США, SFB" />
-            <geoValue key="ORLB" caption="Орландо Флорида, США, ORLB" />
+            <geoValue key="ORLB" caption="Орландо Флорида, США" />
             <geoValue key="OER" caption="Орнсколдсвик, Швеция, OER" />
             <geoValue key="KIX" caption="Осака Кансай Интернешнл, Япония, KIX" />
             <geoValue key="OSL" caption="Осло Гардермуен, Норвегия, OSL" />
             <geoValue key="RYG" caption="Осло Ригге, Норвегия, RYG" />
             <geoValue key="TRF" caption="Осло Торп, Норвегия, TRF" />
-            <geoValue key="OSLO" caption="Осло, Норвегия, OSLO" />
+            <geoValue key="OSLO" caption="Осло, Норвегия" />
             <geoValue key="OST" caption="Остенде - Брюгге, Бельгия, OST" />
             <geoValue key="AUS" caption="Остин-Бергстром, США, AUS" />
             <geoValue key="OSR" caption="Острава, Чешская республика, OSR" />
@@ -789,7 +788,7 @@
             <geoValue key="BVA" caption="Париж Бове, Франция, BVA" />
             <geoValue key="ORY" caption="Париж Орли, Франция, ORY" />
             <geoValue key="CDG" caption="Париж Шарль де Голль, Франция, CDG" />
-            <geoValue key="PARI" caption="Париж, Франция, PARI" />
+            <geoValue key="PARI" caption="Париж, Франция" />
             <geoValue key="PMF" caption="Парма, Италия, PMF" />
             <geoValue key="PSC" caption="Паско, США, PSC" />
             <geoValue key="PFB" caption="Пассо Фандо, Бразилия, PFB" />
@@ -860,7 +859,7 @@
             <geoValue key="RVT" caption="Рейвенсторп, Австралия, RVT" />
             <geoValue key="RKV" caption="Рейкьявик Доместик, Исландия, RKV" />
             <geoValue key="KEF" caption="Рейкьявик Кефлавик, Исландия, KEF" />
-            <geoValue key="REYK" caption="Рейкьявик, Исландия, REYK" />
+            <geoValue key="REYK" caption="Рейкьявик, Исландия" />
             <geoValue key="RNS" caption="Ренн, Франция, RNS" />
             <geoValue key="RNO" caption="Рено / Тахо, США, RNO" />
             <geoValue key="RBQ" caption="Рерренабак, Боливия, RBQ" />
@@ -870,7 +869,7 @@
             <geoValue key="RJK" caption="Риека, Хорватия, RJK" />
             <geoValue key="FCO" caption="Рим Фьюмичино, Италия, FCO" />
             <geoValue key="CIA" caption="Рим Чампино, Италия, CIA" />
-            <geoValue key="ROME" caption="Рим, Италия, ROME" />
+            <geoValue key="ROME" caption="Рим, Италия" />
             <geoValue key="RMI" caption="Римини, Италия, RMI" />
             <geoValue key="RIG" caption="Рио-Гранде, Бразилия, RIG" />
             <geoValue key="RCH" caption="Риоача, Колумбия, RCH" />
@@ -909,7 +908,7 @@
             <geoValue key="SFO" caption="Сан-Франциско Интернешнл, США, SFO" />
             <geoValue key="SYQ" caption="Сан-Хосе Тобиас Боланос, Коста-Рика, SYQ" />
             <geoValue key="SJO" caption="Сан-Хосе Хуан Сантамария, Коста-Рика, SJO" />
-            <geoValue key="SJOA" caption="Сан-Хосе, Коста-Рика, SJOA" />
+            <geoValue key="SJOA" caption="Сан-Хосе, Коста-Рика" />
             <geoValue key="SJU" caption="Сан-Хуан Луис Маноз Марин, Пуэрто-Рико, SJU" />
             <geoValue key="SAH" caption="Сана'а, Йемен, SAH" />
             <geoValue key="SDK" caption="Сандакан, Малайзия, SDK" />
@@ -947,7 +946,7 @@
             <geoValue key="SEU" caption="Серонера, Танзания, SEU" />
             <geoValue key="GMP" caption="Сеул Джимпо, Корея (Южная), GMP" />
             <geoValue key="ICN" caption="Сеул Инчхон, Корея (Южная), ICN" />
-            <geoValue key="SELA" caption="Сеул, Корея (Южная), SELA" />
+            <geoValue key="SELA" caption="Сеул, Корея (Южная)" />
             <geoValue key="XIY" caption="Сиань Сяньян, Китай, XIY" />
             <geoValue key="SBW" caption="Сибу, Малайзия, SBW" />
             <geoValue key="CEB" caption="Сибу, Филиппины, CEB" />
@@ -984,12 +983,12 @@
             <geoValue key="SVG" caption="Ставангер, Норвегия, SVG" />
             <geoValue key="IST" caption="Стамбул Ататюрк, Турция, IST" />
             <geoValue key="SAW" caption="Стамбул Сабиха, Турция, SAW" />
-            <geoValue key="ISTA" caption="Стамбул, Турция, ISTA" />
+            <geoValue key="ISTA" caption="Стамбул, Турция" />
             <geoValue key="ARN" caption="Стокгольм Арланда, Швеция, ARN" />
             <geoValue key="BMA" caption="Стокгольм Бромма, Швеция, BMA" />
             <geoValue key="VST" caption="Стокгольм Вастерас, Швеция, VST" />
             <geoValue key="NYO" caption="Стокгольм-Скавста, Швеция, NYO" />
-            <geoValue key="STOC" caption="Стокгольм, Швеция, STOC" />
+            <geoValue key="STOC" caption="Стокгольм, Швеция" />
             <geoValue key="SYY" caption="Сторноуей, Великобритания, SYY" />
             <geoValue key="SXB" caption="Страсбург, Франция, SXB" />
             <geoValue key="FSD" caption="Су-Фолс, США, FSD" />
@@ -1023,7 +1022,7 @@
             <geoValue key="TIM" caption="Тембагапера, Индонезия, TIM" />
             <geoValue key="TFN" caption="Тенерифе Норт, Испания, TFN" />
             <geoValue key="TFS" caption="Тенерифе Южный, Испания, TFS" />
-            <geoValue key="TENE" caption="Тенерифе, Испания, TENE" />
+            <geoValue key="TENE" caption="Тенерифе, Испания" />
             <geoValue key="TTU" caption="Тетуан С. Рамэль, Марокко, TTU" />
             <geoValue key="TSR" caption="Тимишоара, Румыния, TSR" />
             <geoValue key="TIA" caption="Тирана, Албания, TIA" />
@@ -1034,7 +1033,7 @@
             <geoValue key="TVF" caption="Тиф Ривер Фоллс, США, TVF" />
             <geoValue key="NRT" caption="Токио Нарита, Япония, NRT" />
             <geoValue key="HND" caption="Токио Ханэда, Япония, HND" />
-            <geoValue key="TYOA" caption="Токио, Япония, TYOA" />
+            <geoValue key="TYOA" caption="Токио, Япония" />
             <geoValue key="TLC" caption="Толака, Мексика, TLC" />
             <geoValue key="TOL" caption="Толедо Экспресс, США, TOL" />
             <geoValue key="TLI" caption="Толитоли, Индонезия, TLI" />
@@ -1088,7 +1087,7 @@
             <geoValue key="FSC" caption="Фигари Сад Корс, Франция, FSC" />
             <geoValue key="PHL" caption="Филадельфия Интернешнл, США, PHL" />
             <geoValue key="PHX" caption="Финикс Скай Харбор, США, PHX" />
-            <geoValue key="PHXA" caption="Финикс, США, PHXA" />
+            <geoValue key="PHXA" caption="Финикс, США" />
             <geoValue key="FLR" caption="Флоренция, Италия, FLR" />
             <geoValue key="FLN" caption="Флорианополис, Бразилия, FLN" />
             <geoValue key="FOD" caption="Форт Додж, США, FOD" />
@@ -1098,7 +1097,7 @@
             <geoValue key="FON" caption="Фортуна, Коста-Рика, FON" />
             <geoValue key="HHN" caption="Франкфурт Хан, Германия, HHN" />
             <geoValue key="FRA" caption="Франкфурт-на-Майне, Германия, FRA" />
-            <geoValue key="FRAN" caption="Франкфурт, Германия, FRAN" />
+            <geoValue key="FRAN" caption="Франкфурт, Германия" />
             <geoValue key="FAT" caption="Фресно Йозмайт, США, FAT" />
             <geoValue key="FDH" caption="Фридрихсхафен, Германия, FDH" />
             <geoValue key="FUE" caption="Фуертевентура, Испания, FUE" />
@@ -1155,7 +1154,7 @@
             <geoValue key="MDW" caption="Чикаго Мидвей, США, MDW" />
             <geoValue key="ORD" caption="Чикаго О’Хара Интернешнл, США, ORD" />
             <geoValue key="RFD" caption="Чикаго Рокфорд, США, RFD" />
-            <geoValue key="CHIA" caption="Чикаго, США, CHIA" />
+            <geoValue key="CHIA" caption="Чикаго, США" />
             <geoValue key="HIN" caption="Чинджу, Корея (Южная), HIN" />
             <geoValue key="JKH" caption="Чиос, Греция, JKH" />
             <geoValue key="CGP" caption="Читтагонг, Бангладеш, CGP" />
@@ -1164,7 +1163,7 @@
             <geoValue key="CYS" caption="Шайенн, США, CYS" />
             <geoValue key="ZTM" caption="Шаматтава, Канада, ZTM" />
             <geoValue key="SHA" caption="Шанхай Хонгкьяо, Китай, SHA" />
-            <geoValue key="CSHA" caption="Шанхай, Китай, CSHA" />
+            <geoValue key="CSHA" caption="Шанхай, Китай" />
             <geoValue key="SHJ" caption="Шарджа, Объединённые Арабские Эмираты, SHJ" />
             <geoValue key="SSH" caption="Шарм-эль-Шейх, Египет, SSH" />
             <geoValue key="SHR" caption="Шеридан, США, SHR" />
