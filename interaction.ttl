@@ -1,0 +1,175 @@
+@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix og: <http://ogp.me/ns#> .
+@prefix ya: <http://webmaster.yandex.ru/vocabularies/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ogc: <http://ogp.me/ns/class#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@base <http://webmaster.yandex.ru/vocabularies/> .
+
+<http://webmaster.yandex.ru/vocabularies/> a owl:Ontology .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://webmaster.yandex.ru/vocabularies/interaction:url:method
+
+<http://webmaster.yandex.ru/vocabularies/interaction:url:method> a owl:ObjectProperty ;
+                                                                 
+                                                                 rdfs:label "Interaction method"@en ;
+                                                                 
+                                                                 rdfs:comment "Method of interaction query. Possible value GET, POST. Default value GET"@en ,
+                                                                              "Поле, обозначающее тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST."@ru ;
+                
+                rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interaction:url:response_format
+
+<http://webmaster.yandex.ru/vocabularies/interaction:url:response_format> a owl:ObjectProperty ;
+                                                                          
+                                                                          rdfs:label "Interaction response format"@en ;
+                                                                          
+                                                                          rdfs:comment "Format of interaction respons. Possible value JSON, XML"@en ,
+                                                                                       """Поле, обозначающее тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
+"""@ru ;
+                
+                rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interactions
+
+ya:interactions a owl:ObjectProperty ;
+                
+                rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interactions:property
+
+<http://webmaster.yandex.ru/vocabularies/interactions:property> a owl:ObjectProperty ;
+                                                                
+                                                                rdfs:label "Interraction property"@en ;
+                                                                
+                                                                rdfs:comment "Name of property"@en ,
+                                                                             "Название поля формы"@ru ;
+                                                                
+                                                                rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interactions:property:default_value
+
+<http://webmaster.yandex.ru/vocabularies/interactions:property:default_value> a owl:ObjectProperty ;
+                                                                              
+                                                                              rdfs:label "Interraction property default value"@en ;
+                                                                              
+                                                                              rdfs:comment """Default value of poperty
+"""@en ,
+                                                                                           "Значение поля формы по умолчанию"@ru ;
+                                                                              
+                                                                              rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interactions:type
+
+<http://webmaster.yandex.ru/vocabularies/interactions:type> a owl:ObjectProperty ;
+                                                            
+                                                            rdfs:label "Interraction  type"@en ;
+                                                            
+                                                            rdfs:comment "Type of interraction"@en ,
+                                                                         "Тип интеракативного ответа"@ru ;
+                                                            
+                                                            rdfs:range ogc:string .
+
+
+
+###  http://webmaster.yandex.ru/vocabularies/interactions:url
+
+<http://webmaster.yandex.ru/vocabularies/interactions:url> a owl:ObjectProperty ;
+                                                           
+                                                           rdfs:label "Interraction URL"@en ;
+                                                           
+                                                           rdfs:comment "URL of interraction"@en ,
+                                                                        "Адрес, по которому происходит действие"@ru ;
+                                                           
+                                                           rdfs:range ogc:url .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://ogp.me/ns/class#boolean_str
+
+ogc:boolean_str a owl:Class .
+
+
+
+###  http://ogp.me/ns/class#float_str
+
+ogc:float_str a owl:Class .
+
+
+
+###  http://ogp.me/ns/class#integer_str
+
+ogc:integer_str a owl:Class .
+
+
+
+###  http://ogp.me/ns/class#string
+
+ogc:string a owl:Class .
+
+
+
+###  http://ogp.me/ns/class#url
+
+ogc:url a owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net
+
