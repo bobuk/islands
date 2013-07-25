@@ -44,7 +44,7 @@
   <head>
     <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="BuyAction" />
     <meta property="ya:interaction:url" content="http://example.com/goods/124123#buy" />
   ...
   </head>
@@ -53,8 +53,8 @@
 ```
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
-* **interaction** ([array](http://ogp.me/#array)) &mdash; **обязательный** тег, показывающей какого типа интерактивный ответ описан. Для транзакционных кнопок значение должно быть "BUTTON"
-* **interaction:type** ([array](http://ogp.me/#array)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "BookAction"), покупка товара (значение "BuyAction") и др. Текущий перечень доступных действий опубликован в [документации] (http://help.yandex.ru/webmaster/?id=1127950#actions)
+* **interaction** ([Enum](http://ogp.me/#enum)) &mdash; **обязательный** тег, показывающей какого типа интерактивный ответ описан. Для транзакционных кнопок значение должно быть "BUTTON"
+* **interaction:type** ([Enum](http://ogp.me/#enum)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "BookAction"), покупка товара (значение "BuyAction") и др. Текущий перечень доступных действий опубликован в [документации] (http://help.yandex.ru/webmaster/?id=1127950#actions)
 * **interaction:url** ([URL](http://ogp.me/#url)) &mdash; **обязательный** тег, обозначающий адрес страницы, на которую нужно перейти для совершения действия. Это может быть как страница на вашем сайте, если действие можно совершить на нём, так и страница на другом сайте (сайте агрегатора), если ваш сайт такой возможности не предоставляет. 
 
 
@@ -101,10 +101,10 @@
 ```html
 <html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="ya:interaction" content="BUTTON" />
+    <meta property="ya:interaction" content="RTResponse" />
     ...
     <meta property="ya:interaction:type" content="BookAction" />
-    <meta property="ya:interaction:url" content="http://example.com/hotel/124123#book" />
+    <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" />
   ...
   </head>
   ...
@@ -114,8 +114,8 @@
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
 * **interaction:url** ([URL](http://ogp.me/#url)) **обязательный** тег, обозначающий API урл. По этому урлу должна быть возможность получить ответ в зависимости от заданных пользователем параметров.
-* **interaction:url:method** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
-* **interaction:url:response_format** ([enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
+* **interaction:url:method** ([Enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип запроса к API. Если тег не указан, по умолчанию тип считается GET. Возможные значения GET, POST.
+* **interaction:url:response_format** ([Enum]((http://ogp.me/#enum)) &mdash; необязательный тег, обозначающий тип ответа. Если тег не указан, по умолчанию тип считается JSON. Возможные значения JSON, XML.
 * **interaction:paid_service** ([Boolean](http://ogp.me/#bool)) &mdash; необязательный тег, указывающий, что на одном из шагов транзакции пользователю может потребоваться заплатить денег. Если тег не указан, по умолчанию считается, что вся транзакция бесплатная. Пример платной транзакции &mdash; покупка товара.
 
 То же, но с указанием необязательных параметров:
@@ -124,7 +124,7 @@
   <head>
     ...
     <!--Возможность забронировать номер в отеле -->
-    <meta property="ya:interaction" content="BUTTON" />
+    <meta property="ya:interaction" content="RTResponse" />
     <meta property="ya:interaction:type" content="BookAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
     <meta property="ya:interaction:url:method" content="GET" />
