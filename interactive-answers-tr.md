@@ -40,20 +40,21 @@ Sitenizde çevrimiçi ticari işlemler (rezervasyon, kaydolma, kaydetme, satın 
 #### Open Graph standardında işaretleme örneği
 İşlem yapma olanağını belirtmek için, bu işlemi ilişkilendirmek istediğiniz sayfaya iki meta etiketi eklenmesi gerekir. Bir kafede masa rezervasyonu için görünüm şöyle olur: 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="og:interaction" content="BookTable" /> 
-    <meta property="og:interaction:web_handler" content="http://menu.ru/order/table" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/bar/124123#book" />
   ...
   </head>
   ...
 </html>
 ```
 Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
-* **interaction** (interaction [array](http://ogp.me/#array)): Olası işlemi belirten zorunlu etiket. Örnek olarak restoran rezervasyonu ("BookTable" değeri), otel rezervasyonu ("BookHotel" değeri) vs. verilebilir. Belirli işlemleri ve bunlara ilişkin değerleri ürünler çıktıkça kademeli olarak yayınlayacağız.
-*	**interaction:web_handler** ([URL](http://ogp.me/#url)): İşlemin tamamlanması için gidilmesi gereken sayfanın adresini belirten zorunlu etiket. Bu adres, işlem sayfanızda gerçekleştirilebiliyorsa sitenizin bir sayfası olabileceği gibi, kendi siteniz böyle bir olanak sağlamıyorsa başka bir sitenin sayfası (toplayıcı sayfası) da olabilir.
+* **interaction** ([enum](http://ogp.me/#enum)) — açıklamada yer alan interaktif yanıtın hangi türden olduğunu gösteren zorunlu bir etiket. Hareketli butonlar için değer "BUTTON" olmalıdır
+* **interaction:type** ([enum](http://ogp.me/#enum)): Olası işlemi belirten zorunlu etiket. Örnek olarak restoran rezervasyonu ("BookTable" değeri), otel rezervasyonu ("BookHotel" değeri) vs. verilebilir. Erişime açık işlemlerin güncel listesi belgelerde yayınlandı.
+*	**interaction:url** ([URL](http://ogp.me/#url)): İşlemin tamamlanması için gidilmesi gereken sayfanın adresini belirten zorunlu etiket. Bu adres, işlem sayfanızda gerçekleştirilebiliyorsa sitenizin bir sayfası olabileceği gibi, kendi siteniz böyle bir olanak sağlamıyorsa başka bir sitenin sayfası (toplayıcı sayfası) da olabilir.
 *	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerektiğini belirten isteğe bağlı etiket. Etiket belirtilmezse, varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
 Ayrıca standardın bir gereği olarak html veya head etiketinde prefix="og: http://ogp.me/ns#" öneki belirtilmelidir.
@@ -99,13 +100,12 @@ Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayıs
 İşaretleme, nesne açıklamasının bir parçası olarak görünebilir:
 
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
+    <meta property="ya:interaction" content="RTResponse" />
     ...
-    <!--Hotel reservation feature -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" />
   ...
   </head>
   ...
@@ -113,22 +113,21 @@ Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayıs
 ```
 Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
 
-*  **interaction:http_handler** ([URL](http://ogp.me/#url)): URL API'sini belirten zorunlu etiket. Bu nedenle, URL'nin kullanıcı tarafından girilen parametrelere bağlı olarak yanıt alma olanağı olmalıdır.
-*	**interaction:http_handler:method** ([enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
-*	**interaction:http_handler:response_format** ([enum]((http://ogp.me/#enum)): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
+*  **interaction:url** ([URL](http://ogp.me/#url)): URL API'sini belirten zorunlu etiket. Bu nedenle, URL'nin kullanıcı tarafından girilen parametrelere bağlı olarak yanıt alma olanağı olmalıdır.
+*	**interaction:url:method** ([enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
+*	**interaction:url:response_format** ([enum]((http://ogp.me/#enum)): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
 *	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerekebileceğini belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
 Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
 ```html
-<html prefix="og: http://ogp.me/ns#">
+<html prefix="ya: http://webmaster.yandex.ru/vocabularies/">
   <head>
-    <meta property="og:type" content="..." />
     ...
-    <!--Hotel reservation feature -->
-    <meta property="og:interaction" content="BookHotel" /> 
-    <meta property="og:interaction:http_handler" content="http://host/prefix?hotel=433" /> 
-    <meta property="og:interaction:http_handler:method" content="GET" />
-    <meta property="og:interaction:http_handler:response_format" content="JSON" />
+    <meta property="ya:interaction" content="RTResponse" />
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
+    <meta property="ya:interaction:url:method" content="GET" />
+    <meta property="ya:interaction:url:response_format" content="JSON" />
     ...
   </head>
   ...
