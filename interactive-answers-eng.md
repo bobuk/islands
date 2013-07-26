@@ -41,8 +41,8 @@ To indicate that a transaction can be made, you need to add two metatags to the 
   <head>
     <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="ya:interaction:type" content="BuyAction" />
-    <meta property="ya:interaction:url" content="http://example.com/goods/124123#buy" /> 
+    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:url" content="http://example.com/bar/124123#book" /> 
   ...
   </head>
   ...
