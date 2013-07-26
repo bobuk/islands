@@ -52,8 +52,8 @@ Sitenizde çevrimiçi ticari işlemler (rezervasyon, kaydolma, kaydetme, satın 
 </html>
 ```
 Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
-* **interaction** ([enum](http://ogp.me/#enum)) — açıklamada yer alan interaktif yanıtın hangi türden olduğunu gösteren zorunlu bir etiket. Hareketli butonlar için değer "BUTTON" olmalıdır
-* **interaction:type** ([enum](http://ogp.me/#enum)): Olası işlemi belirten zorunlu etiket. Örnek olarak restoran rezervasyonu ("BookTable" değeri), otel rezervasyonu ("BookHotel" değeri) vs. verilebilir. Erişime açık işlemlerin güncel listesi belgelerde yayınlandı.
+* **interaction** ([Enum](http://ogp.me/#enum)) — açıklamada yer alan interaktif yanıtın hangi türden olduğunu gösteren zorunlu bir etiket. Hareketli butonlar için değer "BUTTON" olmalıdır
+* **interaction:type** ([Enum](http://ogp.me/#enum)): Olası işlemi belirten zorunlu etiket. Örnek olarak restoran rezervasyonu ("BookTable" değeri), otel rezervasyonu ("BookHotel" değeri) vs. verilebilir. Erişime açık işlemlerin güncel listesi belgelerde yayınlandı.
 *	**interaction:url** ([URL](http://ogp.me/#url)): İşlemin tamamlanması için gidilmesi gereken sayfanın adresini belirten zorunlu etiket. Bu adres, işlem sayfanızda gerçekleştirilebiliyorsa sitenizin bir sayfası olabileceği gibi, kendi siteniz böyle bir olanak sağlamıyorsa başka bir sitenin sayfası (toplayıcı sayfası) da olabilir.
 *	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerektiğini belirten isteğe bağlı etiket. Etiket belirtilmezse, varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
@@ -114,8 +114,8 @@ Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayıs
 Interaction ile başlayan etiketler, Open Graph Protocol (http://ogp.me) açık standardının uzantısıdır.
 
 *  **interaction:url** ([URL](http://ogp.me/#url)): URL API'sini belirten zorunlu etiket. Bu nedenle, URL'nin kullanıcı tarafından girilen parametrelere bağlı olarak yanıt alma olanağı olmalıdır.
-*	**interaction:url:method** ([enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
-*	**interaction:url:response_format** ([enum]((http://ogp.me/#enum)): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
+*	**interaction:url:method** ([Enum]((http://ogp.me/#enum)): API için sorgu türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak GET olduğu kabul edilir. Olası değerler GET ve POST'tur.
+*	**interaction:url:response_format** ([Enum]((http://ogp.me/#enum)): Yanıt türünü belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak JSON olduğu kabul edilir. Olası değerler JSON ve XML'dir.
 *	**interaction:paid_service** ([Boolean](http://ogp.me/#bool)): İşlem adımlarından birinde kullanıcının para ödemesi gerekebileceğini belirten isteğe bağlı etiket. Etiket belirtilmezse varsayılan olarak işlemin tümüyle ücretsiz olduğu kabul edilir. Ürün satın alınması, ücretli bir işleme örnektir.
 
 Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
