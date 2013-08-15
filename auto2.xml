@@ -2,11 +2,11 @@
 <site xmlns="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://interactive-answers.webmaster.yandex.ru/schemas/site/0.0.1  http://interactive-answers.webmaster.yandex.ru/schemas/site-0.0.1.xsd">
-    <title>Яндекс.Авто</title>
+    <title>Поиск автомобилей</title>
     <description>Новое Яндекс.Авто 2.0: объявления о продаже, комплектации и цены.</description>
-    <rootUrl>http://auto2.yandex.ru</rootUrl>
+    <rootUrl>http://auto.yandex.ru</rootUrl>
     <resource>
-        <fixed name="auto2.yandex.ru/search"/>
+        <fixed name="auto.yandex.ru/search"/>
     </resource>
     <filters>
         <dropDown>
