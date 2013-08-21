@@ -46,7 +46,7 @@
   <head>
     <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://example.com/bar/124123#book" />
   ...
   </head>
@@ -56,7 +56,7 @@
 Теги, начинающиеся с **interaction**, являются расширением открытого стандарта Open Graph Protocol (http://ogp.me).
 
 * **interaction** ([Enum](http://ogp.me/#enum)) &mdash; **обязательный** тег, показывающей какого типа интерактивный ответ описан. Для транзакционных кнопок значение должно быть "BUTTON"
-* **interaction:type** ([Enum](http://ogp.me/#enum)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "BookAction"), покупка товара (значение "BuyAction") и др. Текущий перечень доступных действий опубликован в [документации] (http://help.yandex.ru/webmaster/?id=1127950#actions)
+* **interaction:type** ([Enum](http://ogp.me/#enum)) &mdash; **обязательный** тег, обозначающий возможное действие. Примерами могут быть бронирование в ресторане (значение "ReserveAction"), покупка товара (значение "BuyAction") и др. Текущий перечень доступных действий опубликован в [документации] (http://help.yandex.ru/webmaster/?id=1127950#actions)
 * **interaction:url** ([URL](http://ogp.me/#url)) &mdash; **обязательный** тег, обозначающий адрес страницы, на которую нужно перейти для совершения действия. Это может быть как страница на вашем сайте, если действие можно совершить на нём, так и страница на другом сайте (сайте агрегатора), если ваш сайт такой возможности не предоставляет. 
 
 
@@ -105,7 +105,7 @@
   <head>
     <meta property="ya:interaction" content="RTResponse" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" />
   ...
   </head>
@@ -127,7 +127,7 @@
     ...
     <!--Возможность забронировать номер в отеле -->
     <meta property="ya:interaction" content="RTResponse" />
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
     <meta property="ya:interaction:url:method" content="GET" />
     <meta property="ya:interaction:url:response_format" content="JSON" />
