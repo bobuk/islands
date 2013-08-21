@@ -41,7 +41,7 @@ To indicate that a transaction can be made, you need to add two metatags to the 
   <head>
     <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://example.com/bar/124123#book" /> 
   ...
   </head>
@@ -52,7 +52,7 @@ To indicate that a transaction can be made, you need to add two metatags to the 
 Tags that start with **interaction** are our extension of the open standard Open Graph Protocol (http://ogp.me).
 
 * **interaction** ([Enum](http://ogp.me/#enum)) &mdash; **mandatory** tag that shows what type of interactive snippet is described. The value should be "BUTTON" for transaction buttons
-* **interaction:type** ([Enum](http://ogp.me/#enum)) &mdash; **mandatory** tag that defines the possible action. Examples of this are making a reservation at a restaurant ("BookAction" value), purchasing merchandise ("BuyAction" value) and others. The current list of available actions are published in [documentation] (http://help.yandex.com/webmaster/?id=1127950#actions)
+* **interaction:type** ([Enum](http://ogp.me/#enum)) &mdash; **mandatory** tag that defines the possible action. Examples of this are making a reservation at a restaurant ("ReserveAction" value), purchasing merchandise ("BuyAction" value) and others. The current list of available actions are published in [documentation] (http://help.yandex.com/webmaster/?id=1127950#actions)
 * **interaction:url** ([URL](http://ogp.me/#url)) &mdash; **mandatory** tag that defines the web address where the user must go to complete an action. This can be a page on your site if the action can be completed on your site, or a page on another site (aggregator site), if your site does not offer this possibility. 
 
 Don't forget to set prefix="ya: http://webmaster.yandex.ru/vocabularies/" in the html tag or head &mdash; this is required by the protocol.
@@ -101,7 +101,7 @@ The markup may look like a part of an object description:
   <head>
     <meta property="ya:interaction" content="RTResponse" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" />
   ...
   </head>
@@ -126,7 +126,7 @@ The same thing, but with optional parameters:
     ...
     <!--Hotel reservation feature -->
     <meta property="ya:interaction" content="RTResponse" />
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
     <meta property="ya:interaction:url:method" content="GET" />
     <meta property="ya:interaction:url:response_format" content="JSON" />
