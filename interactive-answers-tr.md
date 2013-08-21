@@ -44,7 +44,7 @@ Sitenizde çevrimiçi ticari işlemler (rezervasyon, kaydolma, kaydetme, satın 
   <head>
     <meta property="ya:interaction" content="BUTTON" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://example.com/bar/124123#book" />
   ...
   </head>
@@ -104,7 +104,7 @@ Geliş tarihlerine (arrival), ayrılış tarihlerine (departure) ve konuk sayıs
   <head>
     <meta property="ya:interaction" content="RTResponse" />
     ...
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" />
   ...
   </head>
@@ -124,7 +124,7 @@ Aynı şekilde; ancak zorunlu olmayan parametreler de belirtilerek:
   <head>
     ...
     <meta property="ya:interaction" content="RTResponse" />
-    <meta property="ya:interaction:type" content="BookAction" />
+    <meta property="ya:interaction:type" content="ReserveAction" />
     <meta property="ya:interaction:url" content="http://host/prefix?hotel=433" /> 
     <meta property="ya:interaction:url:method" content="GET" />
     <meta property="ya:interaction:url:response_format" content="JSON" />
